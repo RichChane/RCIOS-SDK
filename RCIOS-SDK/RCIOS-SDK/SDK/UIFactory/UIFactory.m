@@ -8,6 +8,7 @@
 
 #import "UIFactory.h"
 
+
 @implementation UIFactory
 
 + (CGSize)sizeFromString:(NSString *)string maxWidth:(CGFloat)width maxHeight:(CGFloat)height font:(UIFont *)font lineSpace:(CGFloat)lineSpace
@@ -193,5 +194,39 @@
     }
     return lable;
 }
+
++ (M80AttributedLabel*)createAttributedLabelWithFrame:(CGRect)rect
+                                            fontArray:(NSArray*)fontSizes
+                                            textArray:(NSArray*)textArray
+                                           colorArray:(NSArray*)colorArray
+                                        numberOfLines:(NSInteger)numberOfLines
+                                       backgroudColor:(UIColor*)backgroudColor
+{
+    
+    M80AttributedLabel *attributedLabel = [[M80AttributedLabel alloc] initWithFrame:rect];
+    NSInteger count = [textArray count];
+    for (NSInteger i=0;i<count;i++)
+    {
+        UIColor *textColor =  colorArray[i];
+        NSString *text = textArray[i];
+        NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc]initWithString:text];
+        if (fontSizes.count == 1)
+        {
+            [attributedText setFont:fontSizes[0]];
+        }
+        else
+        {
+            [attributedText setFont:fontSizes[i]];
+        }
+        
+        [attributedText setTextColor:textColor];
+        [attributedLabel appendAttributedText:attributedText];
+    }
+    attributedLabel.numberOfLines = numberOfLines;
+    attributedLabel.backgroundColor = backgroudColor?:[UIColor clearColor];
+    return attributedLabel;
+    
+}
+
 
 @end

@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^Cancel)(void);
+typedef void(^MakeSure)(void);
+
 @interface PopBaseView : UIView
+
+@property (nonatomic,strong) UIView *topView;
+@property (nonatomic,strong) UIView *contentView;
+
+
+- (instancetype)initWithCancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle;
+- (void)refreshCenterView:(UIView *)topView contentView:(UIView *)contentView;
+
+-(void)showPopView;
+
+//action
+-(void)clickCancleBtn:(UIButton*)sender;
+-(void)clickSureBtn:(UIButton*)sender;
 
 @end

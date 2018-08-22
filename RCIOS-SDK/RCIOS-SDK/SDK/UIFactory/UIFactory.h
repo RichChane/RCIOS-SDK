@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "M80AttributedLabel.h"
 
 @interface UIFactory : NSObject
 + (UILabel *)createLabelWithText:(NSString *)text textColor:(UIColor *)textColor font:(UIFont *)font;
@@ -39,4 +40,12 @@
 
 /// 带圆角的label  可传入更多参数 borderColor 可为nil，其他的不能为nil  frame可为zero
 + (UILabel *)createLabelWithText:(NSString *)text Frame:(CGRect)frame textColor:(UIColor *)textColor font:(UIFont *)font BackGroundColor:(UIColor *)backgroundColor borderColor:(UIColor *)borderColor;
+
++ (M80AttributedLabel*)createAttributedLabelWithFrame:(CGRect)rect
+                                            fontArray:(NSArray*)fontSizes
+                                            textArray:(NSArray*)textArray
+                                           colorArray:(NSArray*)colorArray
+                                        numberOfLines:(NSInteger)numberOfLines
+                                       backgroudColor:(UIColor*)backgroudColor;
+
 @end

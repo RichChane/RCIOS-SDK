@@ -86,34 +86,37 @@
     
 }
 
-- (void)refreshCenterViewWit:(UIView *)topView contentView:(UIView *)contentView
+#define BottomBtnHeight 45
+- (void)refreshCenterView:(UIView *)topView contentView:(UIView *)contentView
 {
     CGFloat originY = 0.0;
-    if (topView) {
+    if (topView && topView.frame.size.height) {
         topView.frame = CGRectMake(0, originY, topView.frame.size.width, topView.frame.size.height);
-        originY = originY + CGRectGetMaxY(topView.frame);
         [_centerView addSubview:topView];
+        
+        originY = CGRectGetMaxY(topView.frame);
     }
-    if (contentView) {
+    if (contentView && contentView.frame.size.height) {
         contentView.frame = CGRectMake(0, originY, contentView.frame.size.width, contentView.frame.size.height);
-        originY = originY + CGRectGetMaxY(contentView.frame);
         [_centerView addSubview:contentView];
+        
+        originY = CGRectGetMaxY(contentView.frame);
     }
     
     _bottomLine.frame = CGRectMake(0, originY, contentView.frame.size.width, 0.5);
-    _bottomMidLine.frame = CGRectMake(contentView.frame.size.width/2, originY, 0.5, 45);
+    _bottomMidLine.frame = CGRectMake(contentView.frame.size.width/2, originY, 0.5, BottomBtnHeight);
     
     if (_cancelTitle && ![_cancelTitle isEqualToString:@""]){
-        _cancelBtn.frame = CGRectMake(0, originY, contentView.frame.size.width/2, 45);
-        _okBtn.frame = CGRectMake(CGRectGetMaxX(_cancelBtn.frame), originY, contentView.frame.size.width/2, 45);
+        _cancelBtn.frame = CGRectMake(0, originY, contentView.frame.size.width/2, BottomBtnHeight);
+        _okBtn.frame = CGRectMake(CGRectGetMaxX(_cancelBtn.frame), originY, contentView.frame.size.width/2, BottomBtnHeight);
         
     }else{
-        _okBtn.frame = CGRectMake(0, originY, contentView.frame.size.width, 45);
+        _okBtn.frame = CGRectMake(0, originY, contentView.frame.size.width, BottomBtnHeight);
         _bottomMidLine.hidden = YES;
         _cancelBtn.hidden = YES;
     }
     
-    _centerView.frame = CGRectMake(0, 0, contentView.frame.size.width, topView.frame.size.height+contentView.frame.size.height+45);
+    _centerView.frame = CGRectMake(0, 0, contentView.frame.size.width, topView.frame.size.height+contentView.frame.size.height+BottomBtnHeight);
     _centerView.center = self.center;
 }
 
@@ -129,25 +132,16 @@
 -(void)showPopView{
     
     [[YYKeyboardManager defaultManager] addObserver:self];
-    //    [self setOriginFrame:self.frame];
-    //    [self addKeyBoardNotice];
     UIWindow* window = [UIApplication sharedApplication].delegate.window;
     [window addSubview:self];
-    //    [UIView animateWithDuration:1 animations:^{
-    //        [window addSubview:self];
-    //
-    //    }];
     
 }
 
 -(void)dismissPopView{
     
     [[YYKeyboardManager defaultManager] removeObserver:self];
-    //    [self removeKeyBoardObserver];
     
     [self removeFromSuperview];
-    
-    
     
 }
 

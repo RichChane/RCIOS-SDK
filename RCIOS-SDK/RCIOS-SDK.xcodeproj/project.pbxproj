@@ -17,7 +17,12 @@
 		8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E16212D2EEF005D4C9B /* YYKeyboardManager.m */; };
 		8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E1B212D316E005D4C9B /* UIFactory.m */; };
 		8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E1F212D4040005D4C9B /* NSString+Size.m */; };
-		8A254E24212D4A8C005D4C9B /* KPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E23212D4A8C005D4C9B /* KPNormalPopView.m */; };
+		8A254E2F212D4D04005D4C9B /* M80AttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E27212D4D04005D4C9B /* M80AttributedLabel.m */; };
+		8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E29212D4D04005D4C9B /* M80AttributedLabelAttachment.m */; };
+		8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E2C212D4D04005D4C9B /* M80AttributedLabelURL.m */; };
+		8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */; };
+		8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E34212D4F96005D4C9B /* WPNormalPopView.m */; };
+		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +47,19 @@
 		8A254E1E212D4040005D4C9B /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		8A254E1F212D4040005D4C9B /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		8A254E21212D40BF005D4C9B /* RCSDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCSDKHeader.h; sourceTree = "<group>"; };
-		8A254E22212D4A8C005D4C9B /* KPNormalPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPNormalPopView.h; sourceTree = "<group>"; };
-		8A254E23212D4A8C005D4C9B /* KPNormalPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPNormalPopView.m; sourceTree = "<group>"; };
+		8A254E26212D4D04005D4C9B /* M80AttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabel.h; sourceTree = "<group>"; };
+		8A254E27212D4D04005D4C9B /* M80AttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabel.m; sourceTree = "<group>"; };
+		8A254E28212D4D04005D4C9B /* M80AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelAttachment.h; sourceTree = "<group>"; };
+		8A254E29212D4D04005D4C9B /* M80AttributedLabelAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabelAttachment.m; sourceTree = "<group>"; };
+		8A254E2A212D4D04005D4C9B /* M80AttributedLabelDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelDefines.h; sourceTree = "<group>"; };
+		8A254E2B212D4D04005D4C9B /* M80AttributedLabelURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelURL.h; sourceTree = "<group>"; };
+		8A254E2C212D4D04005D4C9B /* M80AttributedLabelURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabelURL.m; sourceTree = "<group>"; };
+		8A254E2D212D4D04005D4C9B /* NSMutableAttributedString+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+M80.h"; sourceTree = "<group>"; };
+		8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+M80.m"; sourceTree = "<group>"; };
+		8A254E33212D4F96005D4C9B /* WPNormalPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPNormalPopView.h; sourceTree = "<group>"; };
+		8A254E34212D4F96005D4C9B /* WPNormalPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPNormalPopView.m; sourceTree = "<group>"; };
+		8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPopDemoVC.h; sourceTree = "<group>"; };
+		8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPopDemoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,8 @@
 				8A254DF6212D14D6005D4C9B /* AppDelegate.m */,
 				8A254DF8212D14D6005D4C9B /* ViewController.h */,
 				8A254DF9212D14D6005D4C9B /* ViewController.m */,
+				8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */,
+				8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */,
 				8A254E10212D2DB9005D4C9B /* BaseData.h */,
 				8A254E21212D40BF005D4C9B /* RCSDKHeader.h */,
 				8A254E11212D2E0A005D4C9B /* PrefixHeader.pch */,
@@ -118,8 +136,8 @@
 				8A254E16212D2EEF005D4C9B /* YYKeyboardManager.m */,
 				8A254E13212D2EEF005D4C9B /* PopBaseView.h */,
 				8A254E14212D2EEF005D4C9B /* PopBaseView.m */,
-				8A254E22212D4A8C005D4C9B /* KPNormalPopView.h */,
-				8A254E23212D4A8C005D4C9B /* KPNormalPopView.m */,
+				8A254E33212D4F96005D4C9B /* WPNormalPopView.h */,
+				8A254E34212D4F96005D4C9B /* WPNormalPopView.m */,
 			);
 			path = PopBaseView;
 			sourceTree = "<group>";
@@ -127,6 +145,7 @@
 		8A254E19212D316E005D4C9B /* UIFactory */ = {
 			isa = PBXGroup;
 			children = (
+				8A254E25212D4D04005D4C9B /* M80AttributedLabel */,
 				8A254E1A212D316E005D4C9B /* UIFactory.h */,
 				8A254E1B212D316E005D4C9B /* UIFactory.m */,
 			);
@@ -140,6 +159,22 @@
 				8A254E1F212D4040005D4C9B /* NSString+Size.m */,
 			);
 			path = KitCategry;
+			sourceTree = "<group>";
+		};
+		8A254E25212D4D04005D4C9B /* M80AttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E26212D4D04005D4C9B /* M80AttributedLabel.h */,
+				8A254E27212D4D04005D4C9B /* M80AttributedLabel.m */,
+				8A254E28212D4D04005D4C9B /* M80AttributedLabelAttachment.h */,
+				8A254E29212D4D04005D4C9B /* M80AttributedLabelAttachment.m */,
+				8A254E2A212D4D04005D4C9B /* M80AttributedLabelDefines.h */,
+				8A254E2B212D4D04005D4C9B /* M80AttributedLabelURL.h */,
+				8A254E2C212D4D04005D4C9B /* M80AttributedLabelURL.m */,
+				8A254E2D212D4D04005D4C9B /* NSMutableAttributedString+M80.h */,
+				8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */,
+			);
+			path = M80AttributedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,13 +248,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
+				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
+				8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */,
 				8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */,
-				8A254E24212D4A8C005D4C9B /* KPNormalPopView.m in Sources */,
 				8A254E17212D2EEF005D4C9B /* PopBaseView.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
 				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
 				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
+				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
+				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
+				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
+				8A254E2F212D4D04005D4C9B /* M80AttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
