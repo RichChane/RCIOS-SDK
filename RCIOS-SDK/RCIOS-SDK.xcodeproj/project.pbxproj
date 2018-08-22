@@ -13,6 +13,11 @@
 		8A254DFF212D14D7005D4C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A254DFE212D14D7005D4C9B /* Assets.xcassets */; };
 		8A254E02212D14D7005D4C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A254E00212D14D7005D4C9B /* LaunchScreen.storyboard */; };
 		8A254E05212D14D7005D4C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E04212D14D7005D4C9B /* main.m */; };
+		8A254E17212D2EEF005D4C9B /* PopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E14212D2EEF005D4C9B /* PopBaseView.m */; };
+		8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E16212D2EEF005D4C9B /* YYKeyboardManager.m */; };
+		8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E1B212D316E005D4C9B /* UIFactory.m */; };
+		8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E1F212D4040005D4C9B /* NSString+Size.m */; };
+		8A254E24212D4A8C005D4C9B /* KPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E23212D4A8C005D4C9B /* KPNormalPopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,19 @@
 		8A254E01212D14D7005D4C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A254E03212D14D7005D4C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A254E04212D14D7005D4C9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A254E10212D2DB9005D4C9B /* BaseData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseData.h; sourceTree = "<group>"; };
+		8A254E11212D2E0A005D4C9B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8A254E13212D2EEF005D4C9B /* PopBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBaseView.h; sourceTree = "<group>"; };
+		8A254E14212D2EEF005D4C9B /* PopBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBaseView.m; sourceTree = "<group>"; };
+		8A254E15212D2EEF005D4C9B /* YYKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKeyboardManager.h; sourceTree = "<group>"; };
+		8A254E16212D2EEF005D4C9B /* YYKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKeyboardManager.m; sourceTree = "<group>"; };
+		8A254E1A212D316E005D4C9B /* UIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFactory.h; sourceTree = "<group>"; };
+		8A254E1B212D316E005D4C9B /* UIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFactory.m; sourceTree = "<group>"; };
+		8A254E1E212D4040005D4C9B /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		8A254E1F212D4040005D4C9B /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		8A254E21212D40BF005D4C9B /* RCSDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCSDKHeader.h; sourceTree = "<group>"; };
+		8A254E22212D4A8C005D4C9B /* KPNormalPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPNormalPopView.h; sourceTree = "<group>"; };
+		8A254E23212D4A8C005D4C9B /* KPNormalPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPNormalPopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +76,14 @@
 		8A254DF4212D14D6005D4C9B /* RCIOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				8A254E0B212D1706005D4C9B /* SDK */,
 				8A254DF5212D14D6005D4C9B /* AppDelegate.h */,
 				8A254DF6212D14D6005D4C9B /* AppDelegate.m */,
 				8A254DF8212D14D6005D4C9B /* ViewController.h */,
 				8A254DF9212D14D6005D4C9B /* ViewController.m */,
+				8A254E10212D2DB9005D4C9B /* BaseData.h */,
+				8A254E21212D40BF005D4C9B /* RCSDKHeader.h */,
+				8A254E11212D2E0A005D4C9B /* PrefixHeader.pch */,
 				8A254DFB212D14D6005D4C9B /* Main.storyboard */,
 				8A254DFE212D14D7005D4C9B /* Assets.xcassets */,
 				8A254E00212D14D7005D4C9B /* LaunchScreen.storyboard */,
@@ -69,6 +91,55 @@
 				8A254E04212D14D7005D4C9B /* main.m */,
 			);
 			path = "RCIOS-SDK";
+			sourceTree = "<group>";
+		};
+		8A254E0B212D1706005D4C9B /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E1D212D4040005D4C9B /* KitCategry */,
+				8A254E19212D316E005D4C9B /* UIFactory */,
+				8A254E0C212D1719005D4C9B /* PopView */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		8A254E0C212D1719005D4C9B /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E12212D2EEF005D4C9B /* PopBaseView */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		8A254E12212D2EEF005D4C9B /* PopBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E15212D2EEF005D4C9B /* YYKeyboardManager.h */,
+				8A254E16212D2EEF005D4C9B /* YYKeyboardManager.m */,
+				8A254E13212D2EEF005D4C9B /* PopBaseView.h */,
+				8A254E14212D2EEF005D4C9B /* PopBaseView.m */,
+				8A254E22212D4A8C005D4C9B /* KPNormalPopView.h */,
+				8A254E23212D4A8C005D4C9B /* KPNormalPopView.m */,
+			);
+			path = PopBaseView;
+			sourceTree = "<group>";
+		};
+		8A254E19212D316E005D4C9B /* UIFactory */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E1A212D316E005D4C9B /* UIFactory.h */,
+				8A254E1B212D316E005D4C9B /* UIFactory.m */,
+			);
+			path = UIFactory;
+			sourceTree = "<group>";
+		};
+		8A254E1D212D4040005D4C9B /* KitCategry */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E1E212D4040005D4C9B /* NSString+Size.h */,
+				8A254E1F212D4040005D4C9B /* NSString+Size.m */,
+			);
+			path = KitCategry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
+				8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */,
+				8A254E24212D4A8C005D4C9B /* KPNormalPopView.m in Sources */,
+				8A254E17212D2EEF005D4C9B /* PopBaseView.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
+				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
+				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MC6BK75TK6;
+				GCC_PREFIX_HEADER = "RCIOS-SDK/PrefixHeader.pch";
 				INFOPLIST_FILE = "RCIOS-SDK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MC6BK75TK6;
+				GCC_PREFIX_HEADER = "RCIOS-SDK/PrefixHeader.pch";
 				INFOPLIST_FILE = "RCIOS-SDK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
