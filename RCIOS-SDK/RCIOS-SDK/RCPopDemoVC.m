@@ -9,6 +9,8 @@
 #import "RCPopDemoVC.h"
 #import "WPNormalPopView.h"
 #import "KPUpdatePopView.h"
+#import "KPEditTextPopView.h"
+
 
 @interface RCPopDemoVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -75,7 +77,7 @@
         }];
         [popView showPopView];
     }else if (indexPath.row == 1){
-        WPNormalPopView *popView = [[WPNormalPopView alloc]initWithTitle:@"普通弹框" content:nil cancelBtnTitle:@"取消" okBtnTitle:@"确认" makeSure:^{
+        WPNormalPopView *popView = [[WPNormalPopView alloc] initWithTitle:nil content:@"版本过低，请更新最新版本" cancelBtnTitle:nil okBtnTitle:@"确认" makeSure:^{
             
         } cancel:^{
             
@@ -112,6 +114,15 @@
         } cancel:^{
             
         }];
+        [popView showPopView];
+        
+    }else if (indexPath.row == 6){
+        KPEditTextPopView *popView = [[KPEditTextPopView alloc]initWithTitle:@"请输入" placeHoldTitle:@"请输入" cancelBtnTitle:@"取消" content:@"" okBtnTitle:@"确认" makeSure:^(NSString *title) {
+            
+        } cancel:^{
+            
+        }];
+        
         [popView showPopView];
         
     }else{

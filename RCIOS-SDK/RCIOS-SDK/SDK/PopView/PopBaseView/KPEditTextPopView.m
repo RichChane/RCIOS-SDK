@@ -12,7 +12,7 @@
 @interface KPEditTextPopView()<UITextFieldDelegate>
 
 @property (nonatomic,strong) UILabel *titleLabel;
-
+@property (nonatomic,copy) Confirm confirm;
 @property (nonatomic,strong) UITextField *unitNumer;
 @property (nonatomic,strong) UIButton *defualtBtn;
 
@@ -40,7 +40,7 @@ static const CGFloat leftDis = 15;;
     if (self) {
         
         self.cancel = cancel;
-        self.makeSure = makeSure;
+        self.confirm = makeSure;
         
         _title = title;
         _placeHoldTitle = placeHoldTitle;
@@ -64,7 +64,7 @@ static const CGFloat leftDis = 15;;
     if (self) {
         
         self.cancel = cancel;
-        self.makeSure = makeSure;
+        self.confirm = makeSure;
         
         _title = title;
         _placeHoldTitle = placeHoldTitle;
@@ -83,18 +83,22 @@ static const CGFloat leftDis = 15;;
 
 - (void)createItems
 {
+    
     CGFloat labelWidth = normalWith - leftDis*2;
     
+    CGFloat nowY = 0;
     if (_title && ![_title isEqualToString:@""])
     {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(leftDis, 20, labelWidth, _titleSize.height)];
         //_distanceLabel.backgroundColor = [UIColor colorWithWhite:0.67 alpha:1.00];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.font = FontSize(17);
-        _titleLabel.textColor = kUIColsorFromRGB(0x282b34);
+        _titleLabel.textColor = kUIColorFromRGB(0x282b34);
         _titleLabel.text = _title;
         _titleLabel.numberOfLines = 0;
         [self.contentView addSubview:_titleLabel];
+        
+        nowY = CGRectGetMaxY(_titleLabel.frame)+15;
     }
     UILabel *rightLabel;
     if (_rightText) {
@@ -103,17 +107,14 @@ static const CGFloat leftDis = 15;;
         rightLabel.text = _rightText;
         [self.contentView addSubview:rightLabel];
         [rightLabel sizeToFit];
-        rightLabel.sd_layout
-        .rightSpaceToView(self.contentView, 30)
-        .topSpaceToView(self.contentView, CGRectGetMaxY(_titleLabel.frame) + 20)
-        .widthIs(rightLabel.width)
-        .heightIs(30);
+        rightLabel.frame = CGRectMake(normalWith-30, CGRectGetMaxY(_titleLabel.frame) + 20, rightLabel.frame.size.width, 30);
         
+        nowY = CGRectGetMaxY(rightLabel.frame)+15;
     }
     
-    KPTextField *unitTitleTextField = [[KPTextField alloc]initWithFrame:CGRectMake(30, CGRectGetMaxY(_titleLabel.frame) + 20, normalWith - 60 - rightLabel.width - 10, 30)];
+    KPTextField *unitTitleTextField = [[KPTextField alloc]initWithFrame:CGRectMake(30, CGRectGetMaxY(_titleLabel.frame) + 20, normalWith - 60 - rightLabel.frame.size.width - 10, 30)];
     _unitTextField = unitTitleTextField;
-    unitTitleTextField.font = SIZE_15;
+    unitTitleTextField.font = FontSize(15);
     unitTitleTextField.borderStyle = UITextBorderStyleRoundedRect;
     unitTitleTextField.placeholder = _placeHoldTitle;
     unitTitleTextField.textAlignment = NSTextAlignmentCenter;
@@ -122,10 +123,14 @@ static const CGFloat leftDis = 15;;
     unitTitleTextField.text = _content;
     unitTitleTextField.delegate = self;
     
+    nowY = CGRectGetMaxY(unitTitleTextField.frame)+15;
+    
     if (_textType == 1) {
         
         unitTitleTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
     }
+
+    self.contentView.frame = CGRectMake(0, 0, normalWith, nowY);
 }
 
 - (void)showPopView

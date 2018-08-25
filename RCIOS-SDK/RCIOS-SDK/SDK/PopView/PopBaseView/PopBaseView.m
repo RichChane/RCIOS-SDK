@@ -41,6 +41,8 @@
         _cancelTitle = cancelBtnTitle;
         _okBtnTitle = okBtnTitle;
         
+        self.topView = [UIView new];
+        self.contentView = [UIView new];
         [self createCenterView];
 #warning Add LandScapeNotice
         
