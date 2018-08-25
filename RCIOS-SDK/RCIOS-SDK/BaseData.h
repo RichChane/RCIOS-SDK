@@ -21,5 +21,7 @@
 // font
 #define FontSize(x) [UIFont systemFontOfSize:x]
 
+// init
+#define ImageName(name)     [UIImage imageNamed:name]
 
 #endif /* BaseData_h */

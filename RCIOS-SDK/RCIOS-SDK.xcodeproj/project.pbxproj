@@ -23,6 +23,11 @@
 		8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */; };
 		8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E34212D4F96005D4C9B /* WPNormalPopView.m */; };
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
+		8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */; };
+		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
+		8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8662130EDF60052C962 /* LittleImageBigControl.m */; };
+		8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8732130F07B0052C962 /* KPEditTextPopView.m */; };
+		8A84F8792130F4540052C962 /* KPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8782130F4540052C962 /* KPTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,16 @@
 		8A254E34212D4F96005D4C9B /* WPNormalPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPNormalPopView.m; sourceTree = "<group>"; };
 		8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPopDemoVC.h; sourceTree = "<group>"; };
 		8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPopDemoVC.m; sourceTree = "<group>"; };
+		8A254E39212D6C93005D4C9B /* KPUpdatePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPUpdatePopView.h; sourceTree = "<group>"; };
+		8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPUpdatePopView.m; sourceTree = "<group>"; };
+		8A660A60212E50D800389983 /* GeneralCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCore.h; sourceTree = "<group>"; };
+		8A660A61212E50D800389983 /* GeneralCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCore.m; sourceTree = "<group>"; };
+		8A84F8652130EDF60052C962 /* LittleImageBigControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleImageBigControl.h; sourceTree = "<group>"; };
+		8A84F8662130EDF60052C962 /* LittleImageBigControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleImageBigControl.m; sourceTree = "<group>"; };
+		8A84F8732130F07B0052C962 /* KPEditTextPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPEditTextPopView.m; sourceTree = "<group>"; };
+		8A84F8742130F07B0052C962 /* KPEditTextPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPEditTextPopView.h; sourceTree = "<group>"; };
+		8A84F8772130F4540052C962 /* KPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTextField.h; sourceTree = "<group>"; };
+		8A84F8782130F4540052C962 /* KPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +129,8 @@
 		8A254E0B212D1706005D4C9B /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				8A84F8632130EDF60052C962 /* Widget */,
+				8A660A5F212E50C200389983 /* GeneralCore */,
 				8A254E1D212D4040005D4C9B /* KitCategry */,
 				8A254E19212D316E005D4C9B /* UIFactory */,
 				8A254E0C212D1719005D4C9B /* PopView */,
@@ -138,6 +155,10 @@
 				8A254E14212D2EEF005D4C9B /* PopBaseView.m */,
 				8A254E33212D4F96005D4C9B /* WPNormalPopView.h */,
 				8A254E34212D4F96005D4C9B /* WPNormalPopView.m */,
+				8A254E39212D6C93005D4C9B /* KPUpdatePopView.h */,
+				8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */,
+				8A84F8742130F07B0052C962 /* KPEditTextPopView.h */,
+				8A84F8732130F07B0052C962 /* KPEditTextPopView.m */,
 			);
 			path = PopBaseView;
 			sourceTree = "<group>";
@@ -175,6 +196,42 @@
 				8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */,
 			);
 			path = M80AttributedLabel;
+			sourceTree = "<group>";
+		};
+		8A660A5F212E50C200389983 /* GeneralCore */ = {
+			isa = PBXGroup;
+			children = (
+				8A660A60212E50D800389983 /* GeneralCore.h */,
+				8A660A61212E50D800389983 /* GeneralCore.m */,
+			);
+			path = GeneralCore;
+			sourceTree = "<group>";
+		};
+		8A84F8632130EDF60052C962 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				8A84F8762130F44B0052C962 /* KPTextField */,
+				8A84F8642130EDF60052C962 /* LittleImageBigControl */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		8A84F8642130EDF60052C962 /* LittleImageBigControl */ = {
+			isa = PBXGroup;
+			children = (
+				8A84F8652130EDF60052C962 /* LittleImageBigControl.h */,
+				8A84F8662130EDF60052C962 /* LittleImageBigControl.m */,
+			);
+			path = LittleImageBigControl;
+			sourceTree = "<group>";
+		};
+		8A84F8762130F44B0052C962 /* KPTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8A84F8772130F4540052C962 /* KPTextField.h */,
+				8A84F8782130F4540052C962 /* KPTextField.m */,
+			);
+			path = KPTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A84F8792130F4540052C962 /* KPTextField.m in Sources */,
+				8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
 				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
 				8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */,
@@ -258,7 +317,10 @@
 				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
 				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
+				8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
+				8A660A62212E50D800389983 /* GeneralCore.m in Sources */,
+				8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */,
 				8A254E2F212D4D04005D4C9B /* M80AttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

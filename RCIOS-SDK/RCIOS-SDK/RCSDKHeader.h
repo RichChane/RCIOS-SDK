@@ -9,8 +9,17 @@
 #ifndef RCSDKHeader_h
 #define RCSDKHeader_h
 
+// 基础配置
 #import "BaseData.h"
+#import "GeneralCore.h"
+
+// category
 #import "NSString+Size.h"
 
+// 工场工具
+#import "UIFactory.h"
+
+// 
+#import "KPTextField.h"
 
 #endif /* RCSDKHeader_h */

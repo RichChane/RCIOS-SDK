@@ -56,7 +56,7 @@
 {
     _centerView = [[UIView alloc]initWithFrame:CGRectZero];
     _centerView.backgroundColor = [UIColor whiteColor];
-    _centerView.layer.cornerRadius = 5;
+    _centerView.layer.cornerRadius = 7;
     _centerView.clipsToBounds = YES;
     [self addSubview:_centerView];
     

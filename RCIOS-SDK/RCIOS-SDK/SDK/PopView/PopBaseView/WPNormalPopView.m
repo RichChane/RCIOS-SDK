@@ -13,8 +13,7 @@
 
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) M80AttributedLabel *contentAttriLabel;
-@property (nonatomic,copy) Cancel cancel;
-@property (nonatomic,copy) MakeSure makeSure;
+
 
 @end
 
@@ -54,8 +53,8 @@ static const CGFloat leftDis = 15;
     self = [super initWithCancelBtnTitle:cancelBtnTitle okBtnTitle:okBtnTitle];
     if (self) {
         
-        _cancel = cancel;
-        _makeSure = makeSure;
+        self.cancel = cancel;
+        self.makeSure = makeSure;
         _title = title;
         _content = content;
         _alertTitle = alertTitle;
@@ -93,8 +92,8 @@ static const CGFloat leftDis = 15;
     self = [super initWithCancelBtnTitle:cancelBtnTitle okBtnTitle:okBtnTitle];
     if (self) {
         
-        _cancel = cancel;
-        _makeSure = makeSure;
+        self.cancel = cancel;
+        self.makeSure = makeSure;
         _title = title;
         _contents = contents;
         _colors = colors;
@@ -206,7 +205,6 @@ static const CGFloat leftDis = 15;
 }
 
 #pragma mark - sure&cancel btn
-
 - (void)clickSureBtn:(UIButton *)sender
 {
     if (self.makeSure) {
@@ -218,8 +216,8 @@ static const CGFloat leftDis = 15;
 
 - (void)clickCancleBtn:(UIButton *)sender
 {
-    if (_cancel) {
-        _cancel();
+    if (self.cancel) {
+        self.cancel();
     }
     [super clickCancleBtn:sender];
     

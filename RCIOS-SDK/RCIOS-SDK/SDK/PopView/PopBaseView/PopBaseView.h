@@ -15,7 +15,8 @@ typedef void(^MakeSure)(void);
 
 @property (nonatomic,strong) UIView *topView;
 @property (nonatomic,strong) UIView *contentView;
-
+@property (nonatomic,copy) Cancel cancel;
+@property (nonatomic,copy) MakeSure makeSure;
 
 - (instancetype)initWithCancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle;
 - (void)refreshCenterView:(UIView *)topView contentView:(UIView *)contentView;
