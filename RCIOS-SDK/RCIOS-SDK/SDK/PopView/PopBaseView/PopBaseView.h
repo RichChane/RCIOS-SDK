@@ -10,13 +10,19 @@
 
 typedef void(^Cancel)(void);
 typedef void(^MakeSure)(void);
+typedef void(^ConfirmV2)(NSString *code,int32_t type);
+typedef void(^ConfirmV1)(NSString *title);
 
 @interface PopBaseView : UIView
 
 @property (nonatomic,strong) UIView *topView;
 @property (nonatomic,strong) UIView *contentView;
+@property (nonatomic,strong) UIButton *cancelBtn;
+@property (nonatomic,strong) UIButton *okBtn;
 @property (nonatomic,copy) Cancel cancel;
 @property (nonatomic,copy) MakeSure makeSure;
+@property (nonatomic,copy) ConfirmV1 confirmV1;
+@property (nonatomic,copy) ConfirmV2 confirmV2;
 
 - (instancetype)initWithCancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle;
 - (void)refreshCenterView:(UIView *)topView contentView:(UIView *)contentView;

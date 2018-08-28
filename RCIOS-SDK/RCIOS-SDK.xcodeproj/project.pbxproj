@@ -25,9 +25,12 @@
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 		8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */; };
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
+		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
 		8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8662130EDF60052C962 /* LittleImageBigControl.m */; };
 		8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8732130F07B0052C962 /* KPEditTextPopView.m */; };
 		8A84F8792130F4540052C962 /* KPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8782130F4540052C962 /* KPTextField.m */; };
+		8A8CCC892131599800E7F359 /* InputSecurityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC862131599700E7F359 /* InputSecurityView.m */; };
+		8A8CCC8A2131599800E7F359 /* PasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC882131599700E7F359 /* PasswordInputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +78,12 @@
 		8A84F8742130F07B0052C962 /* KPEditTextPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPEditTextPopView.h; sourceTree = "<group>"; };
 		8A84F8772130F4540052C962 /* KPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTextField.h; sourceTree = "<group>"; };
 		8A84F8782130F4540052C962 /* KPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTextField.m; sourceTree = "<group>"; };
+		8A8CCC812131494F00E7F359 /* KPRedAlertPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPRedAlertPopView.h; sourceTree = "<group>"; };
+		8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPRedAlertPopView.m; sourceTree = "<group>"; };
+		8A8CCC852131599700E7F359 /* InputSecurityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSecurityView.h; sourceTree = "<group>"; };
+		8A8CCC862131599700E7F359 /* InputSecurityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSecurityView.m; sourceTree = "<group>"; };
+		8A8CCC872131599700E7F359 /* PasswordInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordInputView.h; sourceTree = "<group>"; };
+		8A8CCC882131599700E7F359 /* PasswordInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordInputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +168,8 @@
 				8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */,
 				8A84F8742130F07B0052C962 /* KPEditTextPopView.h */,
 				8A84F8732130F07B0052C962 /* KPEditTextPopView.m */,
+				8A8CCC812131494F00E7F359 /* KPRedAlertPopView.h */,
+				8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */,
 			);
 			path = PopBaseView;
 			sourceTree = "<group>";
@@ -210,6 +221,7 @@
 		8A84F8632130EDF60052C962 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				8A8CCC842131599700E7F359 /* PasswordInput */,
 				8A84F8762130F44B0052C962 /* KPTextField */,
 				8A84F8642130EDF60052C962 /* LittleImageBigControl */,
 			);
@@ -232,6 +244,17 @@
 				8A84F8782130F4540052C962 /* KPTextField.m */,
 			);
 			path = KPTextField;
+			sourceTree = "<group>";
+		};
+		8A8CCC842131599700E7F359 /* PasswordInput */ = {
+			isa = PBXGroup;
+			children = (
+				8A8CCC852131599700E7F359 /* InputSecurityView.h */,
+				8A8CCC862131599700E7F359 /* InputSecurityView.m */,
+				8A8CCC872131599700E7F359 /* PasswordInputView.h */,
+				8A8CCC882131599700E7F359 /* PasswordInputView.m */,
+			);
+			path = PasswordInput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */,
 				8A84F8792130F4540052C962 /* KPTextField.m in Sources */,
+				8A8CCC892131599800E7F359 /* InputSecurityView.m in Sources */,
 				8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
 				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
@@ -317,6 +342,7 @@
 				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
 				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
+				8A8CCC8A2131599800E7F359 /* PasswordInputView.m in Sources */,
 				8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 				8A660A62212E50D800389983 /* GeneralCore.m in Sources */,
@@ -465,6 +491,7 @@
 				DEVELOPMENT_TEAM = MC6BK75TK6;
 				GCC_PREFIX_HEADER = "RCIOS-SDK/PrefixHeader.pch";
 				INFOPLIST_FILE = "RCIOS-SDK/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +510,7 @@
 				DEVELOPMENT_TEAM = MC6BK75TK6;
 				GCC_PREFIX_HEADER = "RCIOS-SDK/PrefixHeader.pch";
 				INFOPLIST_FILE = "RCIOS-SDK/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

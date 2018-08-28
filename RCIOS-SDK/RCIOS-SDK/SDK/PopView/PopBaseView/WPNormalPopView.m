@@ -7,7 +7,6 @@
 //
 
 #import "WPNormalPopView.h"
-#import "UIFactory.h"
 
 @interface WPNormalPopView()
 

@@ -8,7 +8,7 @@
 
 #import "PopBaseView.h"
 
-typedef void(^Confirm)(NSString *title);
+
 typedef void(^Delete)(void);
 
 typedef enum : NSUInteger {
@@ -36,9 +36,8 @@ typedef enum : NSUInteger {
 @property (nonatomic,assign) NSInteger maxLength;
 @property (nonatomic,strong) NSArray *verifyArray;
 
-- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle cancelBtnTitle:(NSString*)cancelBtnTitle content:(NSString *)content okBtnTitle:(NSString*)okBtnTitle makeSure:(Confirm)makeSure cancel:(Cancel)cancel;
 
-- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle cancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle rightText:(NSString *)rightText makeSure:(Confirm)makeSure cancel:(Cancel)cancel;
+- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle content:(NSString *)content rightText:(NSString *)rightText cancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle makeSure:(ConfirmV1)makeSure cancel:(Cancel)cancel;
 
 @end
 

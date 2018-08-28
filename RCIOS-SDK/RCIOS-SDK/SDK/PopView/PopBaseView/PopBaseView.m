@@ -13,8 +13,6 @@
 @interface PopBaseView()
 
 @property (nonatomic,strong) UIView *centerView;
-@property (nonatomic,strong) UIButton *cancelBtn;
-@property (nonatomic,strong) UIButton *okBtn;
 @property (nonatomic,strong) UIView *bottomLine;
 @property (nonatomic,strong) UIView *bottomMidLine;
 
@@ -67,6 +65,7 @@
     [cancelBtn addTarget:self action:@selector(clickCancleBtn:) forControlEvents:UIControlEventTouchUpInside];
     [cancelBtn setTitle:_cancelTitle forState:UIControlStateNormal];
     [cancelBtn setTitleColor:kUIColorFromRGB(0x888888) forState:UIControlStateNormal];
+    cancelBtn.titleLabel.font = FontSize(16);
     [_centerView addSubview:cancelBtn];
     
     UIButton *okBtn = [[UIButton alloc]init];
@@ -74,16 +73,17 @@
     [okBtn addTarget:self action:@selector(clickSureBtn:) forControlEvents:UIControlEventTouchUpInside];
     [okBtn setTitle:_okBtnTitle forState:UIControlStateNormal];
     [okBtn setTitleColor:kUIColorFromRGB(0xFC9F06) forState:UIControlStateNormal];
+    okBtn.titleLabel.font = FontSize(16);
     okBtn.backgroundColor = nil;
     [_centerView addSubview:okBtn];
     
     UIView *line = [UIView new];
-    line.backgroundColor = LineColor;
+    line.backgroundColor = GC.LINE;
     _bottomLine = line;
     [_centerView addSubview:line];
     
     _bottomMidLine = [UIView new];
-    _bottomMidLine.backgroundColor = LineColor;
+    _bottomMidLine.backgroundColor = GC.LINE;
     [_centerView addSubview:_bottomMidLine];
     
 }

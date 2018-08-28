@@ -12,7 +12,6 @@
 @interface KPEditTextPopView()<UITextFieldDelegate>
 
 @property (nonatomic,strong) UILabel *titleLabel;
-@property (nonatomic,copy) Confirm confirm;
 @property (nonatomic,strong) UITextField *unitNumer;
 @property (nonatomic,strong) UIButton *defualtBtn;
 
@@ -34,13 +33,13 @@ static const CGFloat leftDis = 15;;
 }
 
 
-- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle cancelBtnTitle:(NSString*)cancelBtnTitle content:(NSString *)content okBtnTitle:(NSString*)okBtnTitle makeSure:(Confirm)makeSure cancel:(Cancel)cancel
+- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle content:(NSString *)content cancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle makeSure:(ConfirmV1)makeSure cancel:(Cancel)cancel
 {
     self = [super initWithCancelBtnTitle:cancelBtnTitle okBtnTitle:okBtnTitle];
     if (self) {
         
         self.cancel = cancel;
-        self.confirm = makeSure;
+        self.confirmV1 = makeSure;
         
         _title = title;
         _placeHoldTitle = placeHoldTitle;
@@ -58,13 +57,13 @@ static const CGFloat leftDis = 15;;
     
 }
 
-- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle cancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle rightText:(NSString *)rightText makeSure:(Confirm)makeSure cancel:(Cancel)cancel
+- (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle content:(NSString *)content rightText:(NSString *)rightText cancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle makeSure:(ConfirmV1)makeSure cancel:(Cancel)cancel
 {
     self = [super initWithCancelBtnTitle:cancelBtnTitle okBtnTitle:okBtnTitle];
     if (self) {
         
         self.cancel = cancel;
-        self.confirm = makeSure;
+        self.confirmV1 = makeSure;
         
         _title = title;
         _placeHoldTitle = placeHoldTitle;
@@ -143,9 +142,7 @@ static const CGFloat leftDis = 15;;
 - (BOOL)becomeFirstResponder
 
 {
-    
     //这句可写可不写，中间妖魔鬼怪的无所谓
-    
     [super becomeFirstResponder];
     
     return [_unitTextField becomeFirstResponder];
@@ -182,8 +179,8 @@ static const CGFloat leftDis = 15;;
 //    }
 //
 //
-//    if (self.makeSure) {
-//        self.makeSure(_unitTextField.text);
+//    if (self.confirmV1) {
+//        self.confirmV1(_unitTextField.text);
 //    }
     [super clickSureBtn:sender];
     

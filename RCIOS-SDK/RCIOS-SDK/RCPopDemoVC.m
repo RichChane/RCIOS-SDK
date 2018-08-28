@@ -10,7 +10,7 @@
 #import "WPNormalPopView.h"
 #import "KPUpdatePopView.h"
 #import "KPEditTextPopView.h"
-
+#import "KPRedAlertPopView.h"
 
 @interface RCPopDemoVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-1",@"KPEditTextPopView-1"];
+    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-1",@"KPEditTextPopView-1",@"KPEditTextPopView-2",@"KPRedAlertPopView-1",@"KPRedAlertPopView-2"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -117,12 +117,39 @@
         [popView showPopView];
         
     }else if (indexPath.row == 6){
-        KPEditTextPopView *popView = [[KPEditTextPopView alloc]initWithTitle:@"请输入" placeHoldTitle:@"请输入" cancelBtnTitle:@"取消" content:@"" okBtnTitle:@"确认" makeSure:^(NSString *title) {
+        KPEditTextPopView *popView = [[KPEditTextPopView alloc]initWithTitle:@"请输入" placeHoldTitle:@"请输入" content:@"" rightText:nil cancelBtnTitle:@"取消" okBtnTitle:@"确认" makeSure:^(NSString *title) {
             
         } cancel:^{
             
         }];
         
+        [popView showPopView];
+        
+    }else if (indexPath.row == 7){
+        KPEditTextPopView *popView = [[KPEditTextPopView alloc]initWithTitle:@"请输入" placeHoldTitle:@"请输入" content:@"" rightText:@"个" cancelBtnTitle:@"取消"  okBtnTitle:@"确认" makeSure:^(NSString *title) {
+            
+        } cancel:^{
+            
+        }];
+        
+        [popView showPopView];
+        
+    }else if (indexPath.row == 8){
+        KPRedAlertPopView *popView = [[KPRedAlertPopView alloc]initWithImage:ImageName(@"warnning") title:@"xxx将成为尘世集团的管理员，你将会变为老板角色。" content:@"该操作不可逆，请谨慎操作。" cancelBtnTitle:@"取消" okBtnTitle:@"确定更换" makeSure:^(NSString *code, int32_t type) {
+            
+        } cancel:^{
+            
+        }];
+        popView.alertPopType = 1;
+        popView.account = @"xxx";
+        [popView showPopView];
+        
+    }else if (indexPath.row == 9){
+        KPRedAlertPopView *popView = [[KPRedAlertPopView alloc]initWithImage:ImageName(@"popup_bell") title:@"当前软件版本过低，请升级到最新版！" content:nil cancelBtnTitle:nil okBtnTitle:@"立即更新" makeSure:^(NSString *code, int32_t type) {
+            
+        } cancel:^{
+            
+        }];
         [popView showPopView];
         
     }else{
