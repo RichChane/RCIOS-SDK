@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#define POPShow @"POPShow"
+#define POPDismiss @"POPDismiss"
+
 typedef void(^Cancel)(void);
 typedef void(^MakeSure)(void);
+typedef void(^ConfirmV3)(NSString *unitTitle,double number,BOOL isDefaultUnit);
 typedef void(^ConfirmV2)(NSString *code,int32_t type);
-typedef void(^ConfirmV1)(NSString *title);
+typedef void(^ConfirmV1)(id objc);
 
 @interface PopBaseView : UIView
 
@@ -23,6 +27,7 @@ typedef void(^ConfirmV1)(NSString *title);
 @property (nonatomic,copy) MakeSure makeSure;
 @property (nonatomic,copy) ConfirmV1 confirmV1;
 @property (nonatomic,copy) ConfirmV2 confirmV2;
+@property (nonatomic,copy) ConfirmV3 confirmV3;
 
 - (instancetype)initWithCancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle;
 - (void)refreshCenterView:(UIView *)topView contentView:(UIView *)contentView;

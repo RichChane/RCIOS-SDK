@@ -14,7 +14,7 @@
 #import "KPAddProFinishPopView.h"
 #import "KPBandingUnitPopView.h"
 #import "KPDepartSelectPopView.h"
-
+#import "KPEditUintPopView.h"
 
 @interface RCPopDemoVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12"];
+    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12",@"KPEditUintPopView-13"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -197,7 +197,20 @@
         [popView showPopView];
         
         
+    }else if(indexPath.row == 13){
+        
+        KPEditUintPopView *popView = [[KPEditUintPopView alloc]initWithTitle:ML(@"编辑单位") unitTitle:@"箱" number:0.5  baseUnitTitle:@"个" isDefaultUnit:YES cancelBtnTitle:@"删除" okBtnTitle:ML(@"确定") makeSure:^(NSString *unitTitle, double number, BOOL isDefaultUnit) {
+            
+        } cancel:^{
+            
+            
+        } delete:^{
+            
+        }];
+        [popView showPopView];
+        
     }
+    
     
     else{
         WPNormalPopView *popView = [[WPNormalPopView alloc]initWithTitle:nil content:nil cancelBtnTitle:@"取消" okBtnTitle:@"确认" makeSure:^{

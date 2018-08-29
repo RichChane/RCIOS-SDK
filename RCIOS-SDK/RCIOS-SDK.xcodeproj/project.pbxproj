@@ -32,6 +32,7 @@
 		8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117552136489900FC03E0 /* KPDepartSelectPopView.m */; };
 		8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175921364BC300FC03E0 /* DownSelectView.m */; };
 		8A81175E21364F2400FC03E0 /* KPDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175D21364F2400FC03E0 /* KPDepartment.m */; };
+		8A8117612136757300FC03E0 /* KPEditUintPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175F2136757100FC03E0 /* KPEditUintPopView.m */; };
 		8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8662130EDF60052C962 /* LittleImageBigControl.m */; };
 		8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8732130F07B0052C962 /* KPEditTextPopView.m */; };
 		8A84F8792130F4540052C962 /* KPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8782130F4540052C962 /* KPTextField.m */; };
@@ -90,6 +91,8 @@
 		8A81175921364BC300FC03E0 /* DownSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownSelectView.m; sourceTree = "<group>"; };
 		8A81175C21364F2400FC03E0 /* KPDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPDepartment.h; sourceTree = "<group>"; };
 		8A81175D21364F2400FC03E0 /* KPDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPDepartment.m; sourceTree = "<group>"; };
+		8A81175F2136757100FC03E0 /* KPEditUintPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPEditUintPopView.m; sourceTree = "<group>"; };
+		8A8117602136757300FC03E0 /* KPEditUintPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPEditUintPopView.h; sourceTree = "<group>"; };
 		8A84F8652130EDF60052C962 /* LittleImageBigControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleImageBigControl.h; sourceTree = "<group>"; };
 		8A84F8662130EDF60052C962 /* LittleImageBigControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleImageBigControl.m; sourceTree = "<group>"; };
 		8A84F8732130F07B0052C962 /* KPEditTextPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPEditTextPopView.m; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				8A254E14212D2EEF005D4C9B /* PopBaseView.m */,
 				8A254E33212D4F96005D4C9B /* WPNormalPopView.h */,
 				8A254E34212D4F96005D4C9B /* WPNormalPopView.m */,
+				8A8117602136757300FC03E0 /* KPEditUintPopView.h */,
+				8A81175F2136757100FC03E0 /* KPEditUintPopView.m */,
 				8A254E39212D6C93005D4C9B /* KPUpdatePopView.h */,
 				8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */,
 				8A84F8742130F07B0052C962 /* KPEditTextPopView.h */,
@@ -386,6 +391,7 @@
 				8A8CCC892131599800E7F359 /* InputSecurityView.m in Sources */,
 				8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
+				8A8117612136757300FC03E0 /* KPEditUintPopView.m in Sources */,
 				8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */,
 				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
 				8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */,
