@@ -11,14 +11,21 @@
 #import "KPUpdatePopView.h"
 #import "KPEditTextPopView.h"
 #import "KPRedAlertPopView.h"
+#import "KPAddProFinishPopView.h"
+#import "KPBandingUnitPopView.h"
+#import "KPDepartSelectPopView.h"
+
 
 @interface RCPopDemoVC ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,assign) int bandUnitIndex;
 
 @end
 
 @implementation RCPopDemoVC
 {
     NSArray *dataSourceArray;
+
     
 }
 
@@ -27,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-1",@"KPEditTextPopView-1",@"KPEditTextPopView-2",@"KPRedAlertPopView-1",@"KPRedAlertPopView-2"];
+    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -55,8 +62,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    cell.textLabel.text = dataSourceArray[indexPath.row];
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", dataSourceArray[indexPath.row]];
     
     return cell;
 }
@@ -152,7 +158,48 @@
         }];
         [popView showPopView];
         
-    }else{
+    }else if (indexPath.row == 10){
+        NSArray *textArray = @[@"保存成功！",@"继续新增",@"复制新增",@"返回列表"];
+        UIImage *image1 = [UIImage imageNamed:@"popup_ok"];
+        UIImage *image2 = [UIImage imageNamed:@"still_add_item"];
+        UIImage *image3 = [UIImage imageNamed:@"copy_add_newitem"];
+        UIImage *image4 = [UIImage imageNamed:@"back_to_list"];
+        
+        NSArray *imageArray = @[image1,image2,image3,image4];
+        
+        KPAddProFinishPopView *popView = [[KPAddProFinishPopView alloc]initTextArray:textArray imageArray:imageArray clickBtnAction:^(NSInteger index) {
+            
+            
+        }];
+        [popView showPopView];
+        
+    }else if (indexPath.row == 11){
+        
+        @RCWeak(self)
+        KPBandingUnitPopView *popView = [[KPBandingUnitPopView alloc]initWithTitle:ML(@"绑定单位") content:ML(@"即下单时扫该条码后选中的单位") unitArr:@[@"1",@"2",@"3"] selectUnit:^(int selectIndex) {
+            @RCStrong(self)
+            self.bandUnitIndex = selectIndex;
+            
+        }];
+        [popView setSelectIndex:self.bandUnitIndex];
+        
+        [popView showPopView];
+        
+        
+    }else if (indexPath.row == 12){
+        
+        KPDepartSelectPopView * popView = [[KPDepartSelectPopView alloc] initWithTitle:ML(@"确定出库扣减库存？") FromDepartment:nil andDepartments:[KPDepartment createDepartments] cancelBtnTitle:ML(@"取消") okBtnTitle:ML(@"确认") makeSure:^(KPDepartment *toDepartment) {
+            
+        } cancel:^{
+            
+        }];
+        
+        [popView showPopView];
+        
+        
+    }
+    
+    else{
         WPNormalPopView *popView = [[WPNormalPopView alloc]initWithTitle:nil content:nil cancelBtnTitle:@"取消" okBtnTitle:@"确认" makeSure:^{
             
         } cancel:^{
@@ -165,11 +212,6 @@
 }
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

@@ -124,7 +124,7 @@
     
     LittleImageBigControl *closeControl = [LittleImageBigControl createControlWithSize:CGSizeMake(50, 50) imageName:@"common_close"];
     [_contentView2 addSubview:closeControl];
-    [closeControl addTarget:self action:@selector(clickCancleBtn) forControlEvents:UIControlEventTouchUpInside];
+    [closeControl addTarget:self action:@selector(clickCancleBtn:) forControlEvents:UIControlEventTouchUpInside];
     closeControl.frame = CGRectMake(_contentWidth-50, 0, 50, 50);
     
     UILabel *titleLabel = [UIFactory createLabelWithText:ML(@"验证身份") textColor:kUIColorFromRGB(0x000000) font:FontSize(18)];

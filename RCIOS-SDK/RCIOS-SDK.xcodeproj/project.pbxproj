@@ -26,6 +26,12 @@
 		8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */; };
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
 		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
+		8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */; };
+		8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */; };
+		8A8117532136436D00FC03E0 /* KPBandingUnitPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117522136436D00FC03E0 /* KPBandingUnitPopView.m */; };
+		8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117552136489900FC03E0 /* KPDepartSelectPopView.m */; };
+		8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175921364BC300FC03E0 /* DownSelectView.m */; };
+		8A81175E21364F2400FC03E0 /* KPDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175D21364F2400FC03E0 /* KPDepartment.m */; };
 		8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8662130EDF60052C962 /* LittleImageBigControl.m */; };
 		8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8732130F07B0052C962 /* KPEditTextPopView.m */; };
 		8A84F8792130F4540052C962 /* KPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A84F8782130F4540052C962 /* KPTextField.m */; };
@@ -72,6 +78,18 @@
 		8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPUpdatePopView.m; sourceTree = "<group>"; };
 		8A660A60212E50D800389983 /* GeneralCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCore.h; sourceTree = "<group>"; };
 		8A660A61212E50D800389983 /* GeneralCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCore.m; sourceTree = "<group>"; };
+		8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAddProFinishPopView.h; sourceTree = "<group>"; };
+		8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAddProFinishPopView.m; sourceTree = "<group>"; };
+		8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpImgDownTextBtn.m; sourceTree = "<group>"; };
+		8A81174F213641DE00FC03E0 /* UpImgDownTextBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpImgDownTextBtn.h; sourceTree = "<group>"; };
+		8A8117512136436D00FC03E0 /* KPBandingUnitPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBandingUnitPopView.h; sourceTree = "<group>"; };
+		8A8117522136436D00FC03E0 /* KPBandingUnitPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBandingUnitPopView.m; sourceTree = "<group>"; };
+		8A8117542136489900FC03E0 /* KPDepartSelectPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDepartSelectPopView.h; sourceTree = "<group>"; };
+		8A8117552136489900FC03E0 /* KPDepartSelectPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDepartSelectPopView.m; sourceTree = "<group>"; };
+		8A81175821364BC300FC03E0 /* DownSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownSelectView.h; sourceTree = "<group>"; };
+		8A81175921364BC300FC03E0 /* DownSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownSelectView.m; sourceTree = "<group>"; };
+		8A81175C21364F2400FC03E0 /* KPDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPDepartment.h; sourceTree = "<group>"; };
+		8A81175D21364F2400FC03E0 /* KPDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPDepartment.m; sourceTree = "<group>"; };
 		8A84F8652130EDF60052C962 /* LittleImageBigControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LittleImageBigControl.h; sourceTree = "<group>"; };
 		8A84F8662130EDF60052C962 /* LittleImageBigControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LittleImageBigControl.m; sourceTree = "<group>"; };
 		8A84F8732130F07B0052C962 /* KPEditTextPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPEditTextPopView.m; sourceTree = "<group>"; };
@@ -138,6 +156,7 @@
 		8A254E0B212D1706005D4C9B /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				8A81175B21364EC000FC03E0 /* TempModel */,
 				8A84F8632130EDF60052C962 /* Widget */,
 				8A660A5F212E50C200389983 /* GeneralCore */,
 				8A254E1D212D4040005D4C9B /* KitCategry */,
@@ -170,6 +189,12 @@
 				8A84F8732130F07B0052C962 /* KPEditTextPopView.m */,
 				8A8CCC812131494F00E7F359 /* KPRedAlertPopView.h */,
 				8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */,
+				8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */,
+				8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */,
+				8A8117512136436D00FC03E0 /* KPBandingUnitPopView.h */,
+				8A8117522136436D00FC03E0 /* KPBandingUnitPopView.m */,
+				8A8117542136489900FC03E0 /* KPDepartSelectPopView.h */,
+				8A8117552136489900FC03E0 /* KPDepartSelectPopView.m */,
 			);
 			path = PopBaseView;
 			sourceTree = "<group>";
@@ -218,9 +243,38 @@
 			path = GeneralCore;
 			sourceTree = "<group>";
 		};
+		8A81174D213641D500FC03E0 /* UpImgDownTextBtn */ = {
+			isa = PBXGroup;
+			children = (
+				8A81174F213641DE00FC03E0 /* UpImgDownTextBtn.h */,
+				8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */,
+			);
+			path = UpImgDownTextBtn;
+			sourceTree = "<group>";
+		};
+		8A81175721364BC300FC03E0 /* DownSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				8A81175821364BC300FC03E0 /* DownSelectView.h */,
+				8A81175921364BC300FC03E0 /* DownSelectView.m */,
+			);
+			path = DownSelectView;
+			sourceTree = "<group>";
+		};
+		8A81175B21364EC000FC03E0 /* TempModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A81175C21364F2400FC03E0 /* KPDepartment.h */,
+				8A81175D21364F2400FC03E0 /* KPDepartment.m */,
+			);
+			path = TempModel;
+			sourceTree = "<group>";
+		};
 		8A84F8632130EDF60052C962 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				8A81175721364BC300FC03E0 /* DownSelectView */,
+				8A81174D213641D500FC03E0 /* UpImgDownTextBtn */,
 				8A8CCC842131599700E7F359 /* PasswordInput */,
 				8A84F8762130F44B0052C962 /* KPTextField */,
 				8A84F8642130EDF60052C962 /* LittleImageBigControl */,
@@ -332,15 +386,21 @@
 				8A8CCC892131599800E7F359 /* InputSecurityView.m in Sources */,
 				8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
+				8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */,
 				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
 				8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */,
 				8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */,
 				8A254E17212D2EEF005D4C9B /* PopBaseView.m in Sources */,
+				8A8117532136436D00FC03E0 /* KPBandingUnitPopView.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
+				8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */,
+				8A81175E21364F2400FC03E0 /* KPDepartment.m in Sources */,
 				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
 				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
 				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
+				8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */,
 				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
+				8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
 				8A8CCC8A2131599800E7F359 /* PasswordInputView.m in Sources */,
 				8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */,
