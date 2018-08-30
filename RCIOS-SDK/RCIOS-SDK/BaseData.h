@@ -21,6 +21,7 @@
 #define RGB(r,g,b) [UIColor colorWithRed:r/255. green:g/255. blue:b/255. alpha:1]
 #define LineColor RGB(221,221,221);
 #define WHITE_COLOR [UIColor whiteColor]
+#define CLEAR_COLOR [UIColor clearColor]
 
 // font
 #define FontSize(x) [UIFont systemFontOfSize:x]
@@ -32,6 +33,10 @@
 // weak - strong
 #define RCWeak(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
 #define RCStrong(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+
+// temp data
+#define ShareArray @[ML(@"分享给好友"),ML(@"分享到朋友圈")]
+#define POPDuration 0.3
 
 
 #endif /* BaseData_h */
