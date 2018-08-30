@@ -177,7 +177,9 @@
 #pragma mark - @protocol YYKeyboardObserver
 
 - (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
+    @RCWeak(self)
     [UIView animateWithDuration:transition.animationDuration delay:0 options:transition.animationOption animations:^{
+        @RCStrong(self)
         UIWindow * keyWindow = [[UIApplication sharedApplication] keyWindow];
         CGRect kbFrame = [[YYKeyboardManager defaultManager] convertRect:transition.toFrame toView:keyWindow];
         //获取当前第一响应者

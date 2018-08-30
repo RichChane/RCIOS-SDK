@@ -24,6 +24,11 @@
 		8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E34212D4F96005D4C9B /* WPNormalPopView.m */; };
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 		8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */; };
+		8A275C932137BEBA0071B32A /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275C922137BEBA0071B32A /* STPickerView.m */; };
+		8A275C9D2137C2840071B32A /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275C992137C2840071B32A /* STUI.m */; };
+		8A275C9E2137C2840071B32A /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275C9B2137C2840071B32A /* UIView+ST.m */; };
+		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
+		8A275CA42137D30C0071B32A /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA32137D30C0071B32A /* STPickerSingle.m */; };
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
 		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
 		8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */; };
@@ -82,6 +87,17 @@
 		8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPopDemoVC.m; sourceTree = "<group>"; };
 		8A254E39212D6C93005D4C9B /* KPUpdatePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPUpdatePopView.h; sourceTree = "<group>"; };
 		8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPUpdatePopView.m; sourceTree = "<group>"; };
+		8A275C912137BEBA0071B32A /* STPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerView.h; sourceTree = "<group>"; };
+		8A275C922137BEBA0071B32A /* STPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerView.m; sourceTree = "<group>"; };
+		8A275C952137C2840071B32A /* STConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
+		8A275C982137C2840071B32A /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		8A275C992137C2840071B32A /* STUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
+		8A275C9A2137C2840071B32A /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
+		8A275C9B2137C2840071B32A /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
+		8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPickerDemoVC.h; sourceTree = "<group>"; };
+		8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPickerDemoVC.m; sourceTree = "<group>"; };
+		8A275CA22137D30C0071B32A /* STPickerSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerSingle.h; sourceTree = "<group>"; };
+		8A275CA32137D30C0071B32A /* STPickerSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
 		8A660A60212E50D800389983 /* GeneralCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCore.h; sourceTree = "<group>"; };
 		8A660A61212E50D800389983 /* GeneralCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCore.m; sourceTree = "<group>"; };
 		8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAddProFinishPopView.h; sourceTree = "<group>"; };
@@ -159,6 +175,8 @@
 				8A254DF9212D14D6005D4C9B /* ViewController.m */,
 				8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */,
 				8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */,
+				8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */,
+				8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */,
 				8A254E10212D2DB9005D4C9B /* BaseData.h */,
 				8A254E21212D40BF005D4C9B /* RCSDKHeader.h */,
 				8A254E11212D2E0A005D4C9B /* PrefixHeader.pch */,
@@ -260,8 +278,33 @@
 		8A275C8F21379FB80071B32A /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				8A275C942137C2840071B32A /* STConfig */,
+				8A275C902137BEBA0071B32A /* STPickerView */,
 			);
 			path = PickerView;
+			sourceTree = "<group>";
+		};
+		8A275C902137BEBA0071B32A /* STPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8A275C912137BEBA0071B32A /* STPickerView.h */,
+				8A275C922137BEBA0071B32A /* STPickerView.m */,
+				8A275CA22137D30C0071B32A /* STPickerSingle.h */,
+				8A275CA32137D30C0071B32A /* STPickerSingle.m */,
+			);
+			path = STPickerView;
+			sourceTree = "<group>";
+		};
+		8A275C942137C2840071B32A /* STConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8A275C952137C2840071B32A /* STConfig.h */,
+				8A275C982137C2840071B32A /* STUI.h */,
+				8A275C992137C2840071B32A /* STUI.m */,
+				8A275C9A2137C2840071B32A /* UIView+ST.h */,
+				8A275C9B2137C2840071B32A /* UIView+ST.m */,
+			);
+			path = STConfig;
 			sourceTree = "<group>";
 		};
 		8A660A5F212E50C200389983 /* GeneralCore */ = {
@@ -446,9 +489,11 @@
 				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
 				8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */,
 				8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */,
+				8A275C9E2137C2840071B32A /* UIView+ST.m in Sources */,
 				8A254E17212D2EEF005D4C9B /* PopBaseView.m in Sources */,
 				8A8117532136436D00FC03E0 /* KPBandingUnitPopView.m in Sources */,
 				8A81176B2136975E00FC03E0 /* ShareProBottomPopView.m in Sources */,
+				8A275C9D2137C2840071B32A /* STUI.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
 				8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */,
 				8A81175E21364F2400FC03E0 /* KPDepartment.m in Sources */,
@@ -459,15 +504,18 @@
 				8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */,
 				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
 				8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */,
+				8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
 				8A8CCC8A2131599800E7F359 /* PasswordInputView.m in Sources */,
 				8A84F8752130F07B0052C962 /* KPEditTextPopView.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 				8A8117722136A94E00FC03E0 /* SelectGroupView.m in Sources */,
+				8A275CA42137D30C0071B32A /* STPickerSingle.m in Sources */,
 				8A660A62212E50D800389983 /* GeneralCore.m in Sources */,
 				8A81176A2136975E00FC03E0 /* ShareBottomPopView.m in Sources */,
 				8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */,
 				8A254E2F212D4D04005D4C9B /* M80AttributedLabel.m in Sources */,
+				8A275C932137BEBA0071B32A /* STPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

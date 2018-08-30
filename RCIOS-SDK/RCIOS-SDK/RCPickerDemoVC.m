@@ -1,26 +1,25 @@
 //
-//  ViewController.m
+//  RCPickerDemoVC.m
 //  RCIOS-SDK
 //
-//  Created by gzkp on 2018/8/22.
+//  Created by gzkp on 2018/8/30.
 //  Copyright © 2018年 RC. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "RCPopDemoVC.h"
 #import "RCPickerDemoVC.h"
 
+#import "STPickerView.h"
+#import "STPickerSingle.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-
-
+@interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerViewDelegate>
 
 @end
 
-@implementation ViewController
+@implementation RCPickerDemoVC
 {
     NSArray *dataSourceArray;
+    
     
 }
 
@@ -29,9 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.title = @"SDK";
+    self.title = @"PopView";
     
-    dataSourceArray = @[@"PopView",@"PickerView"];
+    dataSourceArray = @[@"STPickerView",@"STPickerSingle"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -48,19 +47,18 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentify = @"SDK-Cell";
+    static NSString *cellIdentify = @"SDK-POP";
     
-
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentify];
-
+    
     if (!cell) {
         
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentify];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    cell.textLabel.text = dataSourceArray[indexPath.row];
-
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", dataSourceArray[indexPath.row]];
     
     return cell;
 }
@@ -74,23 +72,35 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
+        STPickerView *pickerView = [[STPickerView alloc]init];
+        [pickerView show];
         
-        RCPopDemoVC *vc = [[RCPopDemoVC alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1){
+        STPickerSingle *pickerView = [[STPickerSingle alloc]init];
+        pickerView.delegate = self;
+        [pickerView setupData:@{FirstDataKey:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8"]}];
+        [pickerView show];
+        
     }else if (indexPath.row == 1){
         
-        RCPickerDemoVC *vc = [[RCPickerDemoVC alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+        
+        
+    }else if (indexPath.row == 1){
+        
+        
+        
     }
     
 }
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - PickerDelegate
+- (void)pickerSingle:(STPickerSingle *)pickerSingle selectedTitle:(NSString *)selectedTitle selectedRow:(NSInteger)selectedRow
+{
+    
+    
 }
+
 
 
 @end

@@ -21,7 +21,6 @@
 @end
 
 static const CGFloat normalWith = 270;
-static const CGFloat normalHeight = 85;
 static const CGFloat leftDis = 15;
 
 @implementation KPEditUintPopView

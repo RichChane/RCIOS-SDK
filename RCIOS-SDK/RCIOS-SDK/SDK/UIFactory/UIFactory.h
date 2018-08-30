@@ -26,7 +26,7 @@
 + (UIButton *)createbtnWithRect:(CGRect)frame target:(id)target select:(SEL)function;
 + (UIButton *)createbtnWithImage:(UIImage *)image target:(id)target select:(SEL)function;
 
-+ (UIView *)guideViewWith:(NSInteger)count;//小红点  count为0时 是小红点
+//+ (UIView *)guideViewWith:(NSInteger)count;//小红点  count为0时 是小红点
 
 + (UIImageView *)createImageViewWithImageName:(NSString *)imageName;
 
@@ -35,8 +35,7 @@
 + (NSString *)showMoney:(NSString *)moneyNum FloatingNumber:(int64_t)fillZero;
 
 // 图片和数字
-
-+ (UIView *)createViewWithImageName:(NSString *)imageName andGuideCount:(NSInteger)count;
+//+ (UIView *)createViewWithImageName:(NSString *)imageName andGuideCount:(NSInteger)count;
 
 /// 带圆角的label  可传入更多参数 borderColor 可为nil，其他的不能为nil  frame可为zero
 + (UILabel *)createLabelWithText:(NSString *)text Frame:(CGRect)frame textColor:(UIColor *)textColor font:(UIFont *)font BackGroundColor:(UIColor *)backgroundColor borderColor:(UIColor *)borderColor;
