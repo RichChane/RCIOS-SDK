@@ -25,7 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        _coverImV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"index_confirm"]];
+        _coverImV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"common_tabcheck"]];
         [self addSubview:_coverImV];
         _coverImV.frame = CGRectMake(self.frame.size.width-_coverImV.frame.size.width, self.frame.size.height-_coverImV.frame.size.height, _coverImV.frame.size.width, _coverImV.frame.size.height);
         

@@ -20,8 +20,8 @@
         
         shareInstance.BG = kUIColorFromRGB(0xEFEFF4);
         shareInstance.LINE = RGB(221,221,221);
-        //shareInstance.MC = kUIColorFromRGB(0xFC9F06);
-        shareInstance.MC = kUIColorFromRGB(0xFF675E);
+        shareInstance.MC = kUIColorFromRGB(0xFC9F06);
+        //shareInstance.MC = kUIColorFromRGB(0xFF675E);
         
         shareInstance.CWhite = [UIColor whiteColor];
         shareInstance.CBlack = [UIColor blackColor];
