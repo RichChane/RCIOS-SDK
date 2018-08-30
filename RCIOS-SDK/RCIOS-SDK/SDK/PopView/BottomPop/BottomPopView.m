@@ -69,13 +69,19 @@ static const CGFloat ItemHeight = 45;
     [contentView addSubview:selectGroupView];
     for (int i = 0; i < _selectArr.count ; i ++) {
         
-        UIButton *itemBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, i*ItemHeight, SCREEN_WIDTH, ItemHeight - 0.5)];
+        UIButton *itemBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, i*ItemHeight, SCREEN_WIDTH, ItemHeight)];
         itemBtn.tag = i + 100;
         [itemBtn setTitle:_selectArr[i] forState:UIControlStateNormal];
         [itemBtn setTitleColor:GC.CBlack forState:UIControlStateNormal];
         itemBtn.backgroundColor = WHITE_COLOR;
         [itemBtn addTarget:self action:@selector(didSelect:) forControlEvents:UIControlEventTouchUpInside];
-
+        
+        if (i < _selectArr.count-1) {
+            UIView *line = [UIView new];
+            line.backgroundColor = GC.LINE;
+            line.frame = CGRectMake(0, itemBtn.frame.size.height-0.5, itemBtn.frame.size.width, 0.5);
+            [itemBtn addSubview:line];
+        }
         
         [contentView addSubview:itemBtn];
         [_selectGroupArr addObject:itemBtn];

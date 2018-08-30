@@ -18,6 +18,7 @@
 // bottompop
 #import "ShareBottomPopView.h"
 #import "ShareProBottomPopView.h"
+
 // top
 #import "PaymentSelectView.h"
 
@@ -40,7 +41,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12",@"KPEditUintPopView-13",@"ShareProBottomPopView-14",@"PaymentSelectView-15",@"PaymentSelectView-16"];
+    self.title = @"PopView";
+    
+    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12",@"KPEditUintPopView-13",@"ShareProBottomPopView-14",@"PaymentSelectView-15",@"PaymentSelectView-16",@"BottomPopView-17"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -233,9 +236,17 @@
         };
     }else if(indexPath.row == 16){
         
-        PaymentSelectView *selectView = [[PaymentSelectView alloc]initWithSelectArr:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7"] selectIndex:0];
+        PaymentSelectView *selectView = [[PaymentSelectView alloc]initWithSelectArr:@[@"1",@"2",@"3",@"4"] selectIndex:0];
         selectView.popType = POPShowFromTop;
         selectView.originY = self.navigationController.navigationBar.frame.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height;
+        [selectView showPopView];
+        selectView.selectType = ^(NSInteger tag) {
+            
+            
+        };
+    }else if(indexPath.row == 17){
+        
+        BottomPopView *selectView = [[BottomPopView alloc]initWithSelectArr:@[@"1",@"2",@"3",@"4"] selectIndex:0];
         [selectView showPopView];
         selectView.selectType = ^(NSInteger tag) {
             

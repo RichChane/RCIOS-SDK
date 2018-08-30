@@ -180,6 +180,7 @@
 				8A254E1D212D4040005D4C9B /* KitCategry */,
 				8A254E19212D316E005D4C9B /* UIFactory */,
 				8A254E0C212D1719005D4C9B /* PopView */,
+				8A275C8F21379FB80071B32A /* PickerView */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -254,6 +255,13 @@
 				8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */,
 			);
 			path = M80AttributedLabel;
+			sourceTree = "<group>";
+		};
+		8A275C8F21379FB80071B32A /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 		8A660A5F212E50C200389983 /* GeneralCore */ = {
