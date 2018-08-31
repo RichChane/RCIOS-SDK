@@ -19,7 +19,10 @@
 // 工场工具
 #import "UIFactory.h"
 
-// 
+// 基类
 #import "KPTextField.h"
+
+// 零时数据
+#import "KPTempModel.h"
 
 #endif /* RCSDKHeader_h */

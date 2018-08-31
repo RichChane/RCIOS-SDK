@@ -29,6 +29,7 @@
 		8A275C9E2137C2840071B32A /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275C9B2137C2840071B32A /* UIView+ST.m */; };
 		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
 		8A275CA42137D30C0071B32A /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA32137D30C0071B32A /* STPickerSingle.m */; };
+		8A275CA72137DEB60071B32A /* STRCCommonPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */; };
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
 		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
 		8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */; };
@@ -36,7 +37,7 @@
 		8A8117532136436D00FC03E0 /* KPBandingUnitPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117522136436D00FC03E0 /* KPBandingUnitPopView.m */; };
 		8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117552136489900FC03E0 /* KPDepartSelectPopView.m */; };
 		8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175921364BC300FC03E0 /* DownSelectView.m */; };
-		8A81175E21364F2400FC03E0 /* KPDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175D21364F2400FC03E0 /* KPDepartment.m */; };
+		8A81175E21364F2400FC03E0 /* KPTempModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175D21364F2400FC03E0 /* KPTempModel.m */; };
 		8A8117612136757300FC03E0 /* KPEditUintPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81175F2136757100FC03E0 /* KPEditUintPopView.m */; };
 		8A8117692136975E00FC03E0 /* BottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117642136975D00FC03E0 /* BottomPopView.m */; };
 		8A81176A2136975E00FC03E0 /* ShareBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117662136975D00FC03E0 /* ShareBottomPopView.m */; };
@@ -98,6 +99,8 @@
 		8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPickerDemoVC.m; sourceTree = "<group>"; };
 		8A275CA22137D30C0071B32A /* STPickerSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerSingle.h; sourceTree = "<group>"; };
 		8A275CA32137D30C0071B32A /* STPickerSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
+		8A275CA52137DEB50071B32A /* STRCCommonPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerView.h; sourceTree = "<group>"; };
+		8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerView.m; sourceTree = "<group>"; };
 		8A660A60212E50D800389983 /* GeneralCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCore.h; sourceTree = "<group>"; };
 		8A660A61212E50D800389983 /* GeneralCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCore.m; sourceTree = "<group>"; };
 		8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAddProFinishPopView.h; sourceTree = "<group>"; };
@@ -110,8 +113,8 @@
 		8A8117552136489900FC03E0 /* KPDepartSelectPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDepartSelectPopView.m; sourceTree = "<group>"; };
 		8A81175821364BC300FC03E0 /* DownSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownSelectView.h; sourceTree = "<group>"; };
 		8A81175921364BC300FC03E0 /* DownSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownSelectView.m; sourceTree = "<group>"; };
-		8A81175C21364F2400FC03E0 /* KPDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPDepartment.h; sourceTree = "<group>"; };
-		8A81175D21364F2400FC03E0 /* KPDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPDepartment.m; sourceTree = "<group>"; };
+		8A81175C21364F2400FC03E0 /* KPTempModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPTempModel.h; sourceTree = "<group>"; };
+		8A81175D21364F2400FC03E0 /* KPTempModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPTempModel.m; sourceTree = "<group>"; };
 		8A81175F2136757100FC03E0 /* KPEditUintPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPEditUintPopView.m; sourceTree = "<group>"; };
 		8A8117602136757300FC03E0 /* KPEditUintPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPEditUintPopView.h; sourceTree = "<group>"; };
 		8A8117632136975D00FC03E0 /* BottomPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPopView.h; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 				8A275C922137BEBA0071B32A /* STPickerView.m */,
 				8A275CA22137D30C0071B32A /* STPickerSingle.h */,
 				8A275CA32137D30C0071B32A /* STPickerSingle.m */,
+				8A275CA52137DEB50071B32A /* STRCCommonPickerView.h */,
+				8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */,
 			);
 			path = STPickerView;
 			sourceTree = "<group>";
@@ -337,8 +342,8 @@
 		8A81175B21364EC000FC03E0 /* TempModel */ = {
 			isa = PBXGroup;
 			children = (
-				8A81175C21364F2400FC03E0 /* KPDepartment.h */,
-				8A81175D21364F2400FC03E0 /* KPDepartment.m */,
+				8A81175C21364F2400FC03E0 /* KPTempModel.h */,
+				8A81175D21364F2400FC03E0 /* KPTempModel.m */,
 			);
 			path = TempModel;
 			sourceTree = "<group>";
@@ -496,8 +501,9 @@
 				8A275C9D2137C2840071B32A /* STUI.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
 				8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */,
-				8A81175E21364F2400FC03E0 /* KPDepartment.m in Sources */,
+				8A81175E21364F2400FC03E0 /* KPTempModel.m in Sources */,
 				8A8117692136975E00FC03E0 /* BottomPopView.m in Sources */,
+				8A275CA72137DEB60071B32A /* STRCCommonPickerView.m in Sources */,
 				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
 				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
 				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,

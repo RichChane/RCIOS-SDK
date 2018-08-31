@@ -30,7 +30,6 @@
 - (void)setupData:(NSDictionary *)data
 {
     _titleUnit = @"";
-    //_arrayData = @[].mutableCopy;
     _arrayData = [data objectForKey:FirstDataKey];
     _heightPickerComponent = 44;
     _widthPickerComponent = 200;

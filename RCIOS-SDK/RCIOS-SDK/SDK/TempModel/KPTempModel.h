@@ -17,3 +17,12 @@
 + (NSArray *)createDepartments;
 
 @end
+
+
+@interface PickerTempModel : NSObject
+
++ (NSMutableDictionary *)createComponum2;
++ (NSMutableDictionary *)createComponum3;
+
+
+@end

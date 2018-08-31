@@ -10,9 +10,9 @@
 
 #import "STPickerView.h"
 #import "STPickerSingle.h"
+#import "STRCCommonPickerView.h"
 
-
-@interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerViewDelegate>
+@interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerSingleDelegate,STRCCommonPickerViewDelegate>
 
 @end
 
@@ -30,7 +30,7 @@
     
     self.title = @"PopView";
     
-    dataSourceArray = @[@"STPickerView",@"STPickerSingle"];
+    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -76,18 +76,31 @@
         [pickerView show];
         
     }else if (indexPath.row == 1){
+        
+        NSDictionary *dict = [PickerTempModel createComponum2];
         STPickerSingle *pickerView = [[STPickerSingle alloc]init];
         pickerView.delegate = self;
-        [pickerView setupData:@{FirstDataKey:@[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8"]}];
+        [pickerView setupData:dict];
         [pickerView show];
         
-    }else if (indexPath.row == 1){
+    }else if (indexPath.row == 2){
         
+        NSMutableDictionary *dict = [PickerTempModel createComponum2];
         
+        STRCCommonPickerView *pickerView = [[STRCCommonPickerView alloc]init];
+        pickerView.delegate = self;
+        [pickerView setupData:dict];
+        [pickerView selectYear:1 selectMonth:2 selectDay:3];
+        [pickerView show];
         
-    }else if (indexPath.row == 1){
+    }else if (indexPath.row == 3){
         
+        NSMutableDictionary *dict = [PickerTempModel createComponum3];
         
+        STRCCommonPickerView *pickerView = [[STRCCommonPickerView alloc]init];
+        pickerView.delegate = self;
+        [pickerView setupData:dict];
+        [pickerView show];
         
     }
     

@@ -7,7 +7,6 @@
 //
 
 #import "PopBaseView.h"
-#import "KPDepartment.h"
 
 
 typedef void(^ConfirmDepart)(KPDepartment * toDepartment);

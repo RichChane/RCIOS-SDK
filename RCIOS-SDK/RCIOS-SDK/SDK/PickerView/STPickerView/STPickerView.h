@@ -18,6 +18,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #define FirstDataKey @"FirstDataKey"
+#define SecondDataKey @"SecondDataKey"
+#define ThirdDataKey @"ThirdDataKey"
 
 typedef NS_ENUM(NSInteger, STPickerContentMode) {
     STPickerContentModeBottom, // 1.选择器在视图的下方
