@@ -26,6 +26,8 @@
     NSString *_okBtnTitle;
     CGFloat _contentWidth;
     CGFloat _contentHeight;
+    
+    CGFloat BottomBtnHeight;
 }
 
 
@@ -35,6 +37,7 @@
     if (self) {
         
         self.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.5];
+        BottomBtnHeight = 45;
         
         _cancelTitle = cancelBtnTitle;
         _okBtnTitle = okBtnTitle;
@@ -88,7 +91,6 @@
     
 }
 
-#define BottomBtnHeight 45
 - (void)refreshCenterView:(UIView *)topView contentView:(UIView *)contentView
 {
     CGFloat originY = 0.0;
@@ -105,18 +107,33 @@
         originY = CGRectGetMaxY(contentView.frame);
     }
     
-    _bottomLine.frame = CGRectMake(0, originY, contentView.frame.size.width, 0.5);
-    _bottomMidLine.frame = CGRectMake(contentView.frame.size.width/2, originY, 0.5, BottomBtnHeight);
-    
-    if (_cancelTitle && ![_cancelTitle isEqualToString:@""]){
-        _cancelBtn.frame = CGRectMake(0, originY, contentView.frame.size.width/2, BottomBtnHeight);
-        _okBtn.frame = CGRectMake(CGRectGetMaxX(_cancelBtn.frame), originY, contentView.frame.size.width/2, BottomBtnHeight);
+    if (self.popType == KPPopTypeNormal) {
+        BottomBtnHeight = 45;
         
-    }else{
-        _okBtn.frame = CGRectMake(0, originY, contentView.frame.size.width, BottomBtnHeight);
+        _bottomLine.frame = CGRectMake(0, originY, contentView.frame.size.width, 0.5);
+        _bottomMidLine.frame = CGRectMake(contentView.frame.size.width/2, originY, 0.5, BottomBtnHeight);
+        
+        if (_cancelTitle && ![_cancelTitle isEqualToString:@""]){
+            _cancelBtn.frame = CGRectMake(0, originY, contentView.frame.size.width/2, BottomBtnHeight);
+            _okBtn.frame = CGRectMake(CGRectGetMaxX(_cancelBtn.frame), originY, contentView.frame.size.width/2, BottomBtnHeight);
+            
+        }else{
+            _okBtn.frame = CGRectMake(0, originY, contentView.frame.size.width, BottomBtnHeight);
+            _bottomMidLine.hidden = YES;
+            _cancelBtn.hidden = YES;
+        }
+    }else if (self.popType == KPPopTypeExplain){
+        BottomBtnHeight = 74;
+        
+        _okBtn.frame = CGRectMake(dis_LEFTSCREEN, originY+15, contentView.frame.size.width-dis_LEFTSCREEN*2, 44);
+        [_okBtn setBackgroundColor:GC.MC];
+        _okBtn.layer.cornerRadius = 4;
+        [_okBtn setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
+        
         _bottomMidLine.hidden = YES;
         _cancelBtn.hidden = YES;
     }
+
     
     _centerView.frame = CGRectMake(0, 0, contentView.frame.size.width, topView.frame.size.height+contentView.frame.size.height+BottomBtnHeight);
     _centerView.center = self.center;

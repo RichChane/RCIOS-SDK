@@ -145,9 +145,10 @@
                 [pickerView selectRow:0 inComponent:1 animated:NO];// 滚动后刷新第二行
                 [pickerView reloadComponent:1];
                 
-                [pickerView selectRow:0 inComponent:2 animated:NO];// 滚动后刷新第二行
-                [pickerView reloadComponent:2];
-                
+                if (_componentNum > 2) {
+                    [pickerView selectRow:0 inComponent:2 animated:NO];// 滚动后刷新第二行
+                    [pickerView reloadComponent:2];
+                }
             }
 
             break;

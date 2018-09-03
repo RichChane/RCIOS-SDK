@@ -76,10 +76,6 @@ static const CGFloat leftDis = 15;
             _alertSize.height = alertHeight;
         }
         
-
-        [self createItems];
-        [self refreshCenterView:self.topView contentView:self.contentView];
-        
     }
     return self;
     
@@ -115,11 +111,6 @@ static const CGFloat leftDis = 15;
             contentHeight = _contentAttriSize.height + 20;
         }
         
-        
-        
-        [self createItems];
-        [self refreshCenterView:self.topView contentView:self.contentView];
-        //[self refreshContentFrame:normalWith height:normalHeight - 30 + titleHeight + contentHeight];//富文本的展示有点小
     }
     return self;
 }
@@ -165,12 +156,23 @@ static const CGFloat leftDis = 15;
     nowY = 0.0;
     if (_content && ![_content isEqualToString:@""])
     {
+        if (self.popType == KPPopTypeNormal) {
+            _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(leftDis, nowY, labelWidth, _contentSize.height)];
+            _contentLabel.text = _content;
+        }else if (self.popType == KPPopTypeExplain){
+            _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(leftDis, 40, labelWidth, _contentSize.height+20)];
+            
+            NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+            paragraphStyle.lineSpacing = 10;
+            NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+            [attributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+            _contentLabel.attributedText = [[NSAttributedString alloc] initWithString:_content attributes:attributes];
+            
+        }
         
-        _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(leftDis, nowY, labelWidth, _contentSize.height)];
         _contentLabel.textAlignment = NSTextAlignmentCenter;
         _contentLabel.font = FontSize(17);
         _contentLabel.textColor = kUIColorFromRGB(0x282b34);
-        _contentLabel.text = _content;
         _contentLabel.numberOfLines = 0;
         [self.contentView addSubview:_contentLabel];
         nowY = CGRectGetMaxY(_contentLabel.frame)+15;
@@ -189,6 +191,14 @@ static const CGFloat leftDis = 15;
 
     
     self.contentView.frame = CGRectMake(0, 0, normalWith, nowY);
+}
+
+#pragma mark - show&dismiss
+- (void)showPopView
+{
+    [self createItems];
+    [self refreshCenterView:self.topView contentView:self.contentView];
+    [super showPopView];
 }
 
 #pragma mark - set&get

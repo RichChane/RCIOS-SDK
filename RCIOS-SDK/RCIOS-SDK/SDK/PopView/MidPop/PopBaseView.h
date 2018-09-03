@@ -11,6 +11,12 @@
 #define POPShow @"POPShow"
 #define POPDismiss @"POPDismiss"
 
+typedef enum : NSUInteger {
+    KPPopTypeNormal,
+    KPPopTypeExplain,
+    
+} KPPopType;
+
 typedef void(^Cancel)(void);
 typedef void(^MakeSure)(void);
 typedef void(^ConfirmV3)(NSString *unitTitle,double number,BOOL isDefaultUnit);
@@ -23,6 +29,7 @@ typedef void(^ConfirmV1)(id objc);
 @property (nonatomic,strong) UIView *contentView;
 @property (nonatomic,strong) UIButton *cancelBtn;
 @property (nonatomic,strong) UIButton *okBtn;
+@property (nonatomic,assign) KPPopType popType;
 @property (nonatomic,copy) Cancel cancel;
 @property (nonatomic,copy) MakeSure makeSure;
 @property (nonatomic,copy) ConfirmV1 confirmV1;

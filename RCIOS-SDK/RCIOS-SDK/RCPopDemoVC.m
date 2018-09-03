@@ -92,11 +92,12 @@
         }];
         [popView showPopView];
     }else if (indexPath.row == 1){
-        WPNormalPopView *popView = [[WPNormalPopView alloc] initWithTitle:nil content:@"版本过低，请更新最新版本" cancelBtnTitle:nil okBtnTitle:@"确认" makeSure:^{
+        WPNormalPopView *popView = [[WPNormalPopView alloc] initWithTitle:nil content:@"库存价值是指商品的销售价值\n即：报价 x 库存" cancelBtnTitle:nil okBtnTitle:@"知道了" makeSure:^{
             
         } cancel:^{
             
         }];
+        popView.popType = KPPopTypeExplain;
         [popView showPopView];
         
     }else if (indexPath.row == 2){
