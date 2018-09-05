@@ -136,18 +136,16 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
     switch (component) {
         case 0:
             
             if (_chooseFirstRow != row) {
                 _chooseFirstRow = row;
-                [pickerView selectRow:0 inComponent:1 animated:NO];// 滚动后刷新第二行
-                [pickerView reloadComponent:1];
+                _chooseSecondRow = 0;
                 
-                if (_componentNum > 2) {
-                    [pickerView selectRow:0 inComponent:2 animated:NO];// 滚动后刷新第二行
-                    [pickerView reloadComponent:2];
+                for (NSInteger i = component+1; i < _componentNum; i ++) {
+                    [pickerView selectRow:0 inComponent:i animated:NO];// 滚动后刷新子行
+                    [pickerView reloadComponent:i];
                 }
             }
 
@@ -155,10 +153,11 @@
         case 1:
             if (_chooseSecondRow != row) {
                 _chooseSecondRow = row;
-                
-                [pickerView selectRow:0 inComponent:2 animated:NO];// 滚动后刷新第二行
-                [pickerView reloadComponent:2];
-                
+                for (NSInteger i = component+1; i < _componentNum; i ++) {
+                    [pickerView selectRow:0 inComponent:i animated:NO];// 滚动后刷新子行
+                    [pickerView reloadComponent:i];
+                    
+                }
             }
             
             break;
@@ -166,7 +165,6 @@
         default:
             break;
     }
-    
     
     [self reloadData];
 }

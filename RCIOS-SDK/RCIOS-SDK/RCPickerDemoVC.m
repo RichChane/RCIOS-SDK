@@ -100,6 +100,7 @@
         STRCCommonPickerView *pickerView = [[STRCCommonPickerView alloc]init];
         pickerView.delegate = self;
         [pickerView setupData:dict];
+        pickerView.title = @"选择地区";
         [pickerView show];
         
     }
