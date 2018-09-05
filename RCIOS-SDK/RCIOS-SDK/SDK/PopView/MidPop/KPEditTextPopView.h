@@ -29,6 +29,7 @@ typedef enum : NSUInteger {
 @property NSInteger textType;
 
 @property (nonatomic,strong) UITextField *unitTextField;
+@property (nonatomic,strong) NSString *alertText;
 @property (nonatomic,assign) NSTextAlignment contentAligment;
 @property (nonatomic,assign) NSTextAlignment titleAligment;
 @property (nonatomic,assign) EditType editType;

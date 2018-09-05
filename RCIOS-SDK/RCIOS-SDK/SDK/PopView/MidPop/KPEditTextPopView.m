@@ -25,6 +25,7 @@ static const CGFloat leftDis = 15;;
     NSString *_title;
     NSString *_placeHoldTitle;
     CGSize _titleSize;
+    CGSize _alertSize;
     NSString *_content;
     CGSize _contentSize;
     NSString *_rightText;
@@ -43,17 +44,10 @@ static const CGFloat leftDis = 15;;
         _title = title;
         _placeHoldTitle = placeHoldTitle;
         _content = content;
-        
-        _titleSize = [title sizeWithFont:FontSize(17) maxSize:CGSizeMake(normalWith - leftDis*2, 0)];
 
-        
-        [self createItems];
-        [self refreshCenterView:self.topView contentView:self.contentView];
     }
     return self;
 
-    
-    
 }
 
 - (instancetype)initWithTitle:(NSString*)title placeHoldTitle:(NSString*)placeHoldTitle content:(NSString *)content rightText:(NSString *)rightText cancelBtnTitle:(NSString*)cancelBtnTitle okBtnTitle:(NSString*)okBtnTitle makeSure:(ConfirmV1)makeSure cancel:(Cancel)cancel
@@ -67,16 +61,9 @@ static const CGFloat leftDis = 15;;
         _title = title;
         _placeHoldTitle = placeHoldTitle;
         _rightText = rightText;
-        
-        _titleSize = [title sizeWithFont:FontSize(17) maxSize:CGSizeMake(normalWith - leftDis*2, 0)];
-        
-        [self createItems];
-        [self refreshCenterView:self.topView contentView:self.contentView];
+
     }
     return self;
-    
-    
-    
 }
 
 - (void)createItems
@@ -96,8 +83,21 @@ static const CGFloat leftDis = 15;;
         _titleLabel.numberOfLines = 0;
         [self.contentView addSubview:_titleLabel];
         
-        nowY = CGRectGetMaxY(_titleLabel.frame)+15;
+        nowY = CGRectGetMaxY(_titleLabel.frame)+20;
     }
+    
+    if (_alertText && _alertText.length) {
+        UILabel *alertLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, nowY, labelWidth, _titleSize.height)];
+        alertLabel.font = FontSize(15);
+        alertLabel.textColor = kUIColorFromRGB(0x282b34);
+        alertLabel.text = _alertText;
+        alertLabel.numberOfLines = 0;
+        [self.contentView addSubview:alertLabel];
+        
+        nowY = CGRectGetMaxY(alertLabel.frame)+10;
+    }
+    
+    
     UILabel *rightLabel;
     if (_rightText) {
         rightLabel = [[UILabel alloc]init];
@@ -105,12 +105,12 @@ static const CGFloat leftDis = 15;;
         rightLabel.text = _rightText;
         [self.contentView addSubview:rightLabel];
         [rightLabel sizeToFit];
-        rightLabel.frame = CGRectMake(normalWith-30, CGRectGetMaxY(_titleLabel.frame) + 20, rightLabel.frame.size.width, 30);
+        rightLabel.frame = CGRectMake(normalWith-30, nowY, rightLabel.frame.size.width, 30);
         
-        nowY = CGRectGetMaxY(rightLabel.frame)+15;
     }
     
-    KPTextField *unitTitleTextField = [[KPTextField alloc]initWithFrame:CGRectMake(30, CGRectGetMaxY(_titleLabel.frame) + 20, normalWith - 60 - rightLabel.frame.size.width - 10, 30)];
+    CGFloat rightDistance = rightLabel? (rightLabel.frame.size.width - 5):0;
+    KPTextField *unitTitleTextField = [[KPTextField alloc]initWithFrame:CGRectMake(30, nowY, normalWith - 60 - rightDistance, 30)];
     _unitTextField = unitTitleTextField;
     unitTitleTextField.font = FontSize(15);
     unitTitleTextField.borderStyle = UITextBorderStyleRoundedRect;
@@ -121,7 +121,7 @@ static const CGFloat leftDis = 15;;
     unitTitleTextField.text = _content;
     unitTitleTextField.delegate = self;
     
-    nowY = CGRectGetMaxY(unitTitleTextField.frame)+15;
+    nowY = CGRectGetMaxY(unitTitleTextField.frame)+20;
     
     if (_textType == 1) {
         
@@ -133,6 +133,12 @@ static const CGFloat leftDis = 15;;
 
 - (void)showPopView
 {
+    _titleSize = [_title sizeWithFont:FontSize(17) maxSize:CGSizeMake(normalWith - leftDis*2, 0)];
+    _alertSize = [_alertText sizeWithFont:FontSize(15) maxSize:CGSizeMake(normalWith - leftDis*2, 0)];
+    
+    [self createItems];
+    [self refreshCenterView:self.topView contentView:self.contentView];
+    
     [super showPopView];
     
     [self performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0.1];

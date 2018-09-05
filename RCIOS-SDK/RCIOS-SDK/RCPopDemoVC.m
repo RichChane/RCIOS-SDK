@@ -43,7 +43,7 @@
     
     self.title = @"PopView";
     
-    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12",@"KPEditUintPopView-13",@"ShareProBottomPopView-14",@"PaymentSelectView-15",@"PaymentSelectView-16",@"BottomPopView-17"];
+    dataSourceArray = @[@"WPNormalPopView-0",@"WPNormalPopView-1",@"WPNormalPopView-2",@"WPNormalPopView-3",@"WPNormalPopView-4",@"KPUpdatePopView-5",@"KPEditTextPopView-6",@"KPEditTextPopView-7",@"KPRedAlertPopView-8",@"KPRedAlertPopView-9",@"KPAddProFinishPopView-10",@"KPBandingUnitPopView-11",@"KPDepartSelectPopView-12",@"KPEditUintPopView-13",@"ShareProBottomPopView-14",@"PaymentSelectView-15",@"PaymentSelectView-16",@"BottomPopView-17",@"BottomPopView-18"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -147,7 +147,7 @@
         } cancel:^{
             
         }];
-        
+        popView.alertText = @"将所选商品折扣改为";
         [popView showPopView];
         
     }else if (indexPath.row == 8){
@@ -248,6 +248,16 @@
     }else if(indexPath.row == 17){
         
         BottomPopView *selectView = [[BottomPopView alloc]initWithSelectArr:@[@"1",@"2",@"3",@"4"] selectIndex:0];
+        [selectView showPopView];
+        selectView.selectType = ^(NSInteger tag) {
+            
+            
+        };
+    }else if(indexPath.row == 18){
+        
+        BottomPopView *selectView = [[BottomPopView alloc]initWithSelectArr:@[@"新老款式随机发货，不挑",@"发货前，一定要跟收货人再次确认",@"记得补货！补货！补货！",@"这个没库存了，记得补货！补货！补货！",@"呵呵呵呵呵呵哈哈哈哈",@"新老款式随机发货，不挑",@"发货前，一定要跟收货人再次确认",@"记得补货！补货！补货！",@"这个没库存了，记得补货！补货！补货！",@"呵呵呵呵呵呵哈哈哈哈"] selectIndex:0];
+        selectView.bottomPopType = KPBottomPopTypeHistory;
+        selectView.title = @"历史备注";
         [selectView showPopView];
         selectView.selectType = ^(NSInteger tag) {
             
