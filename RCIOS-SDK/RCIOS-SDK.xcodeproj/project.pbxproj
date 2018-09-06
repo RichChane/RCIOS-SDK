@@ -30,6 +30,7 @@
 		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
 		8A275CA42137D30C0071B32A /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA32137D30C0071B32A /* STPickerSingle.m */; };
 		8A275CA72137DEB60071B32A /* STRCCommonPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */; };
+		8A54FE242141251900397000 /* STRCCommonPickerDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A54FE222141251800397000 /* STRCCommonPickerDateView.m */; };
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
 		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
 		8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */; };
@@ -101,6 +102,8 @@
 		8A275CA32137D30C0071B32A /* STPickerSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
 		8A275CA52137DEB50071B32A /* STRCCommonPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerView.h; sourceTree = "<group>"; };
 		8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerView.m; sourceTree = "<group>"; };
+		8A54FE222141251800397000 /* STRCCommonPickerDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerDateView.m; sourceTree = "<group>"; };
+		8A54FE232141251900397000 /* STRCCommonPickerDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerDateView.h; sourceTree = "<group>"; };
 		8A660A60212E50D800389983 /* GeneralCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCore.h; sourceTree = "<group>"; };
 		8A660A61212E50D800389983 /* GeneralCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCore.m; sourceTree = "<group>"; };
 		8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAddProFinishPopView.h; sourceTree = "<group>"; };
@@ -296,6 +299,8 @@
 				8A275CA32137D30C0071B32A /* STPickerSingle.m */,
 				8A275CA52137DEB50071B32A /* STRCCommonPickerView.h */,
 				8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */,
+				8A54FE232141251900397000 /* STRCCommonPickerDateView.h */,
+				8A54FE222141251800397000 /* STRCCommonPickerDateView.m */,
 			);
 			path = STPickerView;
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */,
+				8A54FE242141251900397000 /* STRCCommonPickerDateView.m in Sources */,
 				8A84F8792130F4540052C962 /* KPTextField.m in Sources */,
 				8A8CCC892131599800E7F359 /* InputSecurityView.m in Sources */,
 				8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */,

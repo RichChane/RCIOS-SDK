@@ -60,6 +60,8 @@ typedef NS_ENUM(NSInteger, STPickerContentMode) {
 @property (nonatomic, assign)STPickerContentMode contentMode;
 
 @property (nonatomic, assign)CGFloat topY;
+/* 行宽大小 */
+@property (nonatomic,assign) BOOL littleWidth;
 
 /**
  *  5.创建视图,初始化视图时初始数据
@@ -82,6 +84,20 @@ typedef NS_ENUM(NSInteger, STPickerContentMode) {
  *  8.移除
  */
 - (void)remove;
+
+/**
+ 选择器选择下标
+
+ @param year 第一行Index
+ @param month 第二行Index
+ @param day 第三行Index
+ */
+- (void)selectFirIndex:(NSInteger)year secIndex:(NSInteger)month thdIndex:(NSInteger)day;
+
+/**
+ 选择最后一行
+ */
+- (void)setSelectLastOne;
 
 @end
 NS_ASSUME_NONNULL_END

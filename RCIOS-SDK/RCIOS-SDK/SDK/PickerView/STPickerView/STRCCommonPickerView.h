@@ -29,8 +29,7 @@
 
 /** 中间选择框的高度，default is 28*/
 @property (nonatomic, assign)CGFloat heightPickerComponent;
-/* 行宽大小 */
-@property (nonatomic,assign) BOOL littleWidth;
+
 @property(nonatomic, weak)id <STRCCommonPickerViewDelegate>delegate;
 /** 1.第一行 下标 */
 @property (nonatomic, assign)NSInteger firIndex;
@@ -38,12 +37,6 @@
 @property (nonatomic, assign)NSInteger secIndex;
 /** 3.第三行 下标 */
 @property (nonatomic, assign)NSInteger thdIndex;
-
-- (void)reloadPickerView;
-
-- (void)selectFirIndex:(NSInteger)year secIndex:(NSInteger)month thdIndex:(NSInteger)day;
-
-- (void)setSelectLastOne;
 
 /*
  data 格式
