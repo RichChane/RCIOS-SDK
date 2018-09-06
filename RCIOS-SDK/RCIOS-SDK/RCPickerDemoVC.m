@@ -90,9 +90,9 @@
         STRCCommonPickerView *pickerView = [[STRCCommonPickerView alloc]init];
         pickerView.delegate = self;
         [pickerView setupData:dict];
-        [pickerView selectYear:1 selectMonth:2 selectDay:3];
+        pickerView.littleWidth = YES;
         [pickerView show];
-        
+        [pickerView selectFirIndex:1 secIndex:2 thdIndex:3];
     }else if (indexPath.row == 3){
         
         NSMutableDictionary *dict = [PickerTempModel createComponum3];

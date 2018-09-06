@@ -8,13 +8,7 @@
 
 #import "STRCCommonPickerView.h"
 
-@interface STRCCommonPickerView()<UIPickerViewDataSource, UIPickerViewDelegate,STRCCommonPickerViewDelegate>
-/** 1.第一行 下标 */
-@property (nonatomic, assign)NSInteger firIndex;
-/** 2.第二行 下标 */
-@property (nonatomic, assign)NSInteger secIndex;
-/** 3.第三行 下标 */
-@property (nonatomic, assign)NSInteger thirIndex;
+@interface STRCCommonPickerView()<UIPickerViewDataSource, UIPickerViewDelegate>
 
 /** 1.第一行 value - string */
 @property (nonatomic, strong)NSString *firKey;
@@ -34,10 +28,6 @@
 @end
 
 @implementation STRCCommonPickerView
-{
-    NSInteger _chooseFirstRow;
-    NSInteger _chooseSecondRow;
-}
 
 #pragma mark - --- init 视图初始化 ---
 
@@ -64,41 +54,52 @@
     
 }
 
-- (void)selectYear:(NSInteger)year selectMonth:(NSInteger)month selectDay:(NSInteger)day
+- (void)selectFirIndex:(NSInteger)year secIndex:(NSInteger)month thdIndex:(NSInteger)day
 {
     if (self.firstArr.count == 0 ) {
         return;
     }
-    _chooseFirstRow = year;
+    
     self.firIndex = year;
     self.secIndex = month;
     
-    NSString *yearStr = self.firstArr[_chooseFirstRow];
+    NSString *yearStr = self.firstArr[self.firIndex];
     NSArray *monthArr = [_secondDict objectForKey:yearStr];
     NSString *monthStr = monthArr[month];
     
     self.firKey = yearStr;
     self.secKey = monthStr;
     
-    [self.pickerView selectRow:year inComponent:0 animated:NO];
-    [self.pickerView selectRow:month inComponent:1 animated:NO];
-    //[self.pickerView selectRow:day inComponent:2 animated:NO];
-    
+    for (int i = 0; i < _componentNum; i ++) {
+        if (i == 0) {
+            [self.pickerView selectRow:year inComponent:0 animated:NO];
+        }else if (i == 1){
+            [self.pickerView selectRow:month inComponent:1 animated:NO];
+        }else if (i == 2){
+            [self.pickerView selectRow:day inComponent:2 animated:NO];
+        }
+    }
 }
 
 - (void)setSelectLastOne
 {
-    _firIndex = [[_firstArr lastObject] integerValue];
+    self.firIndex = _firstArr.count - 1;
     NSArray *monthArr = [_secondDict objectForKey:[_firstArr lastObject]];
-    _secIndex = [[monthArr lastObject] integerValue];
-    [self selectYear:_firstArr.count - 1 selectMonth:monthArr.count - 1  selectDay:0];
+    self.secIndex = monthArr.count - 1;
+    NSArray *thirdArray = [_thirdDict objectForKey:[monthArr lastObject]];
+    self.thdIndex = thirdArray.count - 1;
+    [self selectFirIndex:_firstArr.count - 1 secIndex:self.secIndex thdIndex:self.thdIndex];
     
 }
 
 #pragma mark - --- delegate UIPickerView ---
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
 {
-    return self.width/3.0;
+    if (self.littleWidth) {
+        return self.width/3.0;
+    }else{
+        return self.width/_componentNum;
+    }
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -115,14 +116,14 @@
             return 0;
         }
         
-        NSString *firstComKey = self.firstArr[_chooseFirstRow];
+        NSString *firstComKey = self.firstArr[self.firIndex];
         NSArray *secondArr = self.secondDict[firstComKey];
         return secondArr.count;
     }else if(component == 2) {
-        NSString *firstComKey = self.firstArr[_chooseFirstRow];
+        NSString *firstComKey = self.firstArr[self.firIndex];
         NSArray *monthArr = self.secondDict[firstComKey];
-        NSString *secondComKey = monthArr[_chooseSecondRow];
-        NSArray *thirdArray = self.thirdDict[secondComKey];
+        NSString *secondComKey = monthArr[self.secIndex];
+        NSArray *thirdArray = self.thirdDict[[NSString stringWithFormat:@"%@-%@",firstComKey,secondComKey]];
         return thirdArray.count;
     }else{
         return 0;
@@ -139,9 +140,9 @@
     switch (component) {
         case 0:
             
-            if (_chooseFirstRow != row) {
-                _chooseFirstRow = row;
-                _chooseSecondRow = 0;
+            if (self.firIndex != row) {
+                self.firIndex = row;
+                self.secIndex = 0;
                 
                 for (NSInteger i = component+1; i < _componentNum; i ++) {
                     [pickerView selectRow:0 inComponent:i animated:NO];// 滚动后刷新子行
@@ -151,8 +152,8 @@
 
             break;
         case 1:
-            if (_chooseSecondRow != row) {
-                _chooseSecondRow = row;
+            if (self.secIndex != row) {
+                self.secIndex = row;
                 for (NSInteger i = component+1; i < _componentNum; i ++) {
                     [pickerView selectRow:0 inComponent:i animated:NO];// 滚动后刷新子行
                     [pickerView reloadComponent:i];
@@ -161,7 +162,13 @@
             }
             
             break;
-    
+        case 2:
+            if (self.thdIndex != row) {
+                self.thdIndex = row;
+                
+            }
+            
+            break;
         default:
             break;
     }
@@ -176,17 +183,17 @@
     if (component == 0) {
         text =  _firstArr[row];
     }else if (component == 1){
-        NSString *currentFirstKey = _firstArr[_chooseFirstRow];
+        NSString *currentFirstKey = _firstArr[self.firIndex];
         NSArray *secondArray = _secondDict[currentFirstKey];
         if (row > secondArray.count - 1) {
             return nil;
         }
         text = secondArray[row];
     }else{
-        NSString *firstComKey = self.firstArr[_chooseFirstRow];
+        NSString *firstComKey = self.firstArr[self.firIndex];
         NSArray *monthArr = self.secondDict[firstComKey];
-        NSString *secondComKey = monthArr[_chooseSecondRow];
-        NSArray *thirdArray = self.thirdDict[secondComKey];
+        NSString *secondComKey = monthArr[self.secIndex];
+        NSArray *thirdArray = self.thirdDict[[NSString stringWithFormat:@"%@-%@",firstComKey,secondComKey]];
         text = thirdArray[row];
     }
     
@@ -205,13 +212,30 @@
     if (self.firstArr.count == 0) {
         return;
     }
-    if ([self.delegate respondsToSelector:@selector(pickerDate:year:month:day:)]) {
-        [self.delegate pickerDate:self year:self.firIndex month:self.secIndex day:self.thirIndex];
-    }else if ([self.delegate respondsToSelector:@selector(pickerDate:yearStr:monthStr:)]) {
-        [self.delegate pickerDate:self yearStr:self.firKey monthStr:self.secKey];
+
+    if ([self.delegate respondsToSelector:@selector(pickerView:valueDict:)]) {
         
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        NSString *firstComKey = @"";
+        NSString *secondComKey = @"";
+        NSString *thirdComKey = @"";
+        if (_componentNum > 0) {
+            firstComKey = self.firstArr[self.firIndex];
+            [dict setObject:firstComKey forKey:@"1"];
+        }
+        if (_componentNum > 1) {
+            NSArray *monthArr = self.secondDict[firstComKey];
+            secondComKey = monthArr[self.secIndex];
+            [dict setObject:secondComKey forKey:@"2"];
+        }
+        if (_componentNum > 2) {
+            NSArray *thirdArray = self.thirdDict[[NSString stringWithFormat:@"%@-%@",firstComKey,secondComKey]];
+            thirdComKey = thirdArray[self.thdIndex];
+            [dict setObject:thirdComKey forKey:@"3"];
+        }
+
+        [self.delegate pickerView:self valueDict:dict];
     }
-    
     
     [super selectedOk];
 }
@@ -239,7 +263,7 @@
         return;
     }
     
-    NSString *yearStr = self.firstArr[_chooseFirstRow];
+    NSString *yearStr = self.firstArr[self.firIndex];
     self.firKey = yearStr;
     
     NSArray *monthArr = [_secondDict objectForKey:yearStr];

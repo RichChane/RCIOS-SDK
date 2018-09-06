@@ -271,7 +271,7 @@
         CGFloat lineW = self.contentView.width;
         CGFloat lineH = 0.5;
         _lineView = [[UIView alloc]initWithFrame:CGRectMake(lineX, lineY, lineW, lineH)];
-        [_lineView setBackgroundColor:self.borderButtonColor];
+        [_lineView setBackgroundColor:CLEAR_COLOR];
     }
     return _lineView;
 }
