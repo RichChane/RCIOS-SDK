@@ -38,8 +38,8 @@
     _year  = [NSCalendar currentYear];
     _month = [NSCalendar currentMonth];
     _day   = [NSCalendar currentDay];
-    _yearLeast = 2015;
-    _yearSum   = _year - _yearLeast + 1;
+    _yearLeast = 2015;// 最小年默认2015
+    _yearSum   = _year - _yearLeast + 1;// 最小年到当前年
 
 }
 
@@ -143,7 +143,11 @@
                 
                 //[pickerView reloadComponent:2];
             }
-            
+        case 2:
+            if (self.thdIndex != row) {
+                self.thdIndex = row;
+                
+            }
         default:
             break;
     }
@@ -195,9 +199,12 @@
 
 - (void)reloadData
 {
+    self.firIndex = [self.pickerView selectedRowInComponent:0];
+    self.secIndex = [self.pickerView selectedRowInComponent:1];
+    self.thdIndex = [self.pickerView selectedRowInComponent:2];
+    
     self.year  = self.firIndex + self.yearLeast;
-    NSInteger selectYearLastMonth = [NSCalendar getLastMonthWithSelectYear:self.year];
-    self.month = self.secIndex + 12 - selectYearLastMonth + 1;
+    self.month = self.secIndex + 1;
     self.day   = self.thdIndex + 1;
 }
 
@@ -206,6 +213,8 @@
 - (void)setYearLeast:(NSInteger)yearLeast
 {
     _yearLeast = yearLeast;
+    _yearSum   = _year - _yearLeast + 1;
+    
 }
 
 - (void)setYearSum:(NSInteger)yearSum
