@@ -10,7 +10,7 @@
 #import "YYKeyboardManager.h"
 #import "NSString+Size.h"
 #import "LittleImageBigControl.h"
-#import "PasswordInputView.h"
+
 
 
 @interface KPRedAlertPopView ()
@@ -20,7 +20,7 @@
 @property (nonatomic,strong) UIView *contentView1;
 @property (nonatomic,strong) UIView *contentView2;
 
-@property (nonatomic,strong) PasswordInputView *dynamicInputView;
+
 @property (nonatomic,strong) KPTextField *dynamicTextField;
 @property (nonatomic,strong) UIButton *dynamicBtn;
 @property (nonatomic,strong) UILabel *contentLabel;
@@ -213,7 +213,7 @@
                 _contentView1.hidden = YES;
                 _contentView2.hidden = NO;
                 [self refreshCenterView:self.topView contentView:self.contentView];
-                [_dynamicInputView textBecomeFirstRespond];
+                
                 
             }else if (_stepOpration == 1){
                 if (self.confirmV2) {
