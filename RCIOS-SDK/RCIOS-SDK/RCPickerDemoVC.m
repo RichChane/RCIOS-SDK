@@ -110,6 +110,7 @@
         pickerView.delegate = self;
         pickerView.topY = 64;
         pickerView.contentMode = STPickerContentModeTop;
+        pickerView.hiddenDay = YES;
         [pickerView show];
         [pickerView setSelectLastOne];
     }

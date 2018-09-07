@@ -30,7 +30,7 @@
     [self.pickerView setDelegate:self];
     [self.pickerView setDataSource:self];
     
-    self.componentNum = 2;
+    self.componentNum = 3;
     self.littleWidth = YES;
     
     _heightPickerComponent = 28;
@@ -49,7 +49,6 @@
 
     
 }
-
 
 - (void)selectYear:(NSInteger)year selectMonth:(NSInteger)month selectDay:(NSInteger)day
 {
@@ -81,6 +80,15 @@
     [self.pickerView reloadAllComponents];
     
     
+}
+
+- (void)setHiddenDay:(BOOL)hiddenDay
+{
+    if (hiddenDay) {
+        self.componentNum = 2;
+    }else{
+        self.componentNum = 3;
+    }
 }
 
 #pragma mark - --- delegate 视图委托 ---

@@ -29,8 +29,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)NSInteger secIndex;
 /** 3.第三行 下标 */
 @property (nonatomic, assign)NSInteger thdIndex;
+/** 第三行是否显示 */
+@property (nonatomic, assign)BOOL hiddenDay;
+
+
 
 - (void)selectYear:(NSInteger)year selectMonth:(NSInteger)month selectDay:(NSInteger)day;
+
 
 @end
 NS_ASSUME_NONNULL_END
