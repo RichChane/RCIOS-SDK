@@ -26,8 +26,10 @@
     
     self.title = ML(@"请选择日期");
     
-    
-    //self.componentNum = 2;
+    [self.pickerView setDelegate:self];
+    [self.pickerView setDataSource:self];
+    self.componentNum = 2;
+    self.littleWidth = YES;
     _heightPickerComponent = 28;
     
     _year  = [NSCalendar currentYear];
@@ -41,8 +43,7 @@
 - (void)setupData:(NSDictionary *)data
 {
     
-    [self.pickerView setDelegate:self];
-    [self.pickerView setDataSource:self];
+
     
 }
 
@@ -56,7 +57,7 @@
     [self.pickerView selectRow:year inComponent:0 animated:NO];
     [self.pickerView selectRow:month inComponent:1 animated:NO];
     [self.pickerView selectRow:day inComponent:2 animated:NO];
-    
+
 }
 
 - (void)setSelectLastOne
@@ -65,26 +66,29 @@
     self.secIndex = _month - 1;
     self.thdIndex = _day - 1;
     
-    
     for (int i = 0; i < self.componentNum; i ++) {
         if (i == 0) {
-            
             [self.pickerView selectRow:self.firIndex inComponent:0 animated:NO];
-            
         }else if (i == 1){
             [self.pickerView selectRow:self.secIndex inComponent:1 animated:NO];
-            
         }else if (i == 2){
             [self.pickerView selectRow:self.thdIndex inComponent:2 animated:NO];
-            
         }
-        
     }
-[self.pickerView reloadAllComponents];
+    [self.pickerView reloadAllComponents];
+    
     
 }
 
 #pragma mark - --- delegate 视图委托 ---
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
+{
+    if (self.littleWidth) {
+        return self.width/3.0;
+    }else{
+        return self.width/self.componentNum;
+    }
+}
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
@@ -114,16 +118,26 @@
 {
     switch (component) {
         case 0:
-            [pickerView reloadComponent:1];
-            [pickerView reloadComponent:2];
+            if (self.firIndex != row) {
+                self.firIndex = row;
+                
+//                [pickerView reloadComponent:1];
+//                [pickerView reloadComponent:2];
+            }
+
             break;
         case 1:
-            [pickerView reloadComponent:2];
+            if (self.secIndex != row) {
+                self.secIndex = row;
+                
+                //[pickerView reloadComponent:2];
+            }
+            
         default:
             break;
     }
     
-//    [pickerView reloadAllComponents];
+    [pickerView reloadAllComponents];
     [self reloadData];
 }
 

@@ -54,7 +54,7 @@
 {
     if (year == [NSCalendar currentYear])
     {
-        return 12 - [NSCalendar currentMonth] + 1;
+        return [NSCalendar currentMonth];
     }
     else
     {
@@ -65,6 +65,10 @@
 + (NSInteger)getDaysWithYear:(NSInteger)year
                        month:(NSInteger)month
 {
+    if (year == [NSCalendar currentYear] && month == [NSCalendar currentMonth]) {
+        return [NSCalendar currentDay];
+    }
+    
     switch (month) {
         case 1:
             return 31;
