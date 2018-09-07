@@ -62,9 +62,7 @@
         _title = title;
         _content = content;
         
-        
-        [self createFirstContentView];
-        [self refreshCenterView:self.topView contentView:self.contentView];
+
 
     }
     
@@ -81,20 +79,37 @@
     _contentView1.clipsToBounds = YES;
     [self.contentView addSubview:_contentView1];
     
+    CGFloat imvTop;
+    CGFloat titleTop;
+    CGFloat titleBottom;
+    CGFloat contentBottom;
+    if (self.popType == KPPopTypeExplain) {
+        imvTop = 35;
+        titleTop = 27.5;
+        titleBottom = 39;
+        contentBottom = 0;
+        
+    }else{
+        imvTop = 25;
+        titleTop = 20;
+        titleBottom = 14;
+        contentBottom = 20;
+    }
     
     //中间
     UIImageView *imageView = [[UIImageView alloc]initWithImage:_image];
-    imageView.frame = CGRectMake((_contentWidth - imageView.frame.size.width)/2, 25, imageView.frame.size.width, imageView.frame.size.height);
+    imageView.frame = CGRectMake((_contentWidth - imageView.frame.size.width)/2, imvTop, imageView.frame.size.width, imageView.frame.size.height);
     [_contentView1 addSubview:imageView];
     
     CGFloat distance = 20;
     CGFloat labelWidth = _contentWidth-distance*2;
     CGSize titleSize = [_title sizeWithFont:FontSize(17) maxSize:CGSizeMake(labelWidth, 0)];
     UILabel *titleLabel = [UIFactory createLabelWithText:_title textColor:kUIColorFromRGB(0x282b34) font:FontSize(16)];
-    titleLabel.frame = CGRectMake(distance, CGRectGetMaxY(imageView.frame)+20, labelWidth, titleSize.height);
+    titleLabel.frame = CGRectMake(distance, CGRectGetMaxY(imageView.frame)+titleTop, labelWidth, titleSize.height);
     titleLabel.numberOfLines = 0;
+    titleLabel.textAlignment = NSTextAlignmentCenter;
     [_contentView1 addSubview:titleLabel];
-    originY = CGRectGetMaxY(titleLabel.frame)+14;
+    originY = CGRectGetMaxY(titleLabel.frame)+titleBottom;
     
     if (_content && _content.length) {
         CGSize contentSize = [_content sizeWithFont:FontSize(14) maxSize:CGSizeMake(labelWidth, 0)];
@@ -103,11 +118,15 @@
         contentLabel.numberOfLines = 0;
         contentLabel.textAlignment = NSTextAlignmentCenter;
         [_contentView1 addSubview:contentLabel];
-        originY = CGRectGetMaxY(contentLabel.frame)+20;
+        originY = CGRectGetMaxY(contentLabel.frame)+contentBottom;
     }else{
-        originY = originY+20;
+        originY = originY+contentBottom;
     }
-
+    
+    if (self.popType == KPPopTypeExplain) {
+        originY = originY - 20;
+    }
+    
     _contentView1.frame = CGRectMake(0, 0, _contentWidth, originY);
     self.contentView.frame = CGRectMake((SCREEN_WIDTH - _contentWidth)/2, _originY, _contentWidth, originY);
 }
@@ -167,6 +186,10 @@
 
 - (void)showPopView
 {
+    
+    [self createFirstContentView];
+    [self refreshCenterView:self.topView contentView:self.contentView];
+    
     UIWindow* window = [UIApplication sharedApplication].delegate.window;
     [window addSubview:self];
     

@@ -161,11 +161,12 @@
         [popView showPopView];
         
     }else if (indexPath.row == 9){
-        KPRedAlertPopView *popView = [[KPRedAlertPopView alloc]initWithImage:ImageName(@"popup_bell") title:@"当前软件版本过低，请升级到最新版！" content:nil cancelBtnTitle:nil okBtnTitle:@"立即更新" makeSure:^(NSString *code, int32_t type) {
+        KPRedAlertPopView *popView = [[KPRedAlertPopView alloc]initWithImage:ImageName(@"popup_bell") title:@"版本过低，请升级到最新版！" content:nil cancelBtnTitle:nil okBtnTitle:@"立即更新" makeSure:^(NSString *code, int32_t type) {
             
         } cancel:^{
             
         }];
+        popView.popType = KPPopTypeExplain;
         [popView showPopView];
         
     }else if (indexPath.row == 10){
