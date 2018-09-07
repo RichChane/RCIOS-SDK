@@ -26,10 +26,13 @@
     
     self.title = ML(@"请选择日期");
     
+    // 代理设置提前，防止代理方法在有数据源时重复调用
     [self.pickerView setDelegate:self];
     [self.pickerView setDataSource:self];
+    
     self.componentNum = 2;
     self.littleWidth = YES;
+    
     _heightPickerComponent = 28;
     
     _year  = [NSCalendar currentYear];
@@ -148,7 +151,6 @@
     if (component == 0) {
         text =  [NSString stringWithFormat:@"%ld", (long)row + _yearLeast];
     }else if (component == 1){
-        NSInteger selectYearLastMonth = [NSCalendar getLastMonthWithSelectYear:self.firIndex + self.yearLeast];
         text =  [NSString stringWithFormat:@"%ld",(long) row + 1];
     }else{
         text = [NSString stringWithFormat:@"%ld", (long)row + 1];

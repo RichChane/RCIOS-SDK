@@ -14,7 +14,7 @@
 #import "STRCCommonPickerDateView.h"
 #import "STPickerDate.h"
 
-@interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerSingleDelegate,STRCCommonPickerViewDelegate>
+@interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerSingleDelegate,STRCCommonPickerViewDelegate,STPickerDateDelegate>
 
 @end
 
@@ -32,7 +32,7 @@
     
     self.title = @"PopView";
     
-    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3",@"STRCCommonPickerDateView-4",@"STPickerDate-5"];
+    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3",@"STPickerDate-4"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -105,22 +105,12 @@
         pickerView.title = @"选择地区";
         [pickerView show];
         
-    }else if (indexPath.row == 4){
-        
-        STRCCommonPickerDateView *pickerView = [[STRCCommonPickerDateView alloc]init];
-        pickerView.delegate = self;
-        [pickerView setupData:nil];
-        pickerView.title = @"选择日期";
-        [pickerView show];
-    }else if(indexPath.row == 5){
+    }else if(indexPath.row == 4){
         STPickerDate *pickerView = [[STPickerDate alloc]init];
         pickerView.delegate = self;
+        pickerView.topY = 64;
+        pickerView.contentMode = STPickerContentModeTop;
         [pickerView show];
-        
-        [pickerView setupData:nil];
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            [pickerView setSelectLastOne];
-//        });
         [pickerView setSelectLastOne];
     }
 }
