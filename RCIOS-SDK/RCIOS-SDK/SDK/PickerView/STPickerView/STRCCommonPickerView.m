@@ -15,8 +15,6 @@
 /** 2.第二行 value  - string */
 @property (nonatomic, strong)NSString *secKey;
 
-/** component num */
-@property (nonatomic, assign)NSInteger componentNum;
 
 /* 第一行 value */
 @property (nonatomic,strong) NSArray *firstArr;
@@ -45,9 +43,9 @@
     self.thirdDict = [data objectForKey:ThirdDataKey];
     
     // 通过数据源计算行数
-    _componentNum = self.firstArr? 1:_componentNum;
-    _componentNum = self.secondDict? 2:_componentNum;
-    _componentNum = self.thirdDict? 3:_componentNum;
+    self.componentNum = self.firstArr? 1:self.componentNum;
+    self.componentNum = self.secondDict? 2:self.componentNum;
+    self.componentNum = self.thirdDict? 3:self.componentNum;
     
     [self.pickerView setDelegate:self];
     [self.pickerView setDataSource:self];
@@ -70,7 +68,7 @@
     self.firKey = yearStr;
     self.secKey = monthStr;
     
-    for (int i = 0; i < _componentNum; i ++) {
+    for (int i = 0; i < self.componentNum; i ++) {
         if (i == 0) {
             [self.pickerView selectRow:year inComponent:0 animated:NO];
         }else if (i == 1){
@@ -98,13 +96,13 @@
     if (self.littleWidth) {
         return self.width/3.0;
     }else{
-        return self.width/_componentNum;
+        return self.width/self.componentNum;
     }
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return _componentNum;
+    return self.componentNum;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
@@ -144,7 +142,7 @@
                 self.firIndex = row;
                 self.secIndex = 0;
                 
-                for (NSInteger i = component+1; i < _componentNum; i ++) {
+                for (NSInteger i = component+1; i < self.componentNum; i ++) {
                     [pickerView selectRow:0 inComponent:i animated:NO];// 滚动后刷新子行
                     [pickerView reloadComponent:i];
                 }
@@ -154,7 +152,7 @@
         case 1:
             if (self.secIndex != row) {
                 self.secIndex = row;
-                for (NSInteger i = component+1; i < _componentNum; i ++) {
+                for (NSInteger i = component+1; i < self.componentNum; i ++) {
                     [pickerView selectRow:0 inComponent:i animated:NO];// 滚动后刷新子行
                     [pickerView reloadComponent:i];
                     
@@ -219,16 +217,16 @@
         NSString *firstComKey = @"";
         NSString *secondComKey = @"";
         NSString *thirdComKey = @"";
-        if (_componentNum > 0) {
+        if (self.componentNum > 0) {
             firstComKey = self.firstArr[self.firIndex];
             [dict setObject:firstComKey forKey:@"1"];
         }
-        if (_componentNum > 1) {
+        if (self.componentNum > 1) {
             NSArray *monthArr = self.secondDict[firstComKey];
             secondComKey = monthArr[self.secIndex];
             [dict setObject:secondComKey forKey:@"2"];
         }
-        if (_componentNum > 2) {
+        if (self.componentNum > 2) {
             NSArray *thirdArray = self.thirdDict[[NSString stringWithFormat:@"%@-%@",firstComKey,secondComKey]];
             thirdComKey = thirdArray[self.thdIndex];
             [dict setObject:thirdComKey forKey:@"3"];

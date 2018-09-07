@@ -30,7 +30,7 @@
     _titleColor        = [UIColor blackColor];
     _borderButtonColor = RGB(205, 205, 205);
     _heightPicker      = 240;
-    
+    _componentNum      = 3;
     
     // 2.设置自身的属性
     self.bounds = [UIScreen mainScreen].bounds;
@@ -50,6 +50,9 @@
 }
 
 - (void)setupUI
+{}
+
+- (void)setupData:(NSDictionary *)data
 {}
 
 - (void)layoutSubviews

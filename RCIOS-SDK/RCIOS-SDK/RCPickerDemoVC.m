@@ -11,6 +11,8 @@
 #import "STPickerView.h"
 #import "STPickerSingle.h"
 #import "STRCCommonPickerView.h"
+#import "STRCCommonPickerDateView.h"
+#import "STPickerDate.h"
 
 @interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerSingleDelegate,STRCCommonPickerViewDelegate>
 
@@ -30,7 +32,7 @@
     
     self.title = @"PopView";
     
-    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3"];
+    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3",@"STRCCommonPickerDateView-4",@"STPickerDate-5"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -103,8 +105,22 @@
         pickerView.title = @"选择地区";
         [pickerView show];
         
+    }else if (indexPath.row == 4){
+        
+        STRCCommonPickerDateView *pickerView = [[STRCCommonPickerDateView alloc]init];
+        pickerView.delegate = self;
+        [pickerView setupData:nil];
+        pickerView.title = @"选择日期";
+        [pickerView show];
+    }else if(indexPath.row == 5){
+        STPickerDate *pickerView = [[STPickerDate alloc]init];
+        pickerView.delegate = self;
+        [pickerView show];
+        
+        
+        [pickerView setupData:nil];
+//        [pickerView setSelectLastOne];
     }
-    
 }
 
 

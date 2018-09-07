@@ -46,9 +46,9 @@
     self.thirdDict = [data objectForKey:ThirdDataKey];
     
     // 通过数据源计算行数
-    _componentNum = self.firstArr? 1:_componentNum;
-    _componentNum = self.secondDict? 2:_componentNum;
-    _componentNum = self.thirdDict? 3:_componentNum;
+    self.componentNum = self.firstArr? 1:self.componentNum;
+    self.componentNum = self.secondDict? 2:self.componentNum;
+    self.componentNum = self.thirdDict? 3:self.componentNum;
     
     [self.pickerView setDelegate:self];
     [self.pickerView setDataSource:self];
@@ -106,7 +106,7 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return _componentNum;
+    return self.componentNum;
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
@@ -114,7 +114,7 @@
     if (self.littleWidth) {
         return self.width/3.0;
     }else{
-        return self.width/_componentNum;
+        return self.width/self.componentNum;
     }
 }
 
@@ -204,35 +204,7 @@
     return label;
 }
 
-
-
-//- (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component __TVOS_PROHIBITED;
-//{
-//    if (component == 0) {
-//        return  _firstArr[row];
-//    }else if (component == 1){
-//        NSString *currentYear = _firstArr[_chooseYearRow];
-//        NSArray *monthArr = _secondDict[currentYear];
-//        return  monthArr[row];
-//        
-//        //        return  _secondArr[row];
-//    }
-//    return @"";
-//}
-
-- (CGSize)rowSizeForComponent:(NSInteger)component
-{
-//    if (component == 0) {
-//        return CGSizeMake(SCREEN_WIDTH/3, _heightPickerComponent);
-//    }else if (component == 1){
-//        
-//    }
-    
-    return CGSizeMake(SCREEN_WIDTH/3, _heightPickerComponent);
-}
-
 #pragma mark - --- event response 事件相应 ---
-
 - (void)selectedOk
 {
     if (self.firstArr.count == 0) {
@@ -245,16 +217,16 @@
         NSString *firstComKey = @"";
         NSString *secondComKey = @"";
         NSString *thirdComKey = @"";
-        if (_componentNum > 0) {
+        if (self.componentNum > 0) {
             firstComKey = self.firstArr[self.firIndex];
             [dict setObject:firstComKey forKey:@"1"];
         }
-        if (_componentNum > 1) {
+        if (self.componentNum > 1) {
             NSArray *monthArr = self.secondDict[firstComKey];
             secondComKey = monthArr[self.secIndex];
             [dict setObject:secondComKey forKey:@"2"];
         }
-        if (_componentNum > 2) {
+        if (self.componentNum > 2) {
             NSArray *thirdArray = self.thirdDict[[NSString stringWithFormat:@"%@-%@",firstComKey,secondComKey]];
             thirdComKey = thirdArray[self.thdIndex];
             [dict setObject:thirdComKey forKey:@"3"];

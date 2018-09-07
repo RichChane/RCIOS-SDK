@@ -61,5 +61,19 @@
     
 }
 
+//+ (NSMutableDictionary *)createDatePickerData
+//{
+//    NSInteger currentYear = [NSCalendar currentYear];
+//    NSMutableArray *yearArr = [NSMutableArray array];
+//    for (int i  = 0; i < currentYear - DateBeginYear + 1; i ++) {
+//        NSString *year = [NSString stringWithFormat:@"%ld",(long)(DateBeginYear + i)];
+//        [yearArr addObject:year];
+//    }
+//
+//
+//
+//
+//}
+
 
 @end

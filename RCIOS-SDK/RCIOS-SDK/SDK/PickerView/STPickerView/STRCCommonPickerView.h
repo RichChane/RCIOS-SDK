@@ -38,12 +38,6 @@
 /** 3.第三行 下标 */
 @property (nonatomic, assign)NSInteger thdIndex;
 
-/*
- data 格式
- FirstDataKey:firstArr
- secondDict key为firstArr的元素 value为数组（显示在第二行）
- thirdDict key为secondDict中的value+firstArr中的元素（格式为：value-firstArr[i]） value为数组（显示在第二行）
- */
-- (void)setupData:(NSDictionary *)data;
+
 
 @end

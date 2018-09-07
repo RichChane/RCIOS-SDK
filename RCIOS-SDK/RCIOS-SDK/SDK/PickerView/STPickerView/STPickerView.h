@@ -62,11 +62,21 @@ typedef NS_ENUM(NSInteger, STPickerContentMode) {
 @property (nonatomic, assign)CGFloat topY;
 /* 行宽大小 */
 @property (nonatomic,assign) BOOL littleWidth;
+/** component num, default is 3*/
+@property (nonatomic, assign)NSInteger componentNum;
 
 /**
  *  5.创建视图,初始化视图时初始数据
  */
 - (void)setupUI;
+
+/*
+ data 格式
+ FirstDataKey:firstArr
+ secondDict key为firstArr的元素 value为数组（显示在第二行）
+ thirdDict key为secondDict中的value+firstArr中的元素（格式为：value-firstArr[i]） value为数组（显示在第二行）
+ */
+- (void)setupData:(NSDictionary *)data;
 
 /**
  *  6.确认按钮的点击事件
