@@ -34,7 +34,6 @@
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
 		8A67897E21420C3300A02090 /* NSCalendar+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A67897C21420C3300A02090 /* NSCalendar+ST.m */; };
 		8A67897F21420C3300A02090 /* STPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A67897D21420C3300A02090 /* STPickerDate.m */; };
-		8A678986214285E000A02090 /* PickerDateHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A678985214285E000A02090 /* PickerDateHelp.m */; };
 		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
 		8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */; };
 		8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */; };
@@ -113,8 +112,6 @@
 		8A67897B21420C3200A02090 /* NSCalendar+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ST.h"; sourceTree = "<group>"; };
 		8A67897C21420C3300A02090 /* NSCalendar+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ST.m"; sourceTree = "<group>"; };
 		8A67897D21420C3300A02090 /* STPickerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerDate.m; sourceTree = "<group>"; };
-		8A678984214285E000A02090 /* PickerDateHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerDateHelp.h; sourceTree = "<group>"; };
-		8A678985214285E000A02090 /* PickerDateHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerDateHelp.m; sourceTree = "<group>"; };
 		8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAddProFinishPopView.h; sourceTree = "<group>"; };
 		8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAddProFinishPopView.m; sourceTree = "<group>"; };
 		8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpImgDownTextBtn.m; sourceTree = "<group>"; };
@@ -314,8 +311,6 @@
 				8A67897C21420C3300A02090 /* NSCalendar+ST.m */,
 				8A67897A21420C3100A02090 /* STPickerDate.h */,
 				8A67897D21420C3300A02090 /* STPickerDate.m */,
-				8A678984214285E000A02090 /* PickerDateHelp.h */,
-				8A678985214285E000A02090 /* PickerDateHelp.m */,
 			);
 			path = STPickerView;
 			sourceTree = "<group>";
@@ -528,7 +523,6 @@
 				8A8117692136975E00FC03E0 /* BottomPopView.m in Sources */,
 				8A275CA72137DEB60071B32A /* STRCCommonPickerView.m in Sources */,
 				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
-				8A678986214285E000A02090 /* PickerDateHelp.m in Sources */,
 				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
 				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
 				8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "STPickerDate.h"
 #import "NSCalendar+ST.h"
-#import "PickerDateHelp.h"
+
 
 @interface STPickerDate()<UIPickerViewDataSource, UIPickerViewDelegate>
 /** 1.年 */
@@ -61,9 +61,23 @@
     _month = month;
     _day   = day;
 
-    [self.pickerView selectRow:year inComponent:0 animated:NO];
-    [self.pickerView selectRow:month inComponent:1 animated:NO];
-    [self.pickerView selectRow:day inComponent:2 animated:NO];
+    self.firIndex = year - _yearLeast;
+    if (self.firIndex == 0) {
+        self.secIndex =  month - self.monthLeast;
+    }else{
+        self.secIndex = month - 1;
+    }
+
+    if (self.firIndex == 0 && self.secIndex == 0) {
+        self.thdIndex = day - self.dayLeast;
+    }else{
+        self.thdIndex = day - 1;
+    }
+    
+    [self.pickerView reloadAllComponents];
+    [self.pickerView selectRow:self.firIndex inComponent:0 animated:NO];
+    [self.pickerView selectRow:self.secIndex inComponent:1 animated:NO];
+    [self.pickerView selectRow:self.thdIndex inComponent:2 animated:NO];
 
 }
 
@@ -159,8 +173,7 @@
         case 1:
             if (self.secIndex != row) {
                 self.secIndex = row;
-//                self.thdIndex = 0;
-//                [pickerView selectRow:0 inComponent:2 animated:NO];
+
                 
             }
         case 2:
@@ -257,7 +270,7 @@
 
  @param time 日期选择器可选的最小时间，格式为 20180909
  */
-- (void)setOriginTime:(NSString *)time
+- (void)setBeginTime:(NSString *)time
 {
     if (time.length == 8) {
         NSInteger year = [time substringToIndex:4].integerValue;

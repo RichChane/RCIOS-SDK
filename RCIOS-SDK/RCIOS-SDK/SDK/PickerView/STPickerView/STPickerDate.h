@@ -6,6 +6,9 @@
 //  Copyright © 2016年 shentian. All rights reserved.
 //
 
+
+/** 本 DatePicker 展示起始日期至今的日期，起始日期可自定义*/
+
 #import "STPickerView.h"
 NS_ASSUME_NONNULL_BEGIN
 @class STPickerDate;
@@ -45,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param time 日期选择器可选的最小时间，格式为 20180909
  */
-- (void)setOriginTime:(NSString *)time;
+- (void)setBeginTime:(NSString *)time;
 
 - (void)selectYear:(NSInteger)year selectMonth:(NSInteger)month selectDay:(NSInteger)day;
 

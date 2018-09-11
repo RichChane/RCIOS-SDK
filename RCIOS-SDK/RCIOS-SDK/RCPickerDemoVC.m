@@ -110,10 +110,11 @@
         pickerView.delegate = self;
         pickerView.topY = 64;
         pickerView.contentMode = STPickerContentModeTop;
-        [pickerView setOriginTime:@"20170913"];
+        [pickerView setBeginTime:@"20170913"];
         //pickerView.hiddenDay = YES;
         [pickerView show];
         //[pickerView setSelectLastOne];
+        [pickerView selectYear:2017 selectMonth:9 selectDay:14];
     }
 }
 
