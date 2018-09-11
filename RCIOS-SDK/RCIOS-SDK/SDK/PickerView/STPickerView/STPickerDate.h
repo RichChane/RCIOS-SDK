@@ -19,6 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)NSInteger yearLeast;
 /** 2.显示年份数量，default is 200 */
 @property (nonatomic, assign)NSInteger yearSum;
+/** 1.最小年份的月份，default is 1 */
+@property (nonatomic, assign)NSInteger monthLeast;
+/** 1.最小年份的日，default is 1 */
+@property (nonatomic, assign)NSInteger dayLeast;
+
+
+
 /** 3.中间选择框的高度，default is 28*/
 @property (nonatomic, assign)CGFloat heightPickerComponent;
 
@@ -33,6 +40,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)BOOL hiddenDay;
 
 
+/**
+ OriginTime
+ 
+ @param time 日期选择器可选的最小时间，格式为 20180909
+ */
+- (void)setOriginTime:(NSString *)time;
 
 - (void)selectYear:(NSInteger)year selectMonth:(NSInteger)month selectDay:(NSInteger)day;
 

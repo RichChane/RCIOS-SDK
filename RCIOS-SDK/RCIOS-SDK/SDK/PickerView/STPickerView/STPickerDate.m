@@ -8,6 +8,8 @@
 
 #import "STPickerDate.h"
 #import "NSCalendar+ST.h"
+#import "PickerDateHelp.h"
+
 @interface STPickerDate()<UIPickerViewDataSource, UIPickerViewDelegate>
 /** 1.年 */
 @property (nonatomic, assign)NSInteger year;
@@ -39,8 +41,11 @@
     _month = [NSCalendar currentMonth];
     _day   = [NSCalendar currentDay];
     _yearLeast = 2015;// 最小年默认2015
+    _monthLeast = 1;
+    _dayLeast = 1;
     _yearSum   = _year - _yearLeast + 1;// 最小年到当前年
 
+    
 }
 
 - (void)setupData:(NSDictionary *)data
@@ -67,6 +72,7 @@
     self.firIndex = _year - _yearLeast;
     self.secIndex = _month - 1;
     self.thdIndex = _day - 1;
+    [self.pickerView reloadAllComponents];
     
     for (int i = 0; i < self.componentNum; i ++) {
         if (i == 0) {
@@ -77,7 +83,7 @@
             [self.pickerView selectRow:self.thdIndex inComponent:2 animated:NO];
         }
     }
-    [self.pickerView reloadAllComponents];
+    
     
     
 }
@@ -108,15 +114,25 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    if (component == 0) {
+    if (component == 0) {// 年
         return self.yearSum;
-    }else if(component == 1) {
-        return [NSCalendar getLastMonthWithSelectYear:self.firIndex + self.yearLeast];
+    }else if(component == 1) {// 月
+        if (self.firIndex == 0) {
+            return 12 - self.monthLeast + 1;
+        }else{
+            return [NSCalendar getLastMonthWithSelectYear:self.firIndex + self.yearLeast];
+        }
+
+    }else {// 日
+        NSInteger monthLeast = (self.firIndex == 0) ? self.monthLeast:1;
+        NSInteger dayLeast = (self.firIndex == 0)&&(self.secIndex == 0) ? self.dayLeast:1;
         
-    }else {
         NSInteger yearSelected = self.firIndex + self.yearLeast;
-        NSInteger monthSelected = self.secIndex + 1;
-        return  [NSCalendar getDaysWithYear:yearSelected month:monthSelected];
+        NSInteger monthSelected = self.secIndex + monthLeast;
+        NSInteger days = [NSCalendar getDaysWithYear:yearSelected month:monthSelected];
+        days = days - dayLeast + 1;
+        return days;
+
     }
 }
 
@@ -131,17 +147,21 @@
         case 0:
             if (self.firIndex != row) {
                 self.firIndex = row;
-                
-//                [pickerView reloadComponent:1];
-//                [pickerView reloadComponent:2];
+                if (row == 0 || (row == [pickerView numberOfRowsInComponent:0] - 1)) {
+                    self.secIndex = 0;
+                    self.thdIndex = 0;
+                    [pickerView selectRow:0 inComponent:1 animated:NO];
+                    [pickerView selectRow:0 inComponent:2 animated:NO];
+                }
             }
 
             break;
         case 1:
             if (self.secIndex != row) {
                 self.secIndex = row;
+//                self.thdIndex = 0;
+//                [pickerView selectRow:0 inComponent:2 animated:NO];
                 
-                //[pickerView reloadComponent:2];
             }
         case 2:
             if (self.thdIndex != row) {
@@ -153,6 +173,7 @@
     }
     
     [pickerView reloadAllComponents];
+    
     [self reloadData];
 }
 
@@ -163,9 +184,20 @@
     if (component == 0) {
         text =  [NSString stringWithFormat:@"%ld", (long)row + _yearLeast];
     }else if (component == 1){
-        text =  [NSString stringWithFormat:@"%ld",(long) row + 1];
+        if (self.firIndex == 0) {
+            text =  [NSString stringWithFormat:@"%ld",(long) row + self.monthLeast];
+            
+        }else{
+            text =  [NSString stringWithFormat:@"%ld",(long) row + 1];
+        }
+    
     }else{
-        text = [NSString stringWithFormat:@"%ld", (long)row + 1];
+        if (self.firIndex == 0 && self.secIndex == 0) {    
+            text = [NSString stringWithFormat:@"%ld", (long)row + self.dayLeast];
+        }else{
+            text = [NSString stringWithFormat:@"%ld", (long)row + 1];
+        }
+        
     }
 
     UILabel *label = [[UILabel alloc]init];
@@ -178,6 +210,7 @@
 
 - (void)selectedOk
 {
+    [self reloadData];
     if ([self.delegate respondsToSelector:@selector(pickerDate:year:month:day:)]) {
          [self.delegate pickerDate:self year:self.year month:self.month day:self.day];
     }
@@ -204,11 +237,39 @@
     self.thdIndex = [self.pickerView selectedRowInComponent:2];
     
     self.year  = self.firIndex + self.yearLeast;
-    self.month = self.secIndex + 1;
-    self.day   = self.thdIndex + 1;
+    if (self.firIndex == 0) {
+        self.month = self.secIndex + self.monthLeast;
+    }else{
+        self.month =  self.secIndex + 1;
+    }
+    
+    if (self.firIndex == 0 && self.secIndex == 0) {
+        self.day = self.thdIndex + self.dayLeast;
+    }else{
+        self.day = self.thdIndex + 1;
+    }
 }
 
 #pragma mark - --- setters 属性 ---
+
+/**
+ OriginTime
+
+ @param time 日期选择器可选的最小时间，格式为 20180909
+ */
+- (void)setOriginTime:(NSString *)time
+{
+    if (time.length == 8) {
+        NSInteger year = [time substringToIndex:4].integerValue;
+        NSInteger month = [time substringWithRange:NSMakeRange(4, 2)].integerValue;
+        NSInteger day = [time substringFromIndex:6].integerValue;
+        
+        [self setYearLeast:year];
+        [self setMonthLeast:month];
+        [self setDayLeast:day];
+    }
+    
+}
 
 - (void)setYearLeast:(NSInteger)yearLeast
 {

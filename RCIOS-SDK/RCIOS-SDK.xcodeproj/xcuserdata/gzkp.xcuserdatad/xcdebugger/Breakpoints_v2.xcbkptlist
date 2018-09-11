@@ -19,13 +19,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RCIOS-SDK/RCPickerDemoVC.m"
-            timestampString = "558003817.621227"
+            filePath = "RCIOS-SDK/SDK/PickerView/STPickerView/STPickerDate.m"
+            timestampString = "558346172.592032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "-pickerDate:year:month:day:"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-selectYear:selectMonth:selectDay:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RCIOS-SDK/SDK/PickerView/STPickerView/STPickerDate.m"
+            timestampString = "558346430.6493419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "-selectedOk"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
