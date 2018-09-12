@@ -11,7 +11,6 @@
 #import "STPickerView.h"
 #import "STPickerSingle.h"
 #import "STRCCommonPickerView.h"
-#import "STRCCommonPickerDateView.h"
 #import "STPickerDate.h"
 
 @interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerSingleDelegate,STRCCommonPickerViewDelegate,STPickerDateDelegate>
@@ -110,11 +109,11 @@
         pickerView.delegate = self;
         pickerView.topY = 64;
         pickerView.contentMode = STPickerContentModeTop;
-        [pickerView setBeginTime:@"20170913"];
+        //[pickerView setBeginTime:@"20180905"];
         //pickerView.hiddenDay = YES;
         [pickerView show];
         //[pickerView setSelectLastOne];
-        [pickerView selectYear:2017 selectMonth:9 selectDay:14];
+        //[pickerView selectYear:2017 selectMonth:9 selectDay:14];
     }
 }
 

@@ -30,11 +30,10 @@
 		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
 		8A275CA42137D30C0071B32A /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA32137D30C0071B32A /* STPickerSingle.m */; };
 		8A275CA72137DEB60071B32A /* STRCCommonPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */; };
-		8A54FE242141251900397000 /* STRCCommonPickerDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A54FE222141251800397000 /* STRCCommonPickerDateView.m */; };
 		8A660A62212E50D800389983 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A660A61212E50D800389983 /* GeneralCore.m */; };
-		8A67897E21420C3300A02090 /* NSCalendar+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A67897C21420C3300A02090 /* NSCalendar+ST.m */; };
-		8A67897F21420C3300A02090 /* STPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A67897D21420C3300A02090 /* STPickerDate.m */; };
 		8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CCC822131494F00E7F359 /* KPRedAlertPopView.m */; };
+		8A68FCBB2148F35100C788E3 /* NSCalendar+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A68FCB82148F35100C788E3 /* NSCalendar+ST.m */; };
+		8A68FCBC2148F35100C788E3 /* STPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A68FCBA2148F35100C788E3 /* STPickerDate.m */; };
 		8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */; };
 		8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */; };
 		8A8117532136436D00FC03E0 /* KPBandingUnitPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8117522136436D00FC03E0 /* KPBandingUnitPopView.m */; };
@@ -104,14 +103,12 @@
 		8A275CA32137D30C0071B32A /* STPickerSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
 		8A275CA52137DEB50071B32A /* STRCCommonPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerView.h; sourceTree = "<group>"; };
 		8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerView.m; sourceTree = "<group>"; };
-		8A54FE222141251800397000 /* STRCCommonPickerDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerDateView.m; sourceTree = "<group>"; };
-		8A54FE232141251900397000 /* STRCCommonPickerDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerDateView.h; sourceTree = "<group>"; };
 		8A660A60212E50D800389983 /* GeneralCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralCore.h; sourceTree = "<group>"; };
 		8A660A61212E50D800389983 /* GeneralCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralCore.m; sourceTree = "<group>"; };
-		8A67897A21420C3100A02090 /* STPickerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerDate.h; sourceTree = "<group>"; };
-		8A67897B21420C3200A02090 /* NSCalendar+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ST.h"; sourceTree = "<group>"; };
-		8A67897C21420C3300A02090 /* NSCalendar+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ST.m"; sourceTree = "<group>"; };
-		8A67897D21420C3300A02090 /* STPickerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerDate.m; sourceTree = "<group>"; };
+		8A68FCB72148F35100C788E3 /* NSCalendar+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ST.h"; sourceTree = "<group>"; };
+		8A68FCB82148F35100C788E3 /* NSCalendar+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ST.m"; sourceTree = "<group>"; };
+		8A68FCB92148F35100C788E3 /* STPickerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerDate.h; sourceTree = "<group>"; };
+		8A68FCBA2148F35100C788E3 /* STPickerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerDate.m; sourceTree = "<group>"; };
 		8A81174A2136404B00FC03E0 /* KPAddProFinishPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAddProFinishPopView.h; sourceTree = "<group>"; };
 		8A81174B2136404C00FC03E0 /* KPAddProFinishPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAddProFinishPopView.m; sourceTree = "<group>"; };
 		8A81174E213641DE00FC03E0 /* UpImgDownTextBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpImgDownTextBtn.m; sourceTree = "<group>"; };
@@ -290,6 +287,7 @@
 		8A275C8F21379FB80071B32A /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				8A68FCB62148F35100C788E3 /* DatePicker */,
 				8A275C942137C2840071B32A /* STConfig */,
 				8A275C902137BEBA0071B32A /* STPickerView */,
 			);
@@ -305,12 +303,6 @@
 				8A275CA32137D30C0071B32A /* STPickerSingle.m */,
 				8A275CA52137DEB50071B32A /* STRCCommonPickerView.h */,
 				8A275CA62137DEB50071B32A /* STRCCommonPickerView.m */,
-				8A54FE232141251900397000 /* STRCCommonPickerDateView.h */,
-				8A54FE222141251800397000 /* STRCCommonPickerDateView.m */,
-				8A67897B21420C3200A02090 /* NSCalendar+ST.h */,
-				8A67897C21420C3300A02090 /* NSCalendar+ST.m */,
-				8A67897A21420C3100A02090 /* STPickerDate.h */,
-				8A67897D21420C3300A02090 /* STPickerDate.m */,
 			);
 			path = STPickerView;
 			sourceTree = "<group>";
@@ -334,6 +326,17 @@
 				8A660A61212E50D800389983 /* GeneralCore.m */,
 			);
 			path = GeneralCore;
+			sourceTree = "<group>";
+		};
+		8A68FCB62148F35100C788E3 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8A68FCB72148F35100C788E3 /* NSCalendar+ST.h */,
+				8A68FCB82148F35100C788E3 /* NSCalendar+ST.m */,
+				8A68FCB92148F35100C788E3 /* STPickerDate.h */,
+				8A68FCBA2148F35100C788E3 /* STPickerDate.m */,
+			);
+			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		8A81174D213641D500FC03E0 /* UpImgDownTextBtn */ = {
@@ -499,12 +502,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A679FFB21339822005D45C7 /* KPRedAlertPopView.m in Sources */,
-				8A54FE242141251900397000 /* STRCCommonPickerDateView.m in Sources */,
 				8A84F8792130F4540052C962 /* KPTextField.m in Sources */,
 				8A8CCC892131599800E7F359 /* InputSecurityView.m in Sources */,
 				8A84F8672130EDF60052C962 /* LittleImageBigControl.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
-				8A67897F21420C3300A02090 /* STPickerDate.m in Sources */,
 				8A8117612136757300FC03E0 /* KPEditUintPopView.m in Sources */,
 				8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */,
 				8A8117712136A94E00FC03E0 /* PaymentSelectView.m in Sources */,
@@ -519,15 +520,16 @@
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
 				8A81175A21364BC300FC03E0 /* DownSelectView.m in Sources */,
 				8A81175E21364F2400FC03E0 /* KPTempModel.m in Sources */,
-				8A67897E21420C3300A02090 /* NSCalendar+ST.m in Sources */,
 				8A8117692136975E00FC03E0 /* BottomPopView.m in Sources */,
 				8A275CA72137DEB60071B32A /* STRCCommonPickerView.m in Sources */,
 				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
 				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
+				8A68FCBB2148F35100C788E3 /* NSCalendar+ST.m in Sources */,
 				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
 				8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */,
 				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
 				8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */,
+				8A68FCBC2148F35100C788E3 /* STPickerDate.m in Sources */,
 				8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
 				8A8CCC8A2131599800E7F359 /* PasswordInputView.m in Sources */,

@@ -18,9 +18,12 @@
 /** 3.日 */
 @property (nonatomic, assign)NSInteger day;
 
+@property (nonatomic, assign)NSInteger leastMonthNum;
+
 @end
 
 @implementation STPickerDate
+
 
 #pragma mark - --- init 视图初始化 ---
 
@@ -34,6 +37,7 @@
     
     self.componentNum = 3;
     self.littleWidth = YES;
+    self.leastMonthNum = 12;
     
     _heightPickerComponent = 28;
     
@@ -132,7 +136,7 @@
         return self.yearSum;
     }else if(component == 1) {// 月
         if (self.firIndex == 0) {
-            return 12 - self.monthLeast + 1;
+            return self.leastMonthNum - self.monthLeast + 1;
         }else{
             return [NSCalendar getLastMonthWithSelectYear:self.firIndex + self.yearLeast];
         }
@@ -280,6 +284,24 @@
         [self setYearLeast:year];
         [self setMonthLeast:month];
         [self setDayLeast:day];
+    }else if (time.length == 6){
+        NSInteger year = [time substringToIndex:4].integerValue;
+        NSInteger month = [time substringWithRange:NSMakeRange(4, 2)].integerValue;
+        
+        [self setYearLeast:year];
+        [self setMonthLeast:month];
+        
+    }
+    
+}
+
+- (void)setMonthLeast:(NSInteger)monthLeast
+{
+    _monthLeast = monthLeast;
+    if (_yearLeast == _year) {
+        self.leastMonthNum = [NSCalendar currentMonth];
+    }else{
+        self.leastMonthNum = 12;
     }
     
 }

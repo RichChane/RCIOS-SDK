@@ -38,6 +38,13 @@
 /** 3.第三行 下标 */
 @property (nonatomic, assign)NSInteger thdIndex;
 
-
+/**
+ 选择器选择下标
+ 
+ @param year 第一行Index
+ @param month 第二行Index
+ @param day 第三行Index
+ */
+- (void)selectFirIndex:(NSInteger)year secIndex:(NSInteger)month thdIndex:(NSInteger)day;
 
 @end

@@ -96,15 +96,6 @@ typedef NS_ENUM(NSInteger, STPickerContentMode) {
 - (void)remove;
 
 /**
- 选择器选择下标
-
- @param year 第一行Index
- @param month 第二行Index
- @param day 第三行Index
- */
-- (void)selectFirIndex:(NSInteger)year secIndex:(NSInteger)month thdIndex:(NSInteger)day;
-
-/**
  选择最后一行
  */
 - (void)setSelectLastOne;

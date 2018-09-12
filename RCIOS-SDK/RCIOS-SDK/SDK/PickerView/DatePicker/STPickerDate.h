@@ -7,7 +7,7 @@
 //
 
 
-/** 本 DatePicker 展示起始日期至今的日期，起始日期可自定义*/
+/** 本 DatePicker 展示起始日期至今的日期，起始日期可(用setBeginTime)自定义*/
 
 #import "STPickerView.h"
 NS_ASSUME_NONNULL_BEGIN
