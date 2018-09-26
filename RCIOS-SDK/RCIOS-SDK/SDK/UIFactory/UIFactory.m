@@ -195,7 +195,7 @@
     return lable;
 }
 
-+ (M80AttributedLabel*)createAttributedLabelWithFrame:(CGRect)rect
++ (YYTextView*)createAttributedLabelWithFrame:(CGRect)rect
                                             fontArray:(NSArray*)fontSizes
                                             textArray:(NSArray*)textArray
                                            colorArray:(NSArray*)colorArray
@@ -203,27 +203,52 @@
                                        backgroudColor:(UIColor*)backgroudColor
 {
     
-    M80AttributedLabel *attributedLabel = [[M80AttributedLabel alloc] initWithFrame:rect];
+    YYTextView *attributedLabel = [[YYTextView alloc] initWithFrame:rect];
     NSInteger count = [textArray count];
+    
+
+    NSMutableAttributedString *attributedTextAll = [NSMutableAttributedString new];
     for (NSInteger i=0;i<count;i++)
     {
         UIColor *textColor =  colorArray[i];
         NSString *text = textArray[i];
-        NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc]initWithString:text];
+        
+        NSDictionary *attributes;
         if (fontSizes.count == 1)
         {
-            [attributedText setFont:fontSizes[0]];
+            NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+            paragraphStyle.lineSpacing = 5;// 字体的行间距
+            attributes = @{
+                                         NSFontAttributeName:fontSizes[0],
+                                         NSParagraphStyleAttributeName:paragraphStyle
+                                         };
         }
         else
         {
-            [attributedText setFont:fontSizes[i]];
+            NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+            paragraphStyle.lineSpacing = 5;// 字体的行间距
+            attributes = @{
+                                         NSFontAttributeName:fontSizes[i],
+                                         NSParagraphStyleAttributeName:paragraphStyle
+                                         };
         }
         
-        [attributedText setTextColor:textColor];
-        [attributedLabel appendAttributedText:attributedText];
+        
+        NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
+        if (textColor.CGColor)
+        {
+            [attributedText removeAttribute:(NSString *)kCTForegroundColorAttributeName range:NSMakeRange(0, [text length])];
+            
+            [attributedText addAttribute:(NSString *)kCTForegroundColorAttributeName
+                         value:(id)textColor.CGColor
+                         range:NSMakeRange(0, text.length)];
+        }
+        [attributedTextAll appendAttributedString:attributedText];
     }
-    attributedLabel.numberOfLines = numberOfLines;
+    
+    attributedLabel.attributedText = attributedTextAll;
     attributedLabel.backgroundColor = backgroudColor?:[UIColor clearColor];
+    attributedLabel.userInteractionEnabled = NO;
     return attributedLabel;
     
 }

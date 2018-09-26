@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CDE556887207AB869D3351F /* libPods-RCIOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F43CAF8F14C7CD21A72D737 /* libPods-RCIOS-SDK.a */; };
 		8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254DF6212D14D6005D4C9B /* AppDelegate.m */; };
 		8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254DF9212D14D6005D4C9B /* ViewController.m */; };
 		8A254DFD212D14D6005D4C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A254DFB212D14D6005D4C9B /* Main.storyboard */; };
@@ -17,10 +18,6 @@
 		8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E16212D2EEF005D4C9B /* YYKeyboardManager.m */; };
 		8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E1B212D316E005D4C9B /* UIFactory.m */; };
 		8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E1F212D4040005D4C9B /* NSString+Size.m */; };
-		8A254E2F212D4D04005D4C9B /* M80AttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E27212D4D04005D4C9B /* M80AttributedLabel.m */; };
-		8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E29212D4D04005D4C9B /* M80AttributedLabelAttachment.m */; };
-		8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E2C212D4D04005D4C9B /* M80AttributedLabelURL.m */; };
-		8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */; };
 		8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E34212D4F96005D4C9B /* WPNormalPopView.m */; };
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 		8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E3A212D6C93005D4C9B /* KPUpdatePopView.m */; };
@@ -75,15 +72,6 @@
 		8A254E1E212D4040005D4C9B /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		8A254E1F212D4040005D4C9B /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		8A254E21212D40BF005D4C9B /* RCSDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCSDKHeader.h; sourceTree = "<group>"; };
-		8A254E26212D4D04005D4C9B /* M80AttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabel.h; sourceTree = "<group>"; };
-		8A254E27212D4D04005D4C9B /* M80AttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabel.m; sourceTree = "<group>"; };
-		8A254E28212D4D04005D4C9B /* M80AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelAttachment.h; sourceTree = "<group>"; };
-		8A254E29212D4D04005D4C9B /* M80AttributedLabelAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabelAttachment.m; sourceTree = "<group>"; };
-		8A254E2A212D4D04005D4C9B /* M80AttributedLabelDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelDefines.h; sourceTree = "<group>"; };
-		8A254E2B212D4D04005D4C9B /* M80AttributedLabelURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelURL.h; sourceTree = "<group>"; };
-		8A254E2C212D4D04005D4C9B /* M80AttributedLabelURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabelURL.m; sourceTree = "<group>"; };
-		8A254E2D212D4D04005D4C9B /* NSMutableAttributedString+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+M80.h"; sourceTree = "<group>"; };
-		8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+M80.m"; sourceTree = "<group>"; };
 		8A254E33212D4F96005D4C9B /* WPNormalPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPNormalPopView.h; sourceTree = "<group>"; };
 		8A254E34212D4F96005D4C9B /* WPNormalPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPNormalPopView.m; sourceTree = "<group>"; };
 		8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPopDemoVC.h; sourceTree = "<group>"; };
@@ -145,6 +133,9 @@
 		8A8CCC862131599700E7F359 /* InputSecurityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSecurityView.m; sourceTree = "<group>"; };
 		8A8CCC872131599700E7F359 /* PasswordInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordInputView.h; sourceTree = "<group>"; };
 		8A8CCC882131599700E7F359 /* PasswordInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordInputView.m; sourceTree = "<group>"; };
+		8F43CAF8F14C7CD21A72D737 /* libPods-RCIOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCIOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F387BB4A3192A231BCBB3EC2 /* Pods-RCIOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		F54BAEF96BAD5D0DAE73567A /* Pods-RCIOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,17 +143,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDE556887207AB869D3351F /* libPods-RCIOS-SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31C4B9762772ED1A6E9DB33B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F43CAF8F14C7CD21A72D737 /* libPods-RCIOS-SDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E742FDBE997238338DF4287 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F387BB4A3192A231BCBB3EC2 /* Pods-RCIOS-SDK.debug.xcconfig */,
+				F54BAEF96BAD5D0DAE73567A /* Pods-RCIOS-SDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8A254DE9212D14D6005D4C9B = {
 			isa = PBXGroup;
 			children = (
 				8A254DF4212D14D6005D4C9B /* RCIOS-SDK */,
 				8A254DF3212D14D6005D4C9B /* Products */,
+				3E742FDBE997238338DF4287 /* Pods */,
+				31C4B9762772ED1A6E9DB33B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +263,6 @@
 		8A254E19212D316E005D4C9B /* UIFactory */ = {
 			isa = PBXGroup;
 			children = (
-				8A254E25212D4D04005D4C9B /* M80AttributedLabel */,
 				8A254E1A212D316E005D4C9B /* UIFactory.h */,
 				8A254E1B212D316E005D4C9B /* UIFactory.m */,
 			);
@@ -266,22 +276,6 @@
 				8A254E1F212D4040005D4C9B /* NSString+Size.m */,
 			);
 			path = KitCategry;
-			sourceTree = "<group>";
-		};
-		8A254E25212D4D04005D4C9B /* M80AttributedLabel */ = {
-			isa = PBXGroup;
-			children = (
-				8A254E26212D4D04005D4C9B /* M80AttributedLabel.h */,
-				8A254E27212D4D04005D4C9B /* M80AttributedLabel.m */,
-				8A254E28212D4D04005D4C9B /* M80AttributedLabelAttachment.h */,
-				8A254E29212D4D04005D4C9B /* M80AttributedLabelAttachment.m */,
-				8A254E2A212D4D04005D4C9B /* M80AttributedLabelDefines.h */,
-				8A254E2B212D4D04005D4C9B /* M80AttributedLabelURL.h */,
-				8A254E2C212D4D04005D4C9B /* M80AttributedLabelURL.m */,
-				8A254E2D212D4D04005D4C9B /* NSMutableAttributedString+M80.h */,
-				8A254E2E212D4D04005D4C9B /* NSMutableAttributedString+M80.m */,
-			);
-			path = M80AttributedLabel;
 			sourceTree = "<group>";
 		};
 		8A275C8F21379FB80071B32A /* PickerView */ = {
@@ -438,6 +432,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A254E08212D14D7005D4C9B /* Build configuration list for PBXNativeTarget "RCIOS-SDK" */;
 			buildPhases = (
+				CE5B3F3EC9B03F1985ACE0E7 /* [CP] Check Pods Manifest.lock */,
 				8A254DEE212D14D6005D4C9B /* Sources */,
 				8A254DEF212D14D6005D4C9B /* Frameworks */,
 				8A254DF0212D14D6005D4C9B /* Resources */,
@@ -496,6 +491,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE5B3F3EC9B03F1985ACE0E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCIOS-SDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A254DEE212D14D6005D4C9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -510,7 +526,6 @@
 				8A8117562136489A00FC03E0 /* KPDepartSelectPopView.m in Sources */,
 				8A8117712136A94E00FC03E0 /* PaymentSelectView.m in Sources */,
 				8A254E35212D4F96005D4C9B /* WPNormalPopView.m in Sources */,
-				8A254E31212D4D04005D4C9B /* M80AttributedLabelURL.m in Sources */,
 				8A254E18212D2EEF005D4C9B /* YYKeyboardManager.m in Sources */,
 				8A275C9E2137C2840071B32A /* UIView+ST.m in Sources */,
 				8A254E17212D2EEF005D4C9B /* PopBaseView.m in Sources */,
@@ -525,9 +540,7 @@
 				8A254E20212D4040005D4C9B /* NSString+Size.m in Sources */,
 				8A254E1C212D316E005D4C9B /* UIFactory.m in Sources */,
 				8A68FCBB2148F35100C788E3 /* NSCalendar+ST.m in Sources */,
-				8A254E32212D4D04005D4C9B /* NSMutableAttributedString+M80.m in Sources */,
 				8A811750213641DF00FC03E0 /* UpImgDownTextBtn.m in Sources */,
-				8A254E30212D4D04005D4C9B /* M80AttributedLabelAttachment.m in Sources */,
 				8A81174C2136404D00FC03E0 /* KPAddProFinishPopView.m in Sources */,
 				8A68FCBC2148F35100C788E3 /* STPickerDate.m in Sources */,
 				8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */,
@@ -540,7 +553,6 @@
 				8A660A62212E50D800389983 /* GeneralCore.m in Sources */,
 				8A81176A2136975E00FC03E0 /* ShareBottomPopView.m in Sources */,
 				8A254E3B212D6C93005D4C9B /* KPUpdatePopView.m in Sources */,
-				8A254E2F212D4D04005D4C9B /* M80AttributedLabel.m in Sources */,
 				8A275C932137BEBA0071B32A /* STPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,6 +691,7 @@
 		};
 		8A254E09212D14D7005D4C9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F387BB4A3192A231BCBB3EC2 /* Pods-RCIOS-SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
@@ -699,6 +712,7 @@
 		};
 		8A254E0A212D14D7005D4C9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54BAEF96BAD5D0DAE73567A /* Pods-RCIOS-SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;

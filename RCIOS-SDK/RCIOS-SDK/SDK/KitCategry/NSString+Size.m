@@ -13,9 +13,16 @@
 //返回字符串所占用的尺寸.
 -(CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize
 {
-    NSDictionary *attrs = @{NSFontAttributeName : font};
+
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = 5;// 字体的行间距
+    NSDictionary *attrs = @{
+                   NSFontAttributeName:font,
+                   NSParagraphStyleAttributeName:paragraphStyle
+                   };
     return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
+
 
 
 @end

@@ -7,11 +7,13 @@
 //
 
 #import "WPNormalPopView.h"
+#import "NSString+Size.h"
+
 
 @interface WPNormalPopView()
 
 @property (nonatomic,strong) UILabel *titleLabel;
-@property (nonatomic,strong) M80AttributedLabel *contentAttriLabel;
+@property (nonatomic,strong) YYTextView *contentAttriLabel;
 
 
 @end
@@ -171,7 +173,7 @@ static const CGFloat leftDis = 15;
         }
         
         _contentLabel.textAlignment = NSTextAlignmentCenter;
-        _contentLabel.font = FontSize(17);
+        _contentLabel.font = [UIFont systemFontOfSize:17];
         _contentLabel.textColor = kUIColorFromRGB(0x282b34);
         _contentLabel.numberOfLines = 0;
         [self.contentView addSubview:_contentLabel];
@@ -184,11 +186,11 @@ static const CGFloat leftDis = 15;
             [fontArray addObject:FontSize(17)];
         }
         _contentAttriLabel = [UIFactory createAttributedLabelWithFrame:CGRectMake(leftDis, nowY+15, labelWidth, _contentAttriSize.height) fontArray:fontArray textArray:_contents colorArray:_colors numberOfLines:0 backgroudColor:nil];
-        _contentAttriLabel.textAlignment = kCTTextAlignmentCenter;
+        _contentAttriLabel.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_contentAttriLabel];
         nowY = CGRectGetMaxY(_contentAttriLabel.frame)+15;
     }
-
+    
     
     self.contentView.frame = CGRectMake(0, 0, normalWith, nowY);
 }
@@ -198,7 +200,14 @@ static const CGFloat leftDis = 15;
 {
     [self createItems];
     [self refreshCenterView:self.topView contentView:self.contentView];
-    [super showPopView];
+    if (_contents) {// 富文本绘制有延迟
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [super showPopView];
+        });
+    }else{
+        [super showPopView];
+    }
+    
 }
 
 #pragma mark - set&get
