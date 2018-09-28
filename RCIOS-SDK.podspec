@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint IOSKit.podspec' to ensure this is a
+# Be sure to run `pod lib lint RCIOS-SDK.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -30,10 +30,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '{IOSKit/GeneralCore,IOSKit/KitCategry,IOSKit/PickerView,IOSKit/PopView,IOSKit/TempModel,IOSKit/UIFactory,IOSKit/Widget}{/}**/*','IOSKit/RCSDKHeader.h','IOSKit/BaseData.h'
+  s.source_files = '{RCIOS-SDK/GeneralCore,RCIOS-SDK/KitCategry,RCIOS-SDK/PickerView,RCIOS-SDK/PopView,RCIOS-SDK/TempModel,RCIOS-SDK/UIFactory,RCIOS-SDK/Widget}{/}**/*','RCIOS-SDK/RCSDKHeader.h','RCIOS-SDK/BaseData.h'
   
   # s.resource_bundles = {
-  #   'IOSKit' => ['IOSKit/Assets/*.png']
+  #   'RCIOS-SDK' => ['RCIOS-SDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
