@@ -89,14 +89,11 @@
 		8A254DF4212D14D6005D4C9B /* RCIOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				8A6C6552215E0CFA00689BED /* Demo */,
 				8A254DF5212D14D6005D4C9B /* AppDelegate.h */,
 				8A254DF6212D14D6005D4C9B /* AppDelegate.m */,
 				8A254DF8212D14D6005D4C9B /* ViewController.h */,
 				8A254DF9212D14D6005D4C9B /* ViewController.m */,
-				8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */,
-				8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */,
-				8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */,
-				8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */,
 				8A254E11212D2E0A005D4C9B /* PrefixHeader.pch */,
 				8A254DFB212D14D6005D4C9B /* Main.storyboard */,
 				8A254DFE212D14D7005D4C9B /* Assets.xcassets */,
@@ -105,6 +102,17 @@
 				8A254E04212D14D7005D4C9B /* main.m */,
 			);
 			path = "RCIOS-SDK";
+			sourceTree = "<group>";
+		};
+		8A6C6552215E0CFA00689BED /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */,
+				8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */,
+				8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */,
+				8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
