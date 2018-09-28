@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '{IOSKit/Classes/UnitBar,IOSKit/Classes/UnitNav,IOSKit/Classes/GeneralUI,IOSKit/Classes/MetaBall,IOSKit/Classes/UnitSearch,IOSKit/Classes/UnitTable,IOSKit/Classes/Photo}{/}**/*','IOSKit/Classes/IOSKit.h'
+  s.source_files = '{IOSKit/GeneralCore,IOSKit/KitCategry,IOSKit/PickerView,IOSKit/PopView,IOSKit/TempModel,IOSKit/UIFactory,IOSKit/Widget}{/}**/*','IOSKit/RCSDKHeader.h','IOSKit/BaseData.h'
   
   # s.resource_bundles = {
   #   'IOSKit' => ['IOSKit/Assets/*.png']
@@ -38,13 +38,13 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'OSFoundation'
-  s.dependency 'SDWebImage'
-  s.dependency "GPUImage"
+#s.dependency 'OSFoundation'
+#s.dependency 'SDWebImage'
+#s.dependency "GPUImage"
 #s.dependency "ZLPhotoBrowser"         # 相册 (包含sdweb)
-  s.dependency "pop", '~> 1.0'
-  s.dependency 'MJRefresh'
-  s.dependency 'MBProgressHUD'
+#s.dependency "pop", '~> 1.0'
+#s.dependency 'MJRefresh'
+#s.dependency 'MBProgressHUD'
   s.dependency 'YYKit'
 #s.dependency 'YYCategories'
 
