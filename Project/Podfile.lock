@@ -1,0 +1,25 @@
+PODS:
+  - RCIOS-SDK (1.0.0):
+    - YYKit
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - RCIOS-SDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YYKit
+
+EXTERNAL SOURCES:
+  RCIOS-SDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RCIOS-SDK: 53f4a804d75912f8340c7b1fb3e1089edd77b772
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 02570107adca4b041f452cab09dc6ba2ec62d607
+
+COCOAPODS: 1.5.3

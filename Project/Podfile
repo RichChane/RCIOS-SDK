@@ -1,0 +1,12 @@
+
+platform :ios, '8.0'
+
+
+target 'RCIOS-SDK' do
+    
+    pod 'RCIOS-SDK', :path => '../'
+#    pod 'YYKit'
+
+
+    
+end
