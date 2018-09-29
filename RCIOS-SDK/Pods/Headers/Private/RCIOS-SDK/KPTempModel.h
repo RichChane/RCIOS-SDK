@@ -1,1 +1,0 @@
-../../../../../IOSKit/TempModel/KPTempModel.h
