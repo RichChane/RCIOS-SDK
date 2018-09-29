@@ -7,7 +7,7 @@
 //
 
 #import "PopBaseView.h"
-#import <RCIOS-SDK/KPTempModel.h>
+#import "KPTempModel.h"
 
 typedef void(^ConfirmDepart)(KPDepartment * toDepartment);
 

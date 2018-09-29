@@ -8,7 +8,7 @@
 
 #import "KPEditTextPopView.h"
 #import "NSString+Size.h"
-#import <RCIOS-SDK/KPTextField.h>
+#import "KPTextField.h"
 
 @interface KPEditTextPopView()<UITextFieldDelegate>
 

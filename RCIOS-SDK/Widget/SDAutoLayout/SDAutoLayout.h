@@ -18,7 +18,7 @@
 #ifndef SDAutoLayout_h
 #define SDAutoLayout_h
 
-#import <IOSKit/UIView+SDAutoLayout.h>
-#import <IOSKit/UITableView+SDAutoTableViewCellHeight.h>
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
 
 #endif

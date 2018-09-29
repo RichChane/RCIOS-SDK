@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "STConfig.h"
-#import <RCIOS-SDK/BaseData.h>
-#import <RCIOS-SDK/GeneralCore.h>
+#import "BaseData.h"
+#import "GeneralCore.h"
 #import "NSString+Size.h"
 
 

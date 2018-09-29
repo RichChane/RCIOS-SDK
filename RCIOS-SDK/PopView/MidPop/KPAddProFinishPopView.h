@@ -7,7 +7,7 @@
 //
 
 #import "PopBaseView.h"
-#import <RCIOS-SDK/BaseData.h>
+#import "BaseData.h"
 
 
 typedef void(^ClickBtnAction)(NSInteger index);

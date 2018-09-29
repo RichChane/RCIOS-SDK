@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RCIOS-SDK/BaseData.h>
-#import <RCIOS-SDK/GeneralCore.h>
+#import "BaseData.h"
+#import "GeneralCore.h"
 
 #define SelectPriceKey      @"SelectPriceKey"
 #define SelectStockKey      @"SelectStockKey"

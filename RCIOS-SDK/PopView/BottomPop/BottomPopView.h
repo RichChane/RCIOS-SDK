@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <RCIOS-SDK/RCSDKHeader.h>
+#import "RCSDKHeader.h"
 
 typedef enum : NSUInteger {
     KPBottomPopTypeNormal,

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RCIOS-SDK/BaseData.h>
-#import <RCIOS-SDK/GeneralCore.h>
-#import <RCIOS-SDK/KPTextField.h>
+#import "BaseData.h"
+#import "GeneralCore.h"
+#import "KPTextField.h"
 #import "NSString+Size.h"
 #import "UIFactory.h"
 
