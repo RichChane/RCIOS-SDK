@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "425320960C9ABB85B8A745774BCA241F"
-               BlueprintName = "RCIOS-SDK"
+               BlueprintIdentifier = "3B3EB908A7F6DF23AAB6CAC2F7586EC2"
+               BlueprintName = "PLeakSniffer"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libRCIOS-SDK.a">
+               BuildableName = "libPLeakSniffer.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

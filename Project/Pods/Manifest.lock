@@ -1,5 +1,7 @@
 PODS:
+  - PLeakSniffer (0.1.0)
   - RCIOS-SDK (1.0.0):
+    - PLeakSniffer
     - YYKit
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -10,6 +12,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - PLeakSniffer
     - YYKit
 
 EXTERNAL SOURCES:
@@ -17,7 +20,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RCIOS-SDK: e78a7848acb6b67a17ab44318a1eaf3412be79ae
+  PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
+  RCIOS-SDK: b227e554c584023aae30893eeb3abf6d4f747f4d
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
 PODFILE CHECKSUM: 02570107adca4b041f452cab09dc6ba2ec62d607

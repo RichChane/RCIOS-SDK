@@ -46,6 +46,7 @@ TODO: Add long description of the pod here.
 #s.dependency 'MJRefresh'
 #s.dependency 'MBProgressHUD'
   s.dependency 'YYKit'
+  s.dependency 'PLeakSniffer'
 #s.dependency 'YYCategories'
 
 #s.pod_target_xcconfig = {
