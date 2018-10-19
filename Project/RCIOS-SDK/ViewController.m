@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "RCPopDemoVC.h"
 #import "RCPickerDemoVC.h"
-
+#import "RCCusKeyboardVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,7 +31,7 @@
     
     self.title = @"SDK";
     
-    dataSourceArray = @[@"PopView",@"PickerView"];
+    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -80,6 +80,10 @@
     }else if (indexPath.row == 1){
         
         RCPickerDemoVC *vc = [[RCPickerDemoVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 2){
+        
+        RCCusKeyboardVC *vc = [[RCCusKeyboardVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     

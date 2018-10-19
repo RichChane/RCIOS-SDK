@@ -8,7 +8,7 @@
 
 #import "AppDelegate+Init.h"
 #import "PLeakSniffer.h"
-
+#import "KeyBoardDigitalView.h"
 
 @implementation AppDelegate (Init)
 
@@ -16,7 +16,9 @@
 {
     [[PLeakSniffer sharedInstance] installLeakSniffer];
     [[PLeakSniffer sharedInstance] addIgnoreList:@[@"MySingletonController"]];
-    
+ 
+    [KeyBoardDigitalView getInstance].delKey = ImageName(@"Custom keyboard delete");
+    [KeyBoardDigitalView getInstance].pickupKey = ImageName(@"pickup keyboard");
 }
 
 
