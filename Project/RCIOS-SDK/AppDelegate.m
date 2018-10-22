@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Init.h"
-
+#import "CommonUtil.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,13 @@
     
     [self initVendors];
 
-
+    dispatch_async(dispatch_get_global_queue(0, 0),^{
+        [CommonUtil testQuickArray];
+    });
+    
+    
+    
+    
     return YES;
 }
 
