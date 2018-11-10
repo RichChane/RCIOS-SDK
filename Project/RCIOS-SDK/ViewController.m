@@ -10,6 +10,8 @@
 #import "RCPopDemoVC.h"
 #import "RCPickerDemoVC.h"
 #import "RCCusKeyboardVC.h"
+#import "RCRealmVC.h"
+#import "RCLKDBHelperVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,7 +33,7 @@
     
     self.title = @"SDK";
     
-    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC"];
+    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -84,6 +86,14 @@
     }else if (indexPath.row == 2){
         
         RCCusKeyboardVC *vc = [[RCCusKeyboardVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 3){
+        
+        RCRealmVC *vc = [[RCRealmVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 4){
+        
+        RCLKDBHelperVC *vc = [[RCLKDBHelperVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     

@@ -16,9 +16,13 @@
 		8A254E05212D14D7005D4C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E04212D14D7005D4C9B /* main.m */; };
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
+		8A6994CC2196B89E000F3B71 /* RCLKDBHelperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994CB2196B89E000F3B71 /* RCLKDBHelperVC.m */; };
+		8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994CE2196C54C000F3B71 /* TestLKModel.m */; };
+		8A6994D22196C7CF000F3B71 /* LKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994D12196C7CF000F3B71 /* LKBaseModel.m */; };
 		8A6D1BEA2177330600DDE742 /* AppDelegate+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */; };
 		8A70B478217D62F00058B955 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70B477217D62F00058B955 /* CommonUtil.m */; };
 		8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */; };
+		8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9ABA2F219413250078E1A8 /* RCRealmVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +41,20 @@
 		8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPopDemoVC.m; sourceTree = "<group>"; };
 		8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPickerDemoVC.h; sourceTree = "<group>"; };
 		8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPickerDemoVC.m; sourceTree = "<group>"; };
+		8A6994CA2196B89E000F3B71 /* RCLKDBHelperVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCLKDBHelperVC.h; sourceTree = "<group>"; };
+		8A6994CB2196B89E000F3B71 /* RCLKDBHelperVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCLKDBHelperVC.m; sourceTree = "<group>"; };
+		8A6994CD2196C54C000F3B71 /* TestLKModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLKModel.h; sourceTree = "<group>"; };
+		8A6994CE2196C54C000F3B71 /* TestLKModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLKModel.m; sourceTree = "<group>"; };
+		8A6994D02196C7CF000F3B71 /* LKBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseModel.h; sourceTree = "<group>"; };
+		8A6994D12196C7CF000F3B71 /* LKBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseModel.m; sourceTree = "<group>"; };
 		8A6D1BE82177330600DDE742 /* AppDelegate+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Init.h"; sourceTree = "<group>"; };
 		8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Init.m"; sourceTree = "<group>"; };
 		8A70B476217D62F00058B955 /* CommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
 		8A70B477217D62F00058B955 /* CommonUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
 		8A8802DA217979D900D84614 /* RCCusKeyboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCCusKeyboardVC.h; sourceTree = "<group>"; };
 		8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCCusKeyboardVC.m; sourceTree = "<group>"; };
+		8A9ABA2E219413250078E1A8 /* RCRealmVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCRealmVC.h; sourceTree = "<group>"; };
+		8A9ABA2F219413250078E1A8 /* RCRealmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCRealmVC.m; sourceTree = "<group>"; };
 		8F43CAF8F14C7CD21A72D737 /* libPods-RCIOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCIOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F387BB4A3192A231BCBB3EC2 /* Pods-RCIOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F54BAEF96BAD5D0DAE73567A /* Pods-RCIOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +137,14 @@
 				8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */,
 				8A8802DA217979D900D84614 /* RCCusKeyboardVC.h */,
 				8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */,
+				8A9ABA2E219413250078E1A8 /* RCRealmVC.h */,
+				8A9ABA2F219413250078E1A8 /* RCRealmVC.m */,
+				8A6994CA2196B89E000F3B71 /* RCLKDBHelperVC.h */,
+				8A6994CB2196B89E000F3B71 /* RCLKDBHelperVC.m */,
+				8A6994CD2196C54C000F3B71 /* TestLKModel.h */,
+				8A6994CE2196C54C000F3B71 /* TestLKModel.m */,
+				8A6994D02196C7CF000F3B71 /* LKBaseModel.h */,
+				8A6994D12196C7CF000F3B71 /* LKBaseModel.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -230,10 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6994CC2196B89E000F3B71 /* RCLKDBHelperVC.m in Sources */,
 				8A6D1BEA2177330600DDE742 /* AppDelegate+Init.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
+				8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */,
+				8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
 				8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */,
+				8A6994D22196C7CF000F3B71 /* LKBaseModel.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 				8A70B478217D62F00058B955 /* CommonUtil.m in Sources */,
