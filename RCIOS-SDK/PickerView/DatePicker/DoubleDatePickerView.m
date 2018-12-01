@@ -54,6 +54,8 @@
         self.beginLabelSelect = YES;
         self.clipsToBounds = YES;
         
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(selectedCancel)];
+        [self addGestureRecognizer:tap];
     }
     return self;
 }

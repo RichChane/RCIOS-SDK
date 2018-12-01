@@ -60,6 +60,7 @@
         frameContent.origin.y = _distanceOrigin;
         UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, _distanceOrigin, self.width, self.height-_distanceOrigin)];
         bgView.backgroundColor = RGBA(0, 0, 0, 102.0/255);
+        bgView.clipsToBounds = YES;
         [self addSubview:bgView];
         [self sendSubviewToBack:bgView];
         [bgView addSubview:self.contentView];
