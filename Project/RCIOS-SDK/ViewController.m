@@ -12,6 +12,7 @@
 #import "RCCusKeyboardVC.h"
 #import "RCRealmVC.h"
 #import "RCLKDBHelperVC.h"
+#import "RCTabbarController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,7 +34,7 @@
     
     self.title = @"SDK";
     
-    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper"];
+    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper",@"InnerTabbar"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -95,6 +96,10 @@
         
         RCLKDBHelperVC *vc = [[RCLKDBHelperVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 5){
+        
+        
+        
     }
     
 }

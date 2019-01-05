@@ -16,9 +16,17 @@
 		8A254E05212D14D7005D4C9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E04212D14D7005D4C9B /* main.m */; };
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
+		8A5424C721E04CB700C2097D /* NumbTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424C621E04CB700C2097D /* NumbTagView.m */; };
+		8A5424CC21E0564200C2097D /* MetaBallCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424CA21E0564200C2097D /* MetaBallCanvas.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A5424CD21E0564200C2097D /* MetaBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424CB21E0564200C2097D /* MetaBall.m */; };
+		8A5424D021E0571200C2097D /* PointUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424CF21E0571200C2097D /* PointUtils.m */; };
+		8A5424D321E0572F00C2097D /* MetaBallItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424D221E0572F00C2097D /* MetaBallItem.m */; };
+		8A5424D621E0582D00C2097D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424D421E0582C00C2097D /* Circle.m */; };
+		8A58A50121D8CCFA00F456B6 /* RCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A58A50021D8CCFA00F456B6 /* RCTabBar.m */; };
 		8A6994CC2196B89E000F3B71 /* RCLKDBHelperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994CB2196B89E000F3B71 /* RCLKDBHelperVC.m */; };
 		8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994CE2196C54C000F3B71 /* TestLKModel.m */; };
 		8A6994D22196C7CF000F3B71 /* LKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994D12196C7CF000F3B71 /* LKBaseModel.m */; };
+		8A6A595521DF94BE0092E101 /* RCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A595421DF94BE0092E101 /* RCTabbarController.m */; };
 		8A6D1BEA2177330600DDE742 /* AppDelegate+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */; };
 		8A70B478217D62F00058B955 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70B477217D62F00058B955 /* CommonUtil.m */; };
 		8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */; };
@@ -41,12 +49,28 @@
 		8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPopDemoVC.m; sourceTree = "<group>"; };
 		8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPickerDemoVC.h; sourceTree = "<group>"; };
 		8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPickerDemoVC.m; sourceTree = "<group>"; };
+		8A5424C521E04CB700C2097D /* NumbTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumbTagView.h; sourceTree = "<group>"; };
+		8A5424C621E04CB700C2097D /* NumbTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbTagView.m; sourceTree = "<group>"; };
+		8A5424C821E0564200C2097D /* MetaBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaBall.h; sourceTree = "<group>"; };
+		8A5424C921E0564200C2097D /* MetaBallCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaBallCanvas.h; sourceTree = "<group>"; };
+		8A5424CA21E0564200C2097D /* MetaBallCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaBallCanvas.m; sourceTree = "<group>"; };
+		8A5424CB21E0564200C2097D /* MetaBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaBall.m; sourceTree = "<group>"; };
+		8A5424CE21E0571100C2097D /* PointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointUtils.h; sourceTree = "<group>"; };
+		8A5424CF21E0571200C2097D /* PointUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointUtils.m; sourceTree = "<group>"; };
+		8A5424D121E0572F00C2097D /* MetaBallItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaBallItem.h; sourceTree = "<group>"; };
+		8A5424D221E0572F00C2097D /* MetaBallItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaBallItem.m; sourceTree = "<group>"; };
+		8A5424D421E0582C00C2097D /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		8A5424D521E0582D00C2097D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		8A58A4FF21D8CCFA00F456B6 /* RCTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTabBar.h; sourceTree = "<group>"; };
+		8A58A50021D8CCFA00F456B6 /* RCTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTabBar.m; sourceTree = "<group>"; };
 		8A6994CA2196B89E000F3B71 /* RCLKDBHelperVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCLKDBHelperVC.h; sourceTree = "<group>"; };
 		8A6994CB2196B89E000F3B71 /* RCLKDBHelperVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCLKDBHelperVC.m; sourceTree = "<group>"; };
 		8A6994CD2196C54C000F3B71 /* TestLKModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLKModel.h; sourceTree = "<group>"; };
 		8A6994CE2196C54C000F3B71 /* TestLKModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLKModel.m; sourceTree = "<group>"; };
 		8A6994D02196C7CF000F3B71 /* LKBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseModel.h; sourceTree = "<group>"; };
 		8A6994D12196C7CF000F3B71 /* LKBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseModel.m; sourceTree = "<group>"; };
+		8A6A595321DF94BE0092E101 /* RCTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTabbarController.h; sourceTree = "<group>"; };
+		8A6A595421DF94BE0092E101 /* RCTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTabbarController.m; sourceTree = "<group>"; };
 		8A6D1BE82177330600DDE742 /* AppDelegate+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Init.h"; sourceTree = "<group>"; };
 		8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Init.m"; sourceTree = "<group>"; };
 		8A70B476217D62F00058B955 /* CommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
@@ -128,9 +152,33 @@
 			path = "RCIOS-SDK";
 			sourceTree = "<group>";
 		};
+		8A58A4FB21D8CCD400F456B6 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				8A5424D521E0582D00C2097D /* Circle.h */,
+				8A5424D421E0582C00C2097D /* Circle.m */,
+				8A5424CE21E0571100C2097D /* PointUtils.h */,
+				8A5424CF21E0571200C2097D /* PointUtils.m */,
+				8A5424C821E0564200C2097D /* MetaBall.h */,
+				8A5424CB21E0564200C2097D /* MetaBall.m */,
+				8A5424D121E0572F00C2097D /* MetaBallItem.h */,
+				8A5424D221E0572F00C2097D /* MetaBallItem.m */,
+				8A5424C921E0564200C2097D /* MetaBallCanvas.h */,
+				8A5424CA21E0564200C2097D /* MetaBallCanvas.m */,
+				8A5424C521E04CB700C2097D /* NumbTagView.h */,
+				8A5424C621E04CB700C2097D /* NumbTagView.m */,
+				8A58A4FF21D8CCFA00F456B6 /* RCTabBar.h */,
+				8A58A50021D8CCFA00F456B6 /* RCTabBar.m */,
+				8A6A595321DF94BE0092E101 /* RCTabbarController.h */,
+				8A6A595421DF94BE0092E101 /* RCTabbarController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		8A6C6552215E0CFA00689BED /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8A58A4FB21D8CCD400F456B6 /* Tabbar */,
 				8A254E36212D55F7005D4C9B /* RCPopDemoVC.h */,
 				8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */,
 				8A275C9F2137CD6C0071B32A /* RCPickerDemoVC.h */,
@@ -250,17 +298,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6A595521DF94BE0092E101 /* RCTabbarController.m in Sources */,
+				8A5424C721E04CB700C2097D /* NumbTagView.m in Sources */,
 				8A6994CC2196B89E000F3B71 /* RCLKDBHelperVC.m in Sources */,
 				8A6D1BEA2177330600DDE742 /* AppDelegate+Init.m in Sources */,
+				8A5424D321E0572F00C2097D /* MetaBallItem.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
 				8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */,
 				8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
 				8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */,
+				8A5424CC21E0564200C2097D /* MetaBallCanvas.m in Sources */,
 				8A6994D22196C7CF000F3B71 /* LKBaseModel.m in Sources */,
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
+				8A5424D021E0571200C2097D /* PointUtils.m in Sources */,
+				8A5424CD21E0564200C2097D /* MetaBall.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 				8A70B478217D62F00058B955 /* CommonUtil.m in Sources */,
+				8A5424D621E0582D00C2097D /* Circle.m in Sources */,
+				8A58A50121D8CCFA00F456B6 /* RCTabBar.m in Sources */,
 				8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

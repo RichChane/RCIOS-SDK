@@ -11,68 +11,66 @@
 		007C7D62EADD4907DDAACE34AC7308AC /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB2BA47515F6FDDEE49DE19D62264E0 /* YYSpriteSheetImage.m */; };
 		00C4E21B5F343860A87B201259A925C3 /* YYDispatchQueuePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F604AC0AC10611AA50EC48E9EA692148 /* YYDispatchQueuePool.m */; };
 		00CBF5E813E654C58120E0D4BD5D24A5 /* sync_user.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 459C525A7DA7B54DE4147B9229996455 /* sync_user.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		00FD0A373751EB2AE6B14BEAC554E683 /* DownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A7D4BFBF8A5907931B2F5E041E663 /* DownSelectView.m */; };
+		0182A33B4E8D0996DAB451A63B7198D0 /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E259F9BBDC7FDF8FA029AFB6E28F35 /* STUI.m */; };
+		018DF1522FC5F2D4A57515355343A818 /* STUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B717E7CE28FAD260C1B83DBDF297D160 /* STUI.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		01B061788B74144D90E675DB6237929D /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4D2D0B0E7223FC47F6D56D2689022 /* UIApplication+YYAdd.m */; };
-		03FF31A950B98B69CB0995B70987C6CF /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5FA3275714A42E85D3519B5386499 /* UIView+SDAutoLayout.m */; };
+		01F32B3B48C846D1427E3F569E10A1E9 /* STConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 128709380186D27749080BC9DADE08E9 /* STConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		02C0F4022786575A21A935EB8B186441 /* ShareBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250D3F13F83F50F119273214205F671 /* ShareBottomPopView.m */; };
 		04BDBBD72A25F28BFE84C092B6DA8098 /* RLMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AAA629EC28CD0A3F9D6F6A8E779439 /* RLMConstants.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		05E28F679ED24B3BDF15C2A0305A6F55 /* RLMSyncConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D1385A3CE6E826B931670D63F89945EC /* RLMSyncConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		062CF8B0CB5638B16F3C888336CE78D6 /* KPTempModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 626995D62C07FB3DB19DEBDB258187CE /* KPTempModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		06CC30EA6293B170A0A72DCCC01F3C3C /* RLMCollection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F11217E2CD3BC34E49B10B53563A7DE /* RLMCollection.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		079912F9FD01B3D855F579669AB8A670 /* UIScreen+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B948436BBEFD2AA5804F99977E233E /* UIScreen+YYAdd.m */; };
 		07B246F04858043EDFA05A865A10A5A3 /* YYKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F8E949300607835A6535569A4250079 /* YYKitMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		091D0562131257C1430BCCC4F2102E3B /* object_store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9FDCACB87450C1D2BE535977FD7B2EE /* object_store.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		095BA0CF4D8F06114034220DF2CF3C99 /* UIGestureRecognizer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F72CBFA59223697BDD378310AA732B9 /* UIGestureRecognizer+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		096A9D302A40B0916FB185B2AE5BB037 /* NSCalendar+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD13F12D1D6F368F2C01CA32E614FA8 /* NSCalendar+Util.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		09C1C73475BBBD30550674F137A1D5ED /* LKDBUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD2D9ED493EC03283BC3F7E11551B6F /* LKDBUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		09D6A0E3A06B6AADE00E722CA0115A2F /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5844BD63E906D1A3AF33C89835B628C /* STPickerView.m */; };
+		0A48588AC39A7B2017B0200CE2061BC8 /* M80AttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC53091F175E713CA9204493E09BDD1 /* M80AttributedLabel.m */; };
 		0AB0DAEB4B4D8228216E0B508943CEB2 /* RLMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4785947851FD8526F6F158482A6B6538 /* RLMObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0B0B426BC18BE0B5D1FA3FEF176D2FED /* _YYWebImageSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC4EFA71E007FF808468C13578A71E3 /* _YYWebImageSetter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0B5B001DC2070BCC89E2348664094143 /* YYThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBF469ACAC7C9A913BB6A353AD5760C /* YYThreadSafeDictionary.m */; };
 		0C85A649E79016172EDFC94771554719 /* RLMSyncSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9FC6CDC99E7BF5E5C373734659BB5D2 /* RLMSyncSession.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		0CDED9E2E11813B706AE427E3517E571 /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A080CD037D958AD51971DE61E7219A1 /* UIView+ST.m */; };
 		0D5369176AFF08B1FDDE8A192D08AC75 /* RLMManagedArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E12F6CBABFD79F74581F2F6D62436A2 /* RLMManagedArray.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		0E298B390A942863E51BEFBA63EBCD5E /* object_schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D41477E4150DE7BE32D2FB2CA9E5B78 /* object_schema.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		0EFC0EDB292DAF73BB092F96C3C42E8A /* YYTextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD82E375790AA062314B585133F28998 /* YYTextSelectionView.m */; };
 		0F435670A47AA70DF0A354D7C4B83D73 /* UIViewController+PLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BEA1365A22DEAE870CA8D05B525050 /* UIViewController+PLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0F95C5BC12B07FAD068F98AD9B75A45C /* RLMRealmConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5940739EF3007D42E3A01BF24E5AEE /* RLMRealmConfiguration_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0FF192C4FAFC4FEAF3613D31A0915E6D /* RCSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 061F0B33BFB54FAC749D117084AE672F /* RCSDKHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		100D5A6EF837C919DAC28D12AF9747CC /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC5968BA10D7953C914F521D9E01E4 /* NSMutableAttributedString+M80.m */; };
 		10FB39D107A569FAA4A1F44ED187C2CF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A709C22DB67C698D66ACD5F05B982 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		11D8D3186DEADA220B8EF2FB1D42CCA2 /* UIView+PLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C599F49B496ECAF24AE626A3B30A052 /* UIView+PLeak.m */; };
 		122AD4DFD549A533ABE78F35EB77C2D1 /* LKDB+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 1609687C6BE753F53F6B1CA316AB9744 /* LKDB+Mapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1255D6B7A033AB5AB22907B0E413C9D3 /* LKDB+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A21A9B927439F662ED3761AB924075 /* LKDB+Mapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		12EEAAC37B76025193B2BA7588C7B37A /* GeneralUIUse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA575DBF66DD1CB4B8C5CED2B4B9BB6 /* GeneralUIUse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1305CA4AD1A437EB57F75578D7226ED9 /* DoubleDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 750482FB56829BCF3D7233A6B95BD2DF /* DoubleDatePickerView.m */; };
 		141EF9F2930E0719BCFE56311B556CB1 /* sync_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 909C23E8CE9B43A322578BF7E5CB4A71 /* sync_file.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		15B9C3D1DD3FBD1A5BDF11F4BFDCD47B /* YYTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 12481FABB427763FDAA7299F7A8F7EF1 /* YYTransaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		16BD6E61EC31A970B0F5A05AA9E0B373 /* YYReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA34A88F2400337B36D678E64246C35 /* YYReachability.m */; };
-		16FA37BF2E60C0231B34BF2DD6083D21 /* RankEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B62657620EA1ACDA42308535399DC2A /* RankEnum.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		17A413FD76C3442437CEA7667D406E04 /* collection_change_builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14893DF93D614F90A7133B16A4E3EAC8 /* collection_change_builder.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		18766F808B3BAF734A77486A3EEFC25C /* NSAttributedString+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = A80B43EABA396298E9116B168497117C /* NSAttributedString+YYText.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		18D332902C6124845AC2B2D5F8141599 /* YYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7530283EEDF43EE9F88912C545ACC5F1 /* YYTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		18D4871B755117D52609743445F57793 /* KPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB4C968F00677ABBA50AD5FF7BF709 /* KPTextField.m */; };
+		19B0AB8075018CB4320B01CBEABA5C49 /* KPBandingUnitPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD522A48F52EA3B9ACA5FC73DBE6E41 /* KPBandingUnitPopView.m */; };
 		1A9BC9762A9F98399C8AD0F7A991BD92 /* UIDevice+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C23A673C29C992386322318BB94C8D /* UIDevice+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1C715F06527DE14A35B64341AF22594C /* PopBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B0398E8B030E6C85088378940A0378 /* PopBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1C759FEBCD79D1030F2210DFF87236DE /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EE0FFCC739658DCB598B9EFC5D78FE /* STPickerSingle.m */; };
+		1C1C90DEC23920DF361CB8D2F308C734 /* PopBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B0398E8B030E6C85088378940A0378 /* PopBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1C7BB03A3239FB6BE177D3978DDCA1F5 /* UIGestureRecognizer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E51AF4AB195192BFF2730B101E034310 /* UIGestureRecognizer+YYAdd.m */; };
 		1D3042CF518C2A0539AD2DC9BF90163B /* UINavigationController+PLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF78199A69B347AC5B52AF9D9542C25 /* UINavigationController+PLeak.m */; };
-		1D627EF7CD0523AEA561472248E2EB1F /* STConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F716809EB63A146D0F794F379381B09E /* STConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1D70E69F0FF065670EBDCA5E14CDBAC8 /* ShareBottomPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A92C9F3759D6119317F066AA3F4892E /* ShareBottomPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1DB3E0C7D3ACC7F1886C7A275161BC74 /* RLMSyncConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 45210A290624CF84F25D486E5A342056 /* RLMSyncConfiguration_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E60CEB5A40B98C91BB543826685E9F9 /* GeneralUIUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083F08EC89891F8837932383C83D7 /* GeneralUIUse.m */; };
-		1EDE1BFAA35CED987F0F785AAA962CEE /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 973BA59781F27076F100A2780F1E63C0 /* NSString+Size.m */; };
-		1FE2A8D134E91A4A288DE3DC61B45F00 /* BaseData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCEC35A2015D11AA156BBE54DC468E5 /* BaseData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		20ACB2E106B4B9EBF462CF780237E564 /* UITextField+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 56300D5F650AA9B4C5BCA5B52D137067 /* UITextField+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		210BE6DCD1B5734B3EEDC7820855704C /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5EC5D96432500DF288CE8978E5250 /* YYCache.m */; };
 		21BDBBDEC6EE1876876C59B683D6D58D /* YYTextMagnifier.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EE45CCC3FA5C4E9159F0ED9206A460 /* YYTextMagnifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		243379D070F33A8904ED4866BDA8A132 /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 8341236C3B582278969C97A641A8C8AD /* NSString+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		254E6EE8C61DB6B6054F9A19D0B1C19E /* KPEditTextPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF488BD4AE633B630AC155432F18715 /* KPEditTextPopView.m */; };
+		2240C7AFEDE3AC3E9CF9C43C40FC0C5E /* NSMutableAttributedString+M80.h in Headers */ = {isa = PBXBuildFile; fileRef = 600D37233026022576AD2DA46C42D8A1 /* NSMutableAttributedString+M80.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22F6C0D5DAC78B3B0B3853D5363D7CCD /* KPEditUintPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C003813F93C410B8299D64A9E140DD4 /* KPEditUintPopView.m */; };
+		23845A91682C9F9287C0C783534721BA /* SelectGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E28F30C7FDD2B34F990B38CC9DE80 /* SelectGroupView.m */; };
+		249BB3556A2493E97D80E3D7FF3E0F3E /* KPTempModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD77D45DDD4BBB4D2EF01AFB1C8F3E7 /* KPTempModel.m */; };
 		255B44BBC0A17EC5C0B4F167A8FFA838 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680D9A746549E567FF45D7CE0E480D5 /* NSObject+YYModel.m */; };
 		25DC0446FDBFDE6BB524B3083CB27097 /* primitive_list_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05DD5D1130B420A9301BAC96E93C1E61 /* primitive_list_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		264D58C25B6320A4C65B2B2E610E47E4 /* InputSecurityView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DED4F9A1CFE96C45C313C594828790 /* InputSecurityView.m */; };
+		2663AF7EE1B7932BE5D4F637850357AD /* RankEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 97EC5B3323040BEC27500883747EEC7C /* RankEnum.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2674A707C458EE751924F81A0E247BEC /* LKDBHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E8F6575E2896D668CF2985B3971635 /* LKDBHelper-dummy.m */; };
 		2724AAC09741E8EC8AE30E7BD6A97C62 /* NSNotificationCenter+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AE0E3BFFCE1098794D8C1228356643 /* NSNotificationCenter+YYAdd.m */; };
 		28041765BE62A8879A12A5B8BA938B95 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC4B6250441A7392B0ECA97E464AAF /* YYImage.m */; };
 		28880FB224AF593487C5193C10C142F3 /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 461723F646A59B2BBB16A064E0F26B16 /* UITableView+YYAdd.m */; };
 		2943EF92232F9052613AF09C985DF5D5 /* NSData+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 472C38FD7900B3945A7DB04ECC21628D /* NSData+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2AA19664A3C09D762F6FD4C9AB875379 /* KPRedAlertPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = D848F9D957053932D62D8614DFFA85D6 /* KPRedAlertPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2AB199715E4AFC805E8C6C6E34912611 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D50B7E210CA048210153275E703E2CAB /* FMDB-dummy.m */; };
-		2B251452EFD849E778DE9F46606BE676 /* PaymentSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = F844B8E1A63D8A5AECD6803B22623A5E /* PaymentSelectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2B70C94EE721AC019984C11DB6DEA451 /* RLMMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = D48C660595F2697B0E2097EE790BE0FE /* RLMMigration.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2B8CDC5B90E20B9C41E135056D808E61 /* RLMSyncManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6186F561BD20F0573F6F0CC242A75A6F /* RLMSyncManager.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		2B966C236CA9310143AFE6685F3F0627 /* NSError+RLMSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFE01FBF570C1FA457DD78286B92FF /* NSError+RLMSync.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
@@ -89,6 +87,7 @@
 		302AB456E87E2E6E62E09755A92B58FA /* YYTextParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8B724A0A635DC92A7D5BFB3D4B3301 /* YYTextParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3033FEECEDEEFB83566B810E7A3456EB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D07462E38C2053747B0E66175BDF7E /* CoreText.framework */; };
 		311110BB107F21CA50B594698B95276C /* external_commit_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 111F7931835E29DA85E8F400C99570BD /* external_commit_helper.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		32612D4681BF2FD35752B988AC705917 /* PopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29667E95A34D5D93D2899408251E3F5F /* PopBaseView.m */; };
 		33F2281A6DC35E9BFFB49F5EA361666F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90F7D6F2CDF0B1FA84BCF1057747ED /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		34867A7BD9C24C4C289A7B643D82FB37 /* YYReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 008BAE90963A72E150977223AE437402 /* YYReachability.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		34D83CAA1EB12104BF25B95FBB4BC6B7 /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA7850A4C777A7E90EA6480E5D9429D /* YYTextParser.m */; };
@@ -99,165 +98,175 @@
 		3909FCAC12A98B4840957BD9F1354DFA /* YYAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 334436942C49B613FDFC56687751E25F /* YYAsyncLayer.m */; };
 		3970279DFD981C272FBD5F47122809D7 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 508FE2B9CECF1DC038FD70BD35A1104C /* NSBundle+YYAdd.m */; };
 		39FCB930AD4DEDED4E5FA732A8162C90 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F7863730F746FE04E9BC28AB222359 /* NSDate+YYAdd.m */; };
-		3A09926EC1E9EC5B11E24D42DD71561E /* UpImgDownTextBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFD8EA643D7930FB24117EE719B277B /* UpImgDownTextBtn.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3B55B5190BF9FE570F756B0C47B77345 /* RLMProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7C391A31AF9275F69BBE810F3572F07D /* RLMProperty.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		3B787D95A7314A8E5001B1643876BC21 /* PLeakSniffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C44FFD54B17506E6E46E367CCC01C549 /* PLeakSniffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3CC381D9E5759F97C85CD9B2A5A78FB1 /* MKAnnotationView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F483A9A0E3379B70479D0C425FEEA98 /* MKAnnotationView+YYWebImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3DC50C28F4737806BC849F18C0095414 /* UIControl+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E03760F3AC908491016B89B137A526 /* UIControl+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3EFAD1EB83A8BC47C5019690B4D46AB2 /* UIViewController+PLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = A767B265E46DE1C6E51BA66F66DFCE81 /* UIViewController+PLeak.m */; };
 		3F635BEC8F47E15BE3C4C40FD903A160 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F827922C07EB068354144BB9FC5D77A /* NSNumber+YYAdd.m */; };
-		3FBA71F3B5E13988183183089473D19F /* YYKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A2D55FF609A0A8CFC9088318359A9D /* YYKeyboardManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		408E62182CA9FAE9D5BAB55BA48E3E93 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76723A6B928D412A93D00FB2D1F6CE /* GeneralCore.m */; };
+		3F9280D5064D6C782DA4B2E3AA12BD0E /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 8341236C3B582278969C97A641A8C8AD /* NSString+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4140ED9D735BE58384AB4DEF21A703BC /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 93363C2978A3293938F356B456F3C1AB /* YYFrameImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41496F7A1E72D91600D3525346A9A6A0 /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 734ADCF4FE91E109EE835EFCB6796A6B /* STPickerSingle.m */; };
 		41AE2A8E41595EF434005E9A310EDB2B /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EA93C17AE24283AB8634ACF4F8E7DF15 /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4206673F66D015D3311701BF52D43237 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C17BA9722645550CDBD57FD582BD6EF /* CoreImage.framework */; };
 		441E9C7F89CF295362BB013F42F4F0C3 /* NSString+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D2D2015E76FF5B12573EB0106FBB0F7 /* NSString+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		44B77749AE4F1430A135A8E1CFCEEFD1 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADC7B30BBEF42A8DA561A1F72ED13C09 /* object.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		44BD959ECB45573391BD1891557C51D8 /* schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1880222A435C0A133BAED3F406CBD90F /* schema.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		45257891EAD334F7C1DDB3243565D2DD /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FAB1AC7A75DF0D38E0DDB639943897 /* YYWeakProxy.m */; };
+		463A3AA4FF1AA8DFACD80E7D775D11E3 /* M80AttributedLabelDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1AC9A328AB021860954F310BADCA18 /* M80AttributedLabelDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46E945B94DFA3364B181020A5E57AED6 /* RLMQueryUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5EC1F4433EC2F08D5C567D1E9045D19 /* RLMQueryUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		47410CD2ED38D647E7A3317D35D1C30E /* RLMSyncUtil_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 636BD0140364A058E4E7715D587F126C /* RLMSyncUtil_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		480BF17FD24D7B59870486C021B5F3D9 /* Pods-RCIOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B75C4D634A4684B2E4CFC6E552687F7F /* Pods-RCIOS-SDK-dummy.m */; };
-		4835741083604DA0448C4B91397F7BDE /* KPBandingUnitPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = F68DD9B1EDF032C14C9D25C3DC50BD89 /* KPBandingUnitPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		496FC864E064E0169991655C6190BE56 /* YYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE789B6836AADC74C25BB174B40A7B00 /* YYGestureRecognizer.m */; };
+		4AA000042EF3411840617763FB1CE70E /* NSCalendar+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = A483D42C358541C099F28B1C89AFE1AF /* NSCalendar+Util.m */; };
+		4BB5DECAEB089A347502211123029E8D /* GeneralCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 216E6D920DDBEFAC36AC07F1A537E66A /* GeneralCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BBA1538B325A9AA5722E92A590C4661 /* GeneralCore.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76723A6B928D412A93D00FB2D1F6CE /* GeneralCore.m */; };
 		4CFC88541633CADC90D3378FBB7333C5 /* weak_realm_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A47BD45F55E6CE7B686A898B34754E34 /* weak_realm_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		4D4D8FBB4325235692EED81308AA5B99 /* RLMResults.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE0377624FD9493E8012A5125D6C630 /* RLMResults.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E4915B0611F6BADD27EF563426774E6 /* DoubleDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6098463B2A12A9FADC72F2857869F14C /* DoubleDatePickerView.m */; };
 		4E7EF3EE25C88B72C4C93B9065D03599 /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B00317BD24EDF44166975D0EDF6A073 /* YYTextInput.m */; };
-		4E8C6A99C617DA27651A1D4666EBF797 /* KPUpdatePopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E42841DC87F3D87460118CFC2669B96 /* KPUpdatePopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4E8D891327EEA9D169D21BF952A2BEF4 /* BottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9825D9E63A09C5095359DEF79F5437BA /* BottomPopView.m */; };
 		4EA4A8C101A12DCFDCC79417153AFD26 /* YYSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BC46D970F1864CE874C62D8B4B7817 /* YYSentinel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4F720EA37D3CF16C3C5242DB5A8BFF22 /* partial_sync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CE65B8C7EDB2A7DC7F4332CEE6E9D /* partial_sync.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		50123278CC8C7A39A2C96DAB9090CF31 /* M80AttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FD929AE552F658FE676387F6AE9015 /* M80AttributedLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		501B4ED06FA6025354962685DA4FB386 /* KeyBoardDigitalView.m in Sources */ = {isa = PBXBuildFile; fileRef = C383B723C379D571D7604E24C7C451FD /* KeyBoardDigitalView.m */; };
+		501CCA83D066CBB0B73E77FBD2E1F2E2 /* NSCalendar+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 028E77D2967EB1A67A85F90DCC536017 /* NSCalendar+ST.m */; };
+		5158816DD34FC9083DBB193F374ECED6 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522C082DC1A249753FF736F73059B1FD /* KPRedAlertPopView.m */; };
 		52560DCE650766C459B4F53C1C07701B /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BAFCDC1F273C3B8DE57859B191B6 /* YYAnimatedImageView.m */; };
 		52B086C46A8A82BFF22C42375C02BCF2 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A88132CBFB0D1B88BFF38CA5E3B204 /* NSAttributedString+YYText.m */; };
 		52BE1F479ED9D60B8E031858BCF0C0DA /* RLMSyncUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 852A73273D5FD25ADB420429E7350893 /* RLMSyncUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		53A60B1C42915DEBC1F2B9B3E85F0D46 /* KPTempModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD77D45DDD4BBB4D2EF01AFB1C8F3E7 /* KPTempModel.m */; };
 		552B35AD5B2F3167A16D4D859C0B35E1 /* UIScreen+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4C24C6B4AC74D44AB9A38400E804E /* UIScreen+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		55639AC6AF9923AED8D120D874E2D390 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04887EF85A3896F1E6128F9C692219E3 /* UIKit.framework */; };
 		558EDDB05DDFCFF748E7363DE6E33967 /* NSObject+YYAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F12D821F2D171D7A71345B653A3F45EE /* NSObject+YYAddForKVO.m */; };
 		55D77D12EF69FAA93EF65A79308C8309 /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07382E20656D08B13D555C69AE51E69A /* YYTextRubyAnnotation.m */; };
-		565917F51A5C9B4D553A600424E175D7 /* LittleImageBigControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA0CFCE5464B6675F7FEDC331A7D1F /* LittleImageBigControl.m */; };
 		56AF046B9980BE683D46DB0FFF18BEFC /* YYTextArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = F12C2C25B84CB21B5D02C7A7AAD355DF /* YYTextArchiver.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5706E3C53A55B9CB51E2A00AC1F50BED /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEF0949344EDE5B9C88FB1EBDF522D /* YYTextAttribute.m */; };
+		575BDC747B331AB8A43C9F4250A7E5B3 /* KeyBoardDigitalView.m in Sources */ = {isa = PBXBuildFile; fileRef = C383B723C379D571D7604E24C7C451FD /* KeyBoardDigitalView.m */; };
 		5775A6790C77AA9367B387B005E28F18 /* RLMPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = CC03BF4B2AF9C7434F99606B6E88178C /* RLMPlatform.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		58BB7511BF03831AB27EBEB0EDF00627 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12220D7C1FC96706D9DF0716DCD60714 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		58DA5C64D1DA4876CE173243374E408D /* NSNumber+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB4675DCB21B2D0477030EF1B0801BC /* NSNumber+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		590841991653D3D9B77BEA48BF1138FA /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4544B491E17E993865CED04B0470C /* UIView+YYAdd.m */; };
 		59573537281D0F07A096ACEC06A37130 /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 50105501762010B8371F5F38E6BC2829 /* UIDevice+YYAdd.m */; };
 		59C6C4C9AD435F3CDB750CA370DC9EA9 /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 792CE851948252AE3DB98718090FAADE /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		59C9B24D83F357C8CF64A5A46AC2B2B2 /* UpImgDownTextBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFD8EA643D7930FB24117EE719B277B /* UpImgDownTextBtn.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5A2C6CE241FF742607A607E0DCA89177 /* sync_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F6473DCCEA772B81AD271E9EDB266D /* sync_config.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		5A63FE9329F5456AE2BA4899E8E8ABF9 /* NSTimer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F412D9966A42864DB27776413B9ED /* NSTimer+YYAdd.m */; };
 		5B42BD36045AF291C15C3F81AE685A69 /* NSParagraphStyle+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 927BC94B48789520B1326335A60B7C45 /* NSParagraphStyle+YYText.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5CB2CFA3DA7224E6F9A5DED8BFA26388 /* NSNotificationCenter+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5F5285DF2768E8C22724910DB9088C /* NSNotificationCenter+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5D6B552A023B9FEFAC9AF596AAB81129 /* UINavigationController+PLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = E6341CC77CFA85004FA9A2B9A9B17149 /* UINavigationController+PLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D78277AB677451D6765B4D005D9084B /* DateFormatString.h in Headers */ = {isa = PBXBuildFile; fileRef = 53140890552793C8D35DD078B6EE54B1 /* DateFormatString.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5D7B8AD895B354D889FCAA648F453AD1 /* YYTextRunDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7AB387DD46FBC5471E1DB2FD6240DD /* YYTextRunDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5E023401475991DC5EB46152B23049A8 /* YYTextDebugOption.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9394E4CE59B893493898CCB531FABF /* YYTextDebugOption.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5ED6281F1CF7A90528CB0597F34590C8 /* KPAddProFinishPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F2B5D86A5BFA33AA731CCDD7D5ABE1 /* KPAddProFinishPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		60E4E7C44F84C91DCF03ADFD526DF0E6 /* KPEditUintPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C003813F93C410B8299D64A9E140DD4 /* KPEditUintPopView.m */; };
+		5F612DE7D71DAF1D74E8AA6EDE7D8D59 /* LittleImageBigControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8257F236582FC9625B1F4FF6065277 /* LittleImageBigControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		61521B865CBBBE153425F2E02AED651E /* NSKeyedUnarchiver+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF20F48960FB9B5A9082958A8F09A9F /* NSKeyedUnarchiver+YYAdd.m */; };
 		615D105085AB88CCDEE1CF10EE89F05A /* RLMMigration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 036099E9169D2B5AF50AC2698A018B5E /* RLMMigration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		61CA9E6113B2CBFE221A849D361E4D15 /* placeholder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9B0F4D26D280FCE96D4C2C50142A6 /* placeholder.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		626CD109AC11390444CB6F56F2F6C273 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = FF895C19E3EB16E30C65BDA1A47A253E /* UITableView+SDAutoTableViewCellHeight.m */; };
+		62962BECEB474B4A7ABF0942AD1DCBBC /* ShareBottomPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A92C9F3759D6119317F066AA3F4892E /* ShareBottomPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		637ADBB3055EB5C09B012037C57E520E /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C09449D85C547BFAE2BEF6E29C77D94 /* YYSpriteSheetImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		63951ED2768667E1D1C07B3684384083 /* RLMSyncPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B143BDAE43B514BDA3B34F20FABE979 /* RLMSyncPermission.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		642FBE149C470458E812C021561B9887 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A211C3C71C3D4BFC8CEAC3435FE7CCEC /* YYClassInfo.m */; };
+		647C6464D378BD0743CEC9E25058F319 /* M80AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C10E1855BFD5B5A5FBB40D44053382 /* M80AttributedLabelAttachment.m */; };
 		64D54C23B6F23F70DFF460E7CCF45A45 /* RLMObservation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A28C69EBCB319EB5F7209A5161EAE26 /* RLMObservation.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		64DF45C932D9112A46977CC1C551570F /* STPickerSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DE5046646BA4C88CDC57863EA7C008 /* STPickerSingle.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6528A429A8FA61A40A3975BB10AC80AB /* NSTimer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D528131BDDE631779DA52F2B7FE1E68D /* NSTimer+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65ADDE59E8CA3EE55E38884F64B95EC9 /* M80AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A08C43140831FB10E0BBC203FD20AE /* M80AttributedLabelURL.m */; };
 		65B4034DCA5691B2E211AD640B048D17 /* RLMRealm_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E27B196B131AFC726C7A588C169B9A07 /* RLMRealm_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6630F764C2FD790BC7C6857CAFC2AF7C /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A09FB54B6490BBAD8F1F8E3477A9FD29 /* YYTextView.m */; };
-		667BBED8F60C5579EEA353A68D70D1A1 /* M80AttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC53091F175E713CA9204493E09BDD1 /* M80AttributedLabel.m */; };
-		66A2C35475387F6284D4B7F5B9A0239B /* SelectGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2E28F30C7FDD2B34F990B38CC9DE80 /* SelectGroupView.m */; };
-		6704C1F546F93A6C9554EA0D00DFCC00 /* ShareBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250D3F13F83F50F119273214205F671 /* ShareBottomPopView.m */; };
+		66C79E278E5C8ECD4DBEFC9023425585 /* ShareProBottomPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 193A5BC2B25AD00EEAA84FFE094010B9 /* ShareProBottomPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		672643E6FD03FB3BCDEB7CF88EEEB11F /* sync_permission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C3612216BBA91169F5F48691E524B7E /* sync_permission.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		6761574E55D0C542479B93FA686A9A14 /* RLMSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A58D03D56B48CC8EFCD45B0A480943E /* RLMSchema.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		683C800EAF636A1AEB127F400EDE9D66 /* DateFormatString.m in Sources */ = {isa = PBXBuildFile; fileRef = BD57016084B3767F933E34B6C251BA8E /* DateFormatString.m */; };
 		68AAF1B1B6E049809B599C0AC99099BF /* RLMProperty_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68F72E4D2F65D3AA84602FE11E946E /* RLMProperty_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		68CA57327FAB87A0628E8A69A67FF45E /* UIScrollView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 28054525380ED4C504D1FB589ACBE4CE /* UIScrollView+YYAdd.m */; };
 		6A25C48859B5DFBB2C518E0FD842B18D /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8088F2FC489E348BF4ADE16F10E6AC /* YYTextLine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A298FE31EC351E73B5D44869D203F2E /* STPickerDate.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B7DC954A63FD941CAB16AD28B221F5 /* STPickerDate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6AC29DDA5B66317D2D68C85CD861540C /* UIImageView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF3094B0D724E950DD3C2097CF1D46A /* UIImageView+YYWebImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6AD6587545DE9DB201EA10916BD3E53A /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A8877548E11CA46BEFD1F19523670D /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B62EB3A93D1954EAD597A236D0F61A5 /* DownSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E6D526839BEDBE18F5FF28C3EF3732 /* DownSelectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B64AE43A08C2A738EC4E8947C898405 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 779F1A8E811A7F02CD3DF344B052DA76 /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6BAE860490182300924154BDED584A08 /* YYWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2373F72C206345D1F00F4926100B236 /* YYWebImageManager.m */; };
-		6C77D833C4F8CA1225AF9EABD9844962 /* KPRedAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522C082DC1A249753FF736F73059B1FD /* KPRedAlertPopView.m */; };
+		6BDACE1191B367D4EAA967F88E67F1DE /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BEA7A92DDF2D6D8AB7CA3DB46F057 /* KPAddProFinishPopView.m */; };
 		6C922ABC05432D4F149C8DC075091C06 /* YYTextEffectWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 620F79A69D31FCBC0B1A9E3CEF0D54C0 /* YYTextEffectWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6CACA62769EBA0A00E8826DF700AA937 /* RLMRealm_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = F74ECF6561FE564F3CD7263FDC1EC30F /* RLMRealm_Dynamic.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D0D4CB67C70A986F3C27C25EF981BE3 /* LittleImageBigControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA0CFCE5464B6675F7FEDC331A7D1F /* LittleImageBigControl.m */; };
 		6D289E05207A3200B481E7B47004853D /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E0987EB36FB61189BAD5254C8D07C594 /* NSDictionary+YYAdd.m */; };
 		6D518EE1BD15D05BFA5BEB8384C77E07 /* results_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 703ECABEC527B0AD4C4D47439FFEB070 /* results_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		6DF707A0A60502ED7EDB5D31370181BB /* LKDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E094E14F408D3F48DA24125B9D924D14 /* LKDBHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6DF8D11C1F953AF7C95D7ABDC8575BEC /* RLMPredicateUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6A5246EDFC14ABFC05EF3E03ED3F31D /* RLMPredicateUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		6E4289D029205DF194730256A3027C29 /* SelectGroupView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE10684DF9C900A4F5223D4073E4F93A /* SelectGroupView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E64FBD2AC90F50559DD38ABB8B419D7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DAD0F7539DC20BCF77992A6C46C17C /* AssetsLibrary.framework */; };
-		6E76F726B23EDABDF78369A41DC15FA3 /* YYKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6FF72F83137A95A069BDDFBAC3CDE1 /* YYKeyboardManager.m */; };
 		6ED96E3A6417EB9AEF5C04A8140242B5 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E8BB5CD30CFE4F746E830947185D8 /* YYDiskCache.m */; };
+		6EF809131FE218598756A633F88FDDB1 /* UIFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 830A9658F59C7C851CC43AA784CF2DC3 /* UIFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6F310F21E2D43722A12D6C80E44CCB74 /* NSKeyedUnarchiver+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = E1FE6DE287111F80D696409AFC3ECDBF /* NSKeyedUnarchiver+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6F401D03D0F12CEB0AC94CA3ED896070 /* RLMSyncSubscription.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C73B30E48DD196264B70E4BA2B47D92 /* RLMSyncSubscription.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		6F82030E2B83EFAEAAD2A9C106B58C4E /* NSObject+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FB688F9A70A490E88829F584C4A83 /* NSObject+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6F99A66A218BE9EC976CF2A60BB1B897 /* RLMListBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C12912A0D9872F7BFCB0D2DF2E31C72 /* RLMListBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6FE98AE5EE3FFFB1D284C4DFA77B7F57 /* RLMObject_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE425AA9234C7632F30421214F6C98A /* RLMObject_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72C4F52CC0E1DCC4B9FB2316A871227B /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 31384F945E9D858BEB317753BCC302E1 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		72D5F15CB70E33B604EBF57F780873A9 /* M80AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C10E1855BFD5B5A5FBB40D44053382 /* M80AttributedLabelAttachment.m */; };
 		731BC94438D529C3D5D832062BAC1DC7 /* YYFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFA565948B7939688DE80D72EF86959 /* YYFileHash.m */; };
 		7363A17CFF801E7E27EE14A161A90F2C /* RLMRealmConfiguration+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 218E1472C9B0DEAABA66CA5030B285A6 /* RLMRealmConfiguration+Sync.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		73AE7485A059BDAED4BD7701611B90A4 /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 16AD1D2020059149AF510E79C2F50089 /* YYTextInput.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		743E94068EFEB617814ABB262904F176 /* YYTextAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 66434032470446D6A397419412A5DF8C /* YYTextAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		743F3F0C9B615A8DB2DB1B38E15B27B9 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = FF895C19E3EB16E30C65BDA1A47A253E /* UITableView+SDAutoTableViewCellHeight.m */; };
 		7629A539F78BBF290C05895538564B47 /* RLMRealm.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB7FE7D7485177AA4CFE2094E92202A7 /* RLMRealm.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		7676EBA948CAEFA6411EB8142F256142 /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8A4D61F412E7FE994CDB882DE5EF7D /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		78400623B08DC444BDC0CC1652E43DDC /* YYDispatchQueuePool.h in Headers */ = {isa = PBXBuildFile; fileRef = F05F7985833D5AED0E6E07DBEAE71AEC /* YYDispatchQueuePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		79E9F2AEBB6379223FEC4F15A1C71302 /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD3F4648C592434A5C51DC93EB46F53 /* YYTextMagnifier.m */; };
+		7A6A2F6DC6B37741E1A30C30A9EC75A9 /* STRCCommonPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7976163AEF3023838F37112FEF02C0 /* STRCCommonPickerView.m */; };
 		7A6C9ADBFB7E29BAA6F247C2F97F63CD /* RLMArray_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B8899E8F93F2C3E1684E73297827AF90 /* RLMArray_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7ABFA7782AD05F8A81B8D93D439ACBCD /* NSObject+LKModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A993AC38E57F90DCFDC5DE7FCAE1B9 /* NSObject+LKModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7B217C64E39365B4779A46F3956D9D16 /* PaymentSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF6CFA98270B0B4879DC4586B61033 /* PaymentSelectView.m */; };
 		7B4740B64BA17FF059EF79F039CCA5EB /* UIView+PLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F5ED5C722133A987D416EFC85EA044C /* UIView+PLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7B8777301C248155A3B3AEC21F29B6C9 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BBA6CC6E40E85EBF902843560FF44 /* YYTimer.m */; };
+		7BA8BE903D61E4D47C29A4E2084903D6 /* KPTempModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 626995D62C07FB3DB19DEBDB258187CE /* KPTempModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C0E0AC646332B2EEEDBB310ADC71BB7 /* SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 43962866F0E979B1C0893ED82DB0E358 /* SDAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C0EF3D4797408FD107930A77E30E5A6 /* DoubleDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B549ED2A8CA3477763B266F919DFC08 /* DoubleDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7C40E804D064CCB36A4E0116F7B48AF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4ACE99A338154EDC111B8E232DAD34 /* CoreGraphics.framework */; };
 		7C553D789FE1443F3DB0627318E42003 /* RLMObjectStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6070464670A1033CF70BE051BA8367C0 /* RLMObjectStore.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		7DD3E6A03ACE4D9C15470249EA8910A2 /* realm_coordinator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C912C1D671CE871DCC198BA5B7B2812C /* realm_coordinator.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		7DF43F5CD0E6DBD5E10A131F73249F5B /* RLMOptionalBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15BBF994FF23CDB4D4D55188C9A0EA1B /* RLMOptionalBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		7E09753115255AD948FF6C150E9D2690 /* UITableView+SDAutoTableViewCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = E891F339A7FB360C73278F0CC3335FBC /* UITableView+SDAutoTableViewCellHeight.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7E4CC7265075F758A3E87CE78A99E19C /* binding_callback_thread_observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5037501C7568D0383E5CB9A6D7B8FE9 /* binding_callback_thread_observer.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		7E6D231A2B42FF6888DDB8C7E432A87A /* PopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29667E95A34D5D93D2899408251E3F5F /* PopBaseView.m */; };
 		7EC4A597A07A5E8B1B16D421B0E9F6DF /* UIColor+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = B9389A7D746A10A3FE72D4E3BC2363E8 /* UIColor+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		810D3566E92749F7466214A8CCC5B7F4 /* RLMRealmUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4ED058A65BD338008E924E018512B208 /* RLMRealmUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		812EC686031DE321032D595BBDAECD9E /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE2887DD48A6D783041F404076CD6C0 /* YYTextDebugOption.m */; };
 		8181D233621F155E0488D4DAF681E052 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C4270BE908D784647DC32FD4584307D8 /* YYImageCoder.m */; };
+		833052AFB59F29FAE220799015E1EC1C /* STPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B26F72F7ECDA4022E1EB0A6BB816BB /* STPickerDate.m */; };
 		8384B1EDA802C91097983D4C29F230C3 /* RLMJSONModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C560F535F046DE092B212BAE391C6E9 /* RLMJSONModels.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		8547AA7E5437EC379FC98C383185B653 /* KPEditUintPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4AAF3ECB0FA01249E83930254087D6 /* KPEditUintPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8579674C7077BB3733550BA3912D4DFE /* RLMObjectSchema_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5D430CA4260FE3A251BE51BDA24429 /* RLMObjectSchema_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		85836937ABBC0F16D2607214564C22F5 /* BaseData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCEC35A2015D11AA156BBE54DC468E5 /* BaseData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		85FD482160C68E93B0E18F826880EAB1 /* UIButton+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A77C0EA8C37057A4CD13F4EDDE924075 /* UIButton+YYWebImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		86A690DB85C7E5206F0F22E618550C3C /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2612AED208ED63E185D8AA1198FCB7 /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8768FD4CA7B7ABB15D37F3596BD714D3 /* SelectGroupView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE10684DF9C900A4F5223D4073E4F93A /* SelectGroupView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		87763C2D9738273AEA54ABF1E76CF600 /* UITextField+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 565DE6015B3C8B959BC9C5F10C704E72 /* UITextField+YYAdd.m */; };
-		87E0E3D88005289E994E4F626C9EF0DA /* STRCCommonPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 158E7CEA3D53A7C7C3BA50894CB550AF /* STRCCommonPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		897F837B375646EBC4E91A8BB7769BF7 /* UpImgDownTextBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBCD6CB0BDBB33BC95BE640CDDAC80 /* UpImgDownTextBtn.m */; };
 		8A95510211B04CCC932974442B8A6D82 /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5838B8221CDD6FE13913057FE96405 /* CALayer+YYAdd.m */; };
 		8AA41D5C4C557D896D6FE043B6DAB2CE /* RLMAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F740112754415FC45A9B6885AEC1012 /* RLMAccessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8B0F3F9C02D7D724AF561F49806AC9D0 /* UITableView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF900333C73C77794A4C348E1F0EE75 /* UITableView+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8B64D635D2A5D0A118C0F19C4C27B218 /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5B1688D934D0C216EA520A6CCC7A6 /* UIPasteboard+YYText.m */; };
 		8C123E65AFD4D3BEA996E06846E586F9 /* LKDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2932B764B5C37095AB6EC3A85A8027A2 /* LKDBUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8C5C2C21C405F2F69F543313D24A9F01 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB5FA3275714A42E85D3519B5386499 /* UIView+SDAutoLayout.m */; };
 		8C8A3AA2810E3302C6DF27D2534401F0 /* network_reachability_observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2573128234BF449F240E8DD64D7B62 /* network_reachability_observer.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		8CF068C2EBECEABCF84C22DDA2169F97 /* YYImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6273B91C7C62017E0A8DF02EAEEBCD /* YYImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8D10F842778E7DBB88E3E6E058B29613 /* YYLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ACFE0F6823DC13B32BB0E66B66BD19 /* YYLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8E12ABDAA1A9B2F275B0EF9F4FD91BE2 /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFDCD6BD7CAF890A2E3090843AE249B /* YYTextRunDelegate.m */; };
 		8E319CDBE03E12D315B280F378D90AAE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 296547D8ADE7A0FFB3E9537173BC5C69 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8EDBC9A637D0054F7215E1BFE9B9C4B4 /* NSObject+YYAddForKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C674E7AF3313D9CFBAE76DD1E2708FF /* NSObject+YYAddForKVO.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8F48E747F5EE4BFC02BF549C287B49AA /* NSCalendar+ST.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E2733116F1305FC60EB8A49B9DB73D /* NSCalendar+ST.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8FDE95952EDC7E89EDB65C9957A017DA /* RLMSyncConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9BF7879A46AAAAD038BB303854D84 /* RLMSyncConfiguration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		90DCC1221B764405555093D316BB213B /* BottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9825D9E63A09C5095359DEF79F5437BA /* BottomPopView.m */; };
+		9291CD240E617E6269D09769EC68C0E1 /* PasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A5F84A39CEA5F144F9065192C63E8 /* PasswordInputView.m */; };
+		92A53A9654310897D7C50B0B9983B333 /* PasswordInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3742FC1287E2A7543E35A96B593546C6 /* PasswordInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		92A74DDDC080AC92028D6AD90E286078 /* RLMSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44052A52CD1B6F26454BA77D099F45E4 /* RLMSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		92E3B83E5AD7D904FE2E93C69A9FBB84 /* DateFormatString.h in Headers */ = {isa = PBXBuildFile; fileRef = ACACAFAB7E959594B14F3E28916EBF8A /* DateFormatString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93E9A574B8E872DB8468BA67718F1E6A /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE92802AD3C5E92E3DA601877536EE3 /* KPUpdatePopView.m */; };
 		94375852554C7BF01BE0F1F9A0ABCBD5 /* RLMObjectSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = C597AFA644139036B13EE5DB68621B41 /* RLMObjectSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		94E1892F5E9EFA481671AF85C2773AB3 /* NSObject+LKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C12A2ED1459D4F038A1935334E0214A7 /* NSObject+LKDBHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		951A475FABBB00A5AAB0AAE1A8A11F00 /* PasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205A5F84A39CEA5F144F9065192C63E8 /* PasswordInputView.m */; };
 		9698E21EE31150C6986249EFE8A08920 /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C18E0CC6F2EDF902E779A1AF5FDD86F /* YYTextArchiver.m */; };
 		96DCA144F361AD8A3161D11AA375867F /* RLMRealmConfiguration+Sync.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B6150C7DECB07DD4F8C2D6F9719C0A9 /* RLMRealmConfiguration+Sync.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		9729FEB5E4F819BE85410C9F7053128E /* SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 43962866F0E979B1C0893ED82DB0E358 /* SDAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		973475DB1ABA52229340471313853D19 /* NSError+RLMSync.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE6763A6229BA186C969609DCFB106F /* NSError+RLMSync.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9734C06B0D2138EB7798A1766552F21E /* YYTextLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB2B474DB0A7819112D51386072F796 /* YYTextLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		97D7921915C11F5EC5266602392FCD8D /* RLMObjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F834A09875AC3B392E0C3894AF23FB90 /* RLMObjectBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		98046FB58E17154F72ED2A424CDF3FFC /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243B0D570EC4EC54D38A7C1473F0713 /* NSArray+YYAdd.m */; };
 		9901E7617C080D48A1460841E16294BD /* YYThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 030F6EC632E0400D93AED0479339BDE1 /* YYThreadSafeArray.m */; };
-		99867D59EDAA50B2E735031C38483EE1 /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B66A0813F24CFBF8B023FBEA58B02A /* UIView+ST.m */; };
-		99C28750E2C66D47D6702E203C9E3D83 /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5583D9DFB6EDDE58EA5515E5C022BA /* STPickerView.m */; };
 		9A585281B50E3CE9A0E9E2D9170F023A /* UIBarButtonItem+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7F4FA1076C78023F1BFB2B2150F455 /* UIBarButtonItem+YYAdd.m */; };
 		9AED0E7D2E8F846F2CEF0844477651EE /* NSDate+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDB1D4D10A7EACAE58F2DCE10F2DF0B /* NSDate+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9B36E3234078FEAA07E1A06665C2AFB3 /* YYGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CFFA9C3851816B69EECDB5853992613 /* YYGestureRecognizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9B3DCD1AEB2406FBC3CFEA141302AA21 /* PickerPopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA43AFBFF8B013BF28682CA5FCED38 /* PickerPopBaseView.m */; };
 		9BB858E6D0C7444E46ED16E70B8F1762 /* RLMSyncSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E116949A7D4EDDA2902D7B84B3ECFB /* RLMSyncSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CE688AD3A26F8C61711F1E2DE90F514 /* BottomPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 744540799489DA5021EE3C28B712F9F9 /* BottomPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D40AEB0973951E9C246F5A972EE90A7 /* YYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA22FD838CE4A8792047BA678D5FA511 /* YYKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D7F3D2401E2BEBB139ECF5EDE00F7AD /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 148161970E196AF3B748BBFA0D6DD6A4 /* YYCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9DB9B3DEAD4D3346678F69BD5EAF6B77 /* transact_log_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34DABDDDA562053BFE12444582749AC8 /* transact_log_handler.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
@@ -265,57 +274,50 @@
 		9E031FD5390BAC494DAFAC705960E51F /* RLMSyncPermissionResults.mm in Sources */ = {isa = PBXBuildFile; fileRef = A821D2367E740D2731DD3B089B7E1E5C /* RLMSyncPermissionResults.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		9E7EB60804E51DD1EE3DAC7838A95714 /* RLMResults.mm in Sources */ = {isa = PBXBuildFile; fileRef = F77CF2A2E1D12198ADEE0FF4F1767F2C /* RLMResults.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		9F949B85C21D9C1B5C7FB939B80608B0 /* YYTextKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EC40571F5EC0C89110D3ED8407725885 /* YYTextKeyboardManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FE618C19047B7DF40E255862A8540CC /* KPDepartSelectPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A295FBC6BFA5CD0845F64AC132803EDA /* KPDepartSelectPopView.m */; };
 		A0075038CF988737D7B2085C9D9A46D7 /* RLMObjectBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD51FE18F3ECF38E7840E33391D6399F /* RLMObjectBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		A0566F09B8861F49F08B1D7FCCCD69E9 /* M80AttributedLabelURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 588E69BE8B76916F7BBFBEA75D001D43 /* M80AttributedLabelURL.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A0EAF39E4A0FFF4AB687E44678F95777 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E08A57D23AFDCFFB1352FC457A19ECD /* NSDictionary+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A12731C7C24D471D7B07731C26745147 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D84B22F90EF704D9013CAEFFC19C5A /* SystemConfiguration.framework */; };
 		A133E3640BF20C2BC8E36DBDD24C5364 /* NSArray+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = A54458B6B519D01C4F7C42D51E57EEB2 /* NSArray+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1A0FF4F949C02FF59EB344EC09EC748 /* PickerPopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C99DDCA6398922BCC3AF73659E415A8 /* PickerPopBaseView.m */; };
 		A1A3BE2A5DA027D00349AECC4DCA54D0 /* UIButton+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D7B3619198D716D8879EA18D5EC7DD /* UIButton+YYWebImage.m */; };
-		A2656832BD7552CDD2047C3E75AF1C9B /* DoubleDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A69BF36FD25F2BADA8DD7A62E0025D /* DoubleDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A26C27A49938F6A97248292D4F4CF8AC /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8A4D61F412E7FE994CDB882DE5EF7D /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A294ED8D4F306DA00537CC0647D920B0 /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E00914F166D37D0EAC3BB050541DE9A3 /* YYTextKeyboardManager.m */; };
 		A2CE44116F91CBCBB157B65236521235 /* RLMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A341804543AB476609ED5ADE33AD97CF /* RLMConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A2D59C5135E9299CA7D788489846AFD2 /* YYTextUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CC051E5333D83DF39F044465782EBDF9 /* YYTextUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3C45EEFD6EF08F3673E0743A016ADAB /* KPAddProFinishPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F2B5D86A5BFA33AA731CCDD7D5ABE1 /* KPAddProFinishPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A414932CCA5711DDE51EE868C97D0EA0 /* RLMSchema_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 291CF4F753601B92DFC94C54A66B8654 /* RLMSchema_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A55F7B81E96CBEFE2472A357D97FB559 /* UITableView+SDAutoTableViewCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = E891F339A7FB360C73278F0CC3335FBC /* UITableView+SDAutoTableViewCellHeight.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5CAF0D4EE61F9BAAACD2DF1BD5101F3 /* KPRedAlertPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = D848F9D957053932D62D8614DFFA85D6 /* KPRedAlertPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A5FDF7E1561646243A45885518C372D4 /* YYCGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 695CE9018DB7F736EF12748F9061E751 /* YYCGUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A74B34C1438E2CCFE66BAE41B2BA65EA /* KPDepartSelectPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC60A0817665F3380D5B712896044BF /* KPDepartSelectPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A7E84E3E02AA15605C36892AEFE6F300 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 6372E834CB106233D37019EDAAB54B8F /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A8038718555942CCA25DBBEB7FCFE59A /* UIBezierPath+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 685AB7B4D948EC73D56DD2950DB050CC /* UIBezierPath+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A958EE8384940EFB0AC52565E19E6489 /* NSCalendar+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 982442614EDA9F2F418DBEBC05833DC9 /* NSCalendar+Util.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AA94FA86C67D139BFFD2E4AD29FD944A /* NSObject+LKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C7CC795742DCC1F37857B0D7CD6542 /* NSObject+LKModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		AABB8AD5740697B36A400A9E88D96F69 /* RLMRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F604CDFBE7BE432B271E9FE1011C4D /* RLMRealm.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AAC9A84870724C81C36C7187CF6BCC3E /* UpImgDownTextBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBCD6CB0BDBB33BC95BE640CDDAC80 /* UpImgDownTextBtn.m */; };
-		ABD9FD8BAC0EF05DFA44519253FBC778 /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EC5968BA10D7953C914F521D9E01E4 /* NSMutableAttributedString+M80.m */; };
-		ABDDB5BBCA36F973F56C81D51E1E13CD /* NSCalendar+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6B46369A375723ACDD1D66CC009A1 /* NSCalendar+ST.m */; };
-		AC1461A64E4C3C186B588278AF110C36 /* NSCalendar+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DC37E1305826AF73A585BAAC754B46 /* NSCalendar+Util.m */; };
 		ACB1C0575ED06C3F3DCA7E0E187F9B7C /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = E3202768E84E3FA7AB9115F6BDA8E0EB /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD51CE63AC0B2C2D16EC2690AEC1360E /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB571232D905236D6C7CA7E78C30F99 /* YYMemoryCache.m */; };
-		AD86313744D61325283D1B2AE5C9DC4A /* WPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B16A04C373603729E288F0EBE8E6F3F9 /* WPNormalPopView.m */; };
-		AD91A348B4FC8E398414F626953AE835 /* KPDepartSelectPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A295FBC6BFA5CD0845F64AC132803EDA /* KPDepartSelectPopView.m */; };
 		ADBDA1E2C2A66BD96B02960BB5E74EA7 /* YYKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E85A8828EAB0A978B0EA9F1C3D769C /* YYKit-dummy.m */; };
 		ADE2CFDCCE0343F21B7A2442EB7A7277 /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6071E24381FF35DF88205FAA5DB831BE /* NSObject+YYAdd.m */; };
 		ADFE4C86B00CA59D91226AE4FCC6CBF7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7882D7FC095FF74E025941AB598DEA0D /* MobileCoreServices.framework */; };
 		AE9DF0703DE04D4CCB85B7517C11E372 /* YYWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4281381F618F0454AF24F97BB0B716 /* YYWebImageOperation.m */; };
 		AEAC5505C334C167D5B27809CC4332DE /* RLMCollection_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6BF0C8FC4610601475E6DC4D891281 /* RLMCollection_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AF67D11D1463E5B9F15A509B2105F5E1 /* DownSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E6D526839BEDBE18F5FF28C3EF3732 /* DownSelectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B04B35E661AEDB9895FB5A0D53C42D48 /* WPNormalPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B16A04C373603729E288F0EBE8E6F3F9 /* WPNormalPopView.m */; };
 		B0F21AD8E035C941DD3B3A0F9E20693F /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 576C0E1B87A1BB320D3E3F4E8A5CD8F3 /* YYCGUtilities.m */; };
 		B10CE43480EB32F5F8FE47F187BB8417 /* YYAsyncLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F58DCD09447B31AAA72378178FDC6C4A /* YYAsyncLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B12B72E8435768593A750F9907F657B8 /* YYKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = B41F2682B7601C797EF36C32063FE666 /* YYKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B1A775BDB3AA2DA5C8955EEC51444E8B /* NSThread+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = F227EC77E31199EDB4D86DBD99F6E238 /* NSThread+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B1E49521B0760203DE00A513E86E7D20 /* M80AttributedLabelAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = FFCB94EF584D0E44C00F5A11F4347F06 /* M80AttributedLabelAttachment.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B225571BF2B5B7B8F6E41895D127369D /* UIBezierPath+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F185218A41736549A24DD4CF5D1BC9 /* UIBezierPath+YYAdd.m */; };
 		B45AE8F660446F4E87DECE3C7859880B /* YYTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D0F8E38EE3A8F1CEEF30E90FDF0493 /* YYTextUtilities.m */; };
-		B581E915CDBCC767F7FA0EA2FB08D7D5 /* InputSecurityView.h in Headers */ = {isa = PBXBuildFile; fileRef = A47FAE9EA29938B78E4D6BF7EC986691 /* InputSecurityView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B5877A5974540565B26CB4A2BF43F598 /* UIApplication+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 373C1CE841C434072589866A59D4AEF5 /* UIApplication+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B67A82F55BBF7FFB7721E7DA12B975DE /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EDCA52050F58E6199EB1023947402D /* YYKVStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B73BC859F3C4354891546C5CEF82E01C /* NSObject+PLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 007ADB94B178AE5FA7FACFBFC62ADF63 /* NSObject+PLeak.m */; };
-		B7C72D65341BD6BF6FB1F663A90E28B2 /* PickerPopBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = B15DBA727BE73336CFBF06641AABF271 /* PickerPopBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B7C81C42493FE7B90108A4B8FC2A3DF0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D655A7C7E60F917FC79138924F7895A4 /* ImageIO.framework */; };
 		B85137D4063960FFF35FFBEA397DB166 /* CALayer+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A8034B7DC4690A97E79BC47700F586 /* CALayer+YYWebImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B85E53A7DB6C2272065AD50F6AFC8062 /* list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBA6252D4C9257725912165E8B60B1B /* list.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		B91D1545359E33CB4138C119555AF807 /* InputSecurityView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DED4F9A1CFE96C45C313C594828790 /* InputSecurityView.m */; };
 		B9BB1BA60DF02FC194E7ED9A24530A1D /* uuid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF39ADFBE7250EE645F691DDE8C5B7E2 /* uuid.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		BA1C47FA5656BB1F0D0B70C7F075291B /* NSObject+LKDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B03A9267FFF90C9695ED95CA6C4FACB1 /* NSObject+LKDBHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BC5C8B8500FCF865FA1E1F8E1F64BDD9 /* RLMResults_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5779F20C099B5608DC624DB0974EB4 /* RLMResults_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BC7A7CECC65DB0994FFB0BA02873C1E1 /* STPickerDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A22CF15462466AB7E12D04465FECBC /* STPickerDate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BC9B764C70B0B76CBAC3FC8A757E02DC /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE9A01C09CDF6FD07BA2D4AACC30288B /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD0C269E794FC7364444A07F18EB83D9 /* RLMRealm+Sync.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9F607D1A8C281FFEE6FFD2D097C24 /* RLMRealm+Sync.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		BD7A162C9BF2E821C618AD037EFE7C47 /* RLMSyncSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F66D7C1824A37C90F136B2F59FD4207 /* RLMSyncSubscription.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -323,47 +325,51 @@
 		BDB6DBFB709A7C7D67480851D5B62895 /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB5BA9375AA01FABFAD2250F124DE3F /* YYTransaction.m */; };
 		BDE78C8DB4D001DF62CBCEA385008099 /* index_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0D156A607CD1C79798596836565FFD6 /* index_set.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		BE8E99245EB21AAA75BB8B6509C05F36 /* RLMSyncPermission.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEDC593FA2F254C7BDEF3A904BFF9C4F /* RLMSyncPermission.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		BEB6183606285B37A6C125AF0A200E6D /* STRCCommonPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 199EE14C8C622097B76A975D05431555 /* STRCCommonPickerView.m */; };
+		BEA8087C12249136142E540F8A585ADD /* KPBandingUnitPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = F68DD9B1EDF032C14C9D25C3DC50BD89 /* KPBandingUnitPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BF10DBD48F070CCA26DF81610307BE2C /* RLMSwiftSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 750FF8BA21DB3386354ABFA1205DBA00 /* RLMSwiftSupport.m */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		BF93A85DB67AB92E5F04BB823371C958 /* M80AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A08C43140831FB10E0BBC203FD20AE /* M80AttributedLabelURL.m */; };
+		BF91398D9CA6D91B4AECB1B1A8006803 /* GeneralUIUse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA575DBF66DD1CB4B8C5CED2B4B9BB6 /* GeneralUIUse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BFE9423A93B7CF8BC0FF0F582EE85BA5 /* YYImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B89C2265F1B511DEBD9CEC0279E49612 /* YYImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BFF0EAA94F03B68A11B76B42B2DEF173 /* RLMArray.h in Headers */ = {isa = PBXBuildFile; fileRef = F44D4B5129F3F74209C16DE1054A0410 /* RLMArray.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C0054F4EE581F39FC6D99310C86AD694 /* PLeakSniffer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6239136791B8466DBEC93FA42280E435 /* PLeakSniffer-dummy.m */; };
+		C0112BA4DD9F0E6C25E5B2AA6EBAF1D5 /* InputSecurityView.h in Headers */ = {isa = PBXBuildFile; fileRef = A47FAE9EA29938B78E4D6BF7EC986691 /* InputSecurityView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1013CF10DA1EEE932B9C6856E5CE5FD /* YYKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A2D55FF609A0A8CFC9088318359A9D /* YYKeyboardManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1DB6E64BF972989BF72050FCBD0A46D /* PickerPopBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1898D30517DB86680B22B51160F98218 /* PickerPopBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C1E19210BEF660F2FBA3771E91A11884 /* RLMRealmConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E986FB2A8D8D603A8A0F8C3638CC46 /* RLMRealmConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1F75AE8223C6C6F9CFCB5686E5AB07F /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AE67F9DFDBC64E57BA29F6D526E29 /* UIFactory.m */; };
 		C237776BCBC76A55A790217F44731E9C /* RLMArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CD59E1D231C47E2355F3EF324B56578 /* RLMArray.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		C32363AF2C2D8CAE297D23043076A95D /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = B67915201C293B8AD1AB381B1AF6E2B6 /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C3A8F14FFE0675ADB59F5B329C14CDDC /* YYTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0701E3B48FAD6DA9E9EFBEBF13D416 /* YYTimer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C3AF7A34BB92270602A05E3C1E97DD85 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DB448774D555236E167C2FBDDD50BE7F /* UIColor+YYAdd.m */; };
 		C3BAAC6C0C0E8C7E2DDD1191559DC0EF /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4128901694E11B4FE28525C7C3EFBB11 /* YYTextContainerView.m */; };
-		C409889DCDFDC063A686E01CD8C27410 /* M80AttributedLabelURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 588E69BE8B76916F7BBFBEA75D001D43 /* M80AttributedLabelURL.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C46B1AC1536590A2B8C3C95A69F086E2 /* PObjectProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C0823D9D3FDF8FE27876F922DD4860 /* PObjectProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C4BE05DF6E09D2C9F9BB21DD9772BDE2 /* RLMSyncUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4224221C0BA6965626F951C96D1C6C7B /* RLMSyncUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C4FF18F4FC3859D740A4DAA6916354CF /* CALayer+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9CEF2699B3951D69B6FCA19463D434 /* CALayer+YYWebImage.m */; };
 		C6735A459A955D2B68C6762C80E5DC17 /* PLeakSniffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2A59BEA241119B1A710CA16B848A5 /* PLeakSniffer.m */; };
 		C764C8B5D5008465C49FF7B8DE6CC002 /* list_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A79CED7E8C23EA70A513DA1FE9FB06A1 /* list_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		C7AEEFFCE94861A5F6FBED2A13228D1D /* PasswordInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3742FC1287E2A7543E35A96B593546C6 /* PasswordInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C7D4DAE4D4FAC9FFD461E6B3CC762267 /* Realm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA76037CAFAE37268D0F64EBB2D4B6B /* Realm-dummy.m */; };
 		C801E209BB48389D84E2A5FC8C568E6B /* NSObject+PLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = C73F26F54E5EFF1967955741A531FBA2 /* NSObject+PLeak.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C8543D71258CD5ED5BCF114EAE5799F9 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0949381C1D4D5FDF6F22088CF729FA /* NSData+YYAdd.m */; };
+		CA2D8F4C4BDBBBED4D886405E547C878 /* PaymentSelectView.h in Headers */ = {isa = PBXBuildFile; fileRef = F844B8E1A63D8A5AECD6803B22623A5E /* PaymentSelectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CBD35158D0B74A31511FAAD3C2F88DEF /* YYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DE690E5CF005006358D216FAB361EBD2 /* YYKeychain.m */; };
-		CC500A0310833030831151F62F531271 /* STUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 544529DD2E3DFBF8C1ADC9409BC6CD85 /* STUI.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CCD816BB265CD3662AE88A7B94B28DD8 /* KPBandingUnitPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD522A48F52EA3B9ACA5FC73DBE6E41 /* KPBandingUnitPopView.m */; };
+		CD0D7F8CCDE616C528383A5A8009E01F /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 973BA59781F27076F100A2780F1E63C0 /* NSString+Size.m */; };
 		CD444DDD8938C0AFBFCA1CD02986E6D2 /* UIView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = C94EE05C48977FBC20D4A0FB581E711E /* UIView+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CD6CAFE7C6B0E13C81A4470844FCFD9A /* RLMThreadSafeReference.mm in Sources */ = {isa = PBXBuildFile; fileRef = 559BB6C91C00B2AF241E9C6441157214 /* RLMThreadSafeReference.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		CE52EFBD93BB221007D5AA490BFC86D7 /* M80AttributedLabelDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1AC9A328AB021860954F310BADCA18 /* M80AttributedLabelDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CDBDB8D99537B54A34F4B88DBD0E90FA /* GeneralUIUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E083F08EC89891F8837932383C83D7 /* GeneralUIUse.m */; };
 		CEAE751CC8429C9EB197B1E56A39361D /* RLMSyncUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 686D569D1B5D7E00823496267214A356 /* RLMSyncUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF1F58AB174359CEB39C47B7CBD037A0 /* KPEditTextPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF488BD4AE633B630AC155432F18715 /* KPEditTextPopView.m */; };
 		CFEF4438B28E7435F2A36BF40F8CE559 /* results.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EC3B2098559F9D62F6B8D455B571AC4 /* results.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		D0398844DE216938D8682039DB84918C /* KPDepartSelectPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC60A0817665F3380D5B712896044BF /* KPDepartSelectPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D0A05E3AB46FC295D36392623ABC7CFE /* RLMThreadSafeReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA193B9676BD63027A78E5FB1C5256F /* RLMThreadSafeReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D0BBDB578EB84EA4D2EF53355DFD8147 /* RLMOptionalBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 94457B151534FCA4DFFABA76041520D8 /* RLMOptionalBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D1A60C7F5582804F4D50C20E07E80C13 /* collection_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17E8A41AC6CCA8579461CE8B4DD06EA4 /* collection_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D27785A1AE00AD2C8F5B35BEF8904348 /* RLMRealmConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDB756F7F47E0AEB88A4BBBDD7AFD4 /* RLMRealmConfiguration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D2F8BB1FEEE0AC7833048B8DB895E6F2 /* RLMObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 448384BBA86E8AD486871EDECBB16D32 /* RLMObject.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D33694C96F1BF996168597F408FFC59D /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 149D98EBD40660B62F199F15646D8264 /* YYTextLine.m */; };
+		D37402B351D3E9D599F4F4ED0319441B /* NSCalendar+ST.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF56549DE3BDF94A1910BBF34ADF8F3 /* NSCalendar+ST.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D3B0CE9A86621781FD80190E5FC4E2A2 /* RLMObjectBase_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EDD401D3E7CA6969719C46BA12E158 /* RLMObjectBase_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D409768D3F69D77B8D47AFC07F4F1CDC /* RLMObjectStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 269D7465A50DFE3C0442DD4F444CEE47 /* RLMObjectStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D49B2BB46B391DD2BA2AE499D6A1A01D /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083513057E1B547C99AD0466B206721 /* NSString+YYAdd.m */; };
 		D4B67DEC2FA65B1759CA62C21D0BC67A /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0FDE0208B8A742C882CFC4E6EE0D5A /* YYTextLayout.m */; };
+		D4D2F065ADF8BE6F93FB7C3758BE2F4D /* DownSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A7D4BFBF8A5907931B2F5E041E663 /* DownSelectView.m */; };
 		D569A1206A55558CBB7873A5B78AB24B /* RLMRealm+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B03D6FD000C255711B30C152C1579B0 /* RLMRealm+Sync.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D5E35304F35AD6CDB10F8EB20D805326 /* sync_metadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B8117690CF929D9830F867DC21F3A29 /* sync_metadata.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		D7782E92252591F8F0310B9AD005B085 /* RLMProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E2140717A2D66492E3D5F97CD7D96A75 /* RLMProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -375,19 +381,23 @@
 		D906F17F76EAA3D97624BCD5E82A15D8 /* RLMSyncCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A633F1F8B2CFE00B1931822AB0AA4B4 /* RLMSyncCredentials.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DA13E332CFB875D4588E56411A28658C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300B0DEA0E41A57A7D1839870EE85B4B /* CoreFoundation.framework */; };
 		DA6F503BEBC3631865C9B1D0EF40878A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9B8B4169339B7B6606EF641A786A24 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA94DAA76D0C9CFF536748A5891AFADC /* KPEditTextPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40452A99F2923CB4461370CEDCDCAD0A /* KPEditTextPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB829DC0DE4C65976E28A9351EDE0C53 /* CALayer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 880FC48B086870202F134A0DE893FC9B /* CALayer+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB951472874FA84EC7C625F927CC39F0 /* YYThreadSafeDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C7CB13A1F64E7AE73B462E3ED4CF33 /* YYThreadSafeDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DCB085E8636F293441D2BDA11E6AB22A /* KPEditTextPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40452A99F2923CB4461370CEDCDCAD0A /* KPEditTextPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DDEB769053BA035DD2FC048A986E4AB6 /* WPNormalPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F82748CC0B69B1397A3D7EEC8EF320 /* WPNormalPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC8EEA2408767B1A299E9C4009CF5627 /* KPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A833F401CA05D12905CCE2A8439F6E /* KPTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE0E18C91F73E60CD5B63942FF47AA2F /* PaymentSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF6CFA98270B0B4879DC4586B61033 /* PaymentSelectView.m */; };
+		DE62E9B8B48C912738ABA0D63427399E /* STPickerSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 86646ED0C9523E1BEA2C2CB9961BF075 /* STPickerSingle.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DE7444F1E8C54C246F972B1B64629282 /* NSObject+PLeakTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 4665CF656793E7987F9580FAC31788B6 /* NSObject+PLeakTrack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE757D8F3ABD1E24EFEBF2780CBBB242 /* UIView+ST.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B435AC2C4CA82E19289410EBC923E3 /* UIView+ST.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DF57599D4F8AD350A78AFD24FF4297EF /* UIPasteboard+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = C842F2844182E2646FCE7E8FB0FED576 /* UIPasteboard+YYText.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DFCC6F7760615212B4BBC34CDFBFCE77 /* YYSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = D144435BED8BFB3F0F49B83F6B1F0A2C /* YYSentinel.m */; };
 		E00B74A08764E2D26C563729B253B5E2 /* _YYWebImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8B07BE4095677F03779D1EC383D304 /* _YYWebImageSetter.m */; };
 		E0B3E3CB40ADA7E0D41149EBAEE9316F /* RLMSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3F2D20550BDB15DEACFE443C3320DC /* RLMSyncManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E0E4E335D8A459F926B255BC500B8851 /* UIView+ST.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D76552CC5808BAAE1991789D79B6897 /* UIView+ST.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E1E43500591FF1F89C782364BD72AA90 /* RLMListBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10684F6357EF303673AB524F89FC634F /* RLMListBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		E26CCABFC468F35B12B3B0A11F791A2D /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26188BD7B1E8802C37E964E2BFA35B83 /* YYFrameImage.m */; };
 		E282796D76CBFD3557D569B51C93CF71 /* RLMClassInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E2DAAA1F788DE589039B69D8A679D /* RLMClassInfo.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		E2D3209389507D4F4059AF5AF978844D /* YYKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6FF72F83137A95A069BDDFBAC3CDE1 /* YYKeyboardManager.m */; };
+		E31953890DB3CA24A9344DB1A9670D47 /* KeyBoardDigitalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB25676B5DEC1EA4689C95805BFC0DC /* KeyBoardDigitalView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E36EC368850D024A2B18D305BC0FE7CC /* object_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0BA04214E70CB11C97D3E1FC036D2 /* object_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		E386C2B0FAFE327C30674C5E2969CADF /* RLMObjectBase_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = B467931FAEAC71471B19AE1EB76582FE /* RLMObjectBase_Dynamic.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E39CD077A1ED0955EB74DDFC17EF598D /* sync_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DA53C4C7238C290595EB43F7C5BB2D3 /* sync_manager.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
@@ -395,50 +405,40 @@
 		E3A7603A6EFDCC366B77EA2635B9B35C /* LKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2599F4B1721854303844185CF757A2 /* LKDBHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E3A8EA7C937BFDAA2B53C5F2188B67D8 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = A8CBC3AF71E244242DD89B946A5DE385 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E3C02A8C696C21323A94BE57D22B557A /* YYWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E06964826E3EF49264D03806850495DF /* YYWebImageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4CC3E919E71975202FC76615DD133ED /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 153AE67F9DFDBC64E57BA29F6D526E29 /* UIFactory.m */; };
+		E42527FC91A3D0568A40040DBB5269D9 /* M80AttributedLabelAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = FFCB94EF584D0E44C00F5A11F4347F06 /* M80AttributedLabelAttachment.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4DD140BF1B157BB35C5C18732372D76 /* UIBarButtonItem+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D57CED1B9FB52E01EDF2B9E2937D6D /* UIBarButtonItem+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4F99B1BAC953E051668BB5F654EB780 /* DateFormatString.m in Sources */ = {isa = PBXBuildFile; fileRef = 4431FC85209EB3783848BD367D2110D9 /* DateFormatString.m */; };
+		E5D7661FDB70E6EDD3B61677036A8982 /* STRCCommonPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1C92F3B55D1677E23D7BCAF4C31E19 /* STRCCommonPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E63A8313C6224A918DEB41A4B31EF100 /* RLMSyncUser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 199E997C9E6B74A081257A33E6C8A8E8 /* RLMSyncUser.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		E68C359353AEF85B515FDC479D8D2B84 /* STPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08661B7BA936C99E9DA8EA77773B364E /* STPickerDate.m */; };
 		E68F40DC3C02BEE8517DAA4F8628B8B1 /* collection_notifications.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B1EE49DEF60863EA47D6B4ADCFE1DDD /* collection_notifications.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		E698D745A17C0833C48DC6512FB635C2 /* YYWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2A53C07FF927593C86E8E557FBC162 /* YYWebImageOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E700743E9B8CD082B531FE3D6111E334 /* UIImage+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5100A7204A852E03B264DA56E9E8C753 /* UIImage+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E83C2F57EBAF4C9A12A7BCE649C486C8 /* KPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB4C968F00677ABBA50AD5FF7BF709 /* KPTextField.m */; };
 		E8768C65D7EDF2A619A698319A630DA6 /* NSBundle+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D58517D83E96A1731B940D59DB2EF01 /* NSBundle+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8AFF2B720AABEAABC7190C671F5647D /* WPNormalPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F82748CC0B69B1397A3D7EEC8EF320 /* WPNormalPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E8E3600BB1DAF45025D7068400CE7E39 /* PObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D201199B0BCBF09076A03D4B66CBD05 /* PObjectProxy.m */; };
 		E9AC611B4E1902F8772241098D1704D7 /* UIScrollView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE4B6A053387114F5659E92F74D7E09 /* UIScrollView+YYAdd.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EA31692FD84458C7D5DBCB619C7840D0 /* ShareProBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6E3847D458DC6EC8A7ECB367496F8 /* ShareProBottomPopView.m */; };
-		EB36143D1F176B93BE09158CCB1C11D0 /* BottomPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 744540799489DA5021EE3C28B712F9F9 /* BottomPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC74B9BB4AEAA445787BC8DAC2E47FCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8354307AB4F3EDC041B2026E727C71 /* QuartzCore.framework */; };
-		ECC44BAB5B01D1D94493B3B5533EF314 /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C743998B7F98B208719EEDF7B0FEAF /* STUI.m */; };
 		ED73D0024E9DCE86A7F9581BD424C8F4 /* YYThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FD6F98225CDE47B9BEEC306528335B /* YYThreadSafeArray.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EDCB3C98D723E20380ECBA469A0A68BA /* sync_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D50FB470F27802F07E54A0EB81836F72 /* sync_session.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		EE6560A242C1FD54C40908B123FABEAC /* NSMutableAttributedString+M80.h in Headers */ = {isa = PBXBuildFile; fileRef = 600D37233026022576AD2DA46C42D8A1 /* NSMutableAttributedString+M80.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EEFDCEB442A849D30DF1EF7CEFE399B9 /* YYImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B6211BD0198C3CB346821EEC30B7AB95 /* YYImageCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F08CCB785B6BF622CE0F20C6AEFA1C5C /* STPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 167BAB4C55EE2EDA1D7C5D90AA6A5290 /* STPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F0E10F51CD746C387F12BC793809761E /* NSObject+YYAddForARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 423C498EE051C2413A537367F089930B /* NSObject+YYAddForARC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F16C2A20AB05E072A0CB1EE9AD6711D9 /* RCIOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B01422A4150BD0565F537493EEB5070 /* RCIOS-SDK-dummy.m */; };
 		F231353E1AB766055C6E3B40E8B35736 /* RLMNetworkClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 937227E70575702A1A57598E37DCAC70 /* RLMNetworkClient.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		F28FC9B136F1B97E9834D3BF38127090 /* LittleImageBigControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8257F236582FC9625B1F4FF6065277 /* LittleImageBigControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F33AE43F96EC2766AADF20B8B4879339 /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = FB752AEDE8B6998BABB4EC5A1FFA4015 /* YYWeakProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F3ED09C94A17BE53C682DE3B1022D85D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091FD2B79FE2DD9B2B95FBF3D4DEB5B /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F451F871086ADC2B4967EFBEC2114475 /* RLMUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3848DD092A9F809640C6E66981D534D0 /* RLMUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		F4E43211385B6043C3CBAD3B6F526821 /* KPUpdatePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE92802AD3C5E92E3DA601877536EE3 /* KPUpdatePopView.m */; };
+		F49BA29DED406AB3FE4EE7C89817E99E /* ShareProBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6E3847D458DC6EC8A7ECB367496F8 /* ShareProBottomPopView.m */; };
 		F57AE8176DC1F7CAF321956F7FDFC909 /* NSObject+PLeakTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC99B88CB537A2F93128A0F91180097 /* NSObject+PLeakTrack.m */; };
 		F73BBEEA8B5684E8B69BF53996E57AED /* UIImage+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ACF9B4BC4FB2D1227B4EA881075A13 /* UIImage+YYAdd.m */; };
-		F7ABB809AAA5EF6B21041BBB976AB7A1 /* ShareProBottomPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 193A5BC2B25AD00EEAA84FFE094010B9 /* ShareProBottomPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F8DDB675D251843E32F7EABB10E47ED3 /* KeyBoardDigitalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB25676B5DEC1EA4689C95805BFC0DC /* KeyBoardDigitalView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F94BDF500791AA791B17FB4FA0AFEDC3 /* RCIOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B01422A4150BD0565F537493EEB5070 /* RCIOS-SDK-dummy.m */; };
-		F9A959A9DB77313B7CD91DD2A8756B7B /* KPEditUintPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4AAF3ECB0FA01249E83930254087D6 /* KPEditUintPopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F9B52D8B2DBEA5AA18303951EA8E0511 /* STPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE0DD256D56F6D46989A5EDB5DF3DE4 /* STPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F9F176B0BDEB2A8EC1EA06508B176863 /* RLMUpdateChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FB032EBE05F38321568D51B12E1EDBC /* RLMUpdateChecker.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		FA3F47AE6D193726185890EEF8DCF63B /* KPAddProFinishPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BEA7A92DDF2D6D8AB7CA3DB46F057 /* KPAddProFinishPopView.m */; };
+		FA6A7A65AF7A563D75695A33F3BF9834 /* RCSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 061F0B33BFB54FAC749D117084AE672F /* RCSDKHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FA9E10B75F04B8501597B37508FDAB7B /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AD93F460EB19A559F755A1E265D7E /* YYLabel.m */; };
-		FBEA37E379E0E0FD70D5B72679243732 /* KPTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A833F401CA05D12905CCE2A8439F6E /* KPTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FBED491D214B2AB2A7D1FD00B7196806 /* GeneralCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 216E6D920DDBEFAC36AC07F1A537E66A /* GeneralCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FCEE1F9077954DBB9BC91D57738A1CEB /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7BC2E3E768EF45B9E369CDF47D7CAE /* YYTextEffectWindow.m */; };
 		FCF01101E0F652BD2E05796A24B07220 /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4E223E75A89FD9B7C53ACFDC9DFD4E /* YYImageCache.m */; };
 		FD2EA1635AEC93A4E9861803BE434051 /* work_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBB4EEC60F4D383E5601934A4C829B5D /* work_queue.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		FD6782D2FCC0243B4B83A35EBECC4053 /* KPUpdatePopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E42841DC87F3D87460118CFC2669B96 /* KPUpdatePopView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FDF1F4A03EB7BCEDFF55A07232B10BE2 /* UIImageView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E9770BF8BBE2B72166E1CE2BB39EE /* UIImageView+YYWebImage.m */; };
-		FE7CB90305DC8AB745C0AF2D83ACE478 /* UIFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 830A9658F59C7C851CC43AA784CF2DC3 /* UIFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEE73BEBC9B6BF2C745FB3DE1D09718D /* M80AttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FD929AE552F658FE676387F6AE9015 /* M80AttributedLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FF3A1B30931C18F2C51BA7D051A1D5C8 /* shared_realm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE2B27135C09FC16EA3B437F6E6BE5AE /* shared_realm.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.12.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 /* End PBXBuildFile section */
 
@@ -515,6 +515,7 @@
 		00D7B3619198D716D8879EA18D5EC7DD /* UIButton+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+YYWebImage.m"; path = "YYKit/Image/Categories/UIButton+YYWebImage.m"; sourceTree = "<group>"; };
 		0243B0D570EC4EC54D38A7C1473F0713 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YYAdd.m"; path = "YYKit/Base/Foundation/NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		0259470706AC4EA1E61B8B45252072DF /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		028E77D2967EB1A67A85F90DCC536017 /* NSCalendar+ST.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ST.m"; sourceTree = "<group>"; };
 		030F6EC632E0400D93AED0479339BDE1 /* YYThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYThreadSafeArray.m; path = YYKit/Utility/YYThreadSafeArray.m; sourceTree = "<group>"; };
 		036099E9169D2B5AF50AC2698A018B5E /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
 		04598B645E04993004E51E6714BE94BC /* Pods-RCIOS-SDK-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RCIOS-SDK-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -522,8 +523,8 @@
 		05DD5D1130B420A9301BAC96E93C1E61 /* primitive_list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = primitive_list_notifier.cpp; path = Realm/ObjectStore/src/impl/primitive_list_notifier.cpp; sourceTree = "<group>"; };
 		05E4C24C6B4AC74D44AB9A38400E804E /* UIScreen+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+YYAdd.h"; path = "YYKit/Base/UIKit/UIScreen+YYAdd.h"; sourceTree = "<group>"; };
 		061F0B33BFB54FAC749D117084AE672F /* RCSDKHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCSDKHeader.h; path = "RCIOS-SDK/RCSDKHeader.h"; sourceTree = "<group>"; };
+		06E259F9BBDC7FDF8FA029AFB6E28F35 /* STUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
 		07382E20656D08B13D555C69AE51E69A /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYKit/Text/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
-		08661B7BA936C99E9DA8EA77773B364E /* STPickerDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPickerDate.m; sourceTree = "<group>"; };
 		08DBCD6CB0BDBB33BC95BE640CDDAC80 /* UpImgDownTextBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UpImgDownTextBtn.m; sourceTree = "<group>"; };
 		09395EEB7A2D174BE847EC5559725DE0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		0ABDB756F7F47E0AEB88A4BBBDD7AFD4 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
@@ -531,9 +532,9 @@
 		0B01422A4150BD0565F537493EEB5070 /* RCIOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCIOS-SDK-dummy.m"; sourceTree = "<group>"; };
 		0C09449D85C547BFAE2BEF6E29C77D94 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYKit/Image/YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		0C12912A0D9872F7BFCB0D2DF2E31C72 /* RLMListBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMListBase.h; path = include/RLMListBase.h; sourceTree = "<group>"; };
+		0C99DDCA6398922BCC3AF73659E415A8 /* PickerPopBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PickerPopBaseView.m; sourceTree = "<group>"; };
 		0CD59E1D231C47E2355F3EF324B56578 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
 		0D2D2015E76FF5B12573EB0106FBB0F7 /* NSString+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+YYAdd.h"; path = "YYKit/Base/Foundation/NSString+YYAdd.h"; sourceTree = "<group>"; };
-		0D76552CC5808BAAE1991789D79B6897 /* UIView+ST.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
 		0D7E9770BF8BBE2B72166E1CE2BB39EE /* UIImageView+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+YYWebImage.m"; path = "YYKit/Image/Categories/UIImageView+YYWebImage.m"; sourceTree = "<group>"; };
 		0DBA0CFCE5464B6675F7FEDC331A7D1F /* LittleImageBigControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LittleImageBigControl.m; sourceTree = "<group>"; };
 		0DC60A0817665F3380D5B712896044BF /* KPDepartSelectPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KPDepartSelectPopView.h; sourceTree = "<group>"; };
@@ -546,22 +547,23 @@
 		11C326CE8C8D56E3D4D39F1ED539682F /* Pods-RCIOS-SDK-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RCIOS-SDK-frameworks.sh"; sourceTree = "<group>"; };
 		12220D7C1FC96706D9DF0716DCD60714 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 		12481FABB427763FDAA7299F7A8F7EF1 /* YYTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTransaction.h; path = YYKit/Utility/YYTransaction.h; sourceTree = "<group>"; };
+		128709380186D27749080BC9DADE08E9 /* STConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
 		142C7BED999B0E5B0A5FA4214420C953 /* libPLeakSniffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPLeakSniffer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		148161970E196AF3B748BBFA0D6DD6A4 /* YYCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCache.h; path = YYKit/Cache/YYCache.h; sourceTree = "<group>"; };
 		14893DF93D614F90A7133B16A4E3EAC8 /* collection_change_builder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_change_builder.cpp; path = Realm/ObjectStore/src/impl/collection_change_builder.cpp; sourceTree = "<group>"; };
 		149D98EBD40660B62F199F15646D8264 /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYKit/Text/Component/YYTextLine.m; sourceTree = "<group>"; };
 		153AE67F9DFDBC64E57BA29F6D526E29 /* UIFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIFactory.m; sourceTree = "<group>"; };
-		158E7CEA3D53A7C7C3BA50894CB550AF /* STRCCommonPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerView.h; sourceTree = "<group>"; };
 		15BBF994FF23CDB4D4D55188C9A0EA1B /* RLMOptionalBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMOptionalBase.mm; path = Realm/RLMOptionalBase.mm; sourceTree = "<group>"; };
 		1609687C6BE753F53F6B1CA316AB9744 /* LKDB+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LKDB+Mapping.m"; path = "LKDBHelper/Helper/LKDB+Mapping.m"; sourceTree = "<group>"; };
+		167BAB4C55EE2EDA1D7C5D90AA6A5290 /* STPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPickerView.h; sourceTree = "<group>"; };
 		16A2D55FF609A0A8CFC9088318359A9D /* YYKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YYKeyboardManager.h; sourceTree = "<group>"; };
 		16AD1D2020059149AF510E79C2F50089 /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYKit/Text/Component/YYTextInput.h; sourceTree = "<group>"; };
 		17E8A41AC6CCA8579461CE8B4DD06EA4 /* collection_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_notifier.cpp; path = Realm/ObjectStore/src/impl/collection_notifier.cpp; sourceTree = "<group>"; };
 		1880222A435C0A133BAED3F406CBD90F /* schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = schema.cpp; path = Realm/ObjectStore/src/schema.cpp; sourceTree = "<group>"; };
+		1898D30517DB86680B22B51160F98218 /* PickerPopBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PickerPopBaseView.h; sourceTree = "<group>"; };
 		192007924BF06C9F8CC0DEBD3E052A50 /* LKDBHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LKDBHelper-prefix.pch"; sourceTree = "<group>"; };
 		193A5BC2B25AD00EEAA84FFE094010B9 /* ShareProBottomPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ShareProBottomPopView.h; sourceTree = "<group>"; };
 		199E997C9E6B74A081257A33E6C8A8E8 /* RLMSyncUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncUser.mm; path = Realm/RLMSyncUser.mm; sourceTree = "<group>"; };
-		199EE14C8C622097B76A975D05431555 /* STRCCommonPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerView.m; sourceTree = "<group>"; };
 		1A5D430CA4260FE3A251BE51BDA24429 /* RLMObjectSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema_Private.h; path = include/RLMObjectSchema_Private.h; sourceTree = "<group>"; };
 		1AB5BA9375AA01FABFAD2250F124DE3F /* YYTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTransaction.m; path = YYKit/Utility/YYTransaction.m; sourceTree = "<group>"; };
 		1B6150C7DECB07DD4F8C2D6F9719C0A9 /* RLMRealmConfiguration+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "RLMRealmConfiguration+Sync.mm"; path = "Realm/RLMRealmConfiguration+Sync.mm"; sourceTree = "<group>"; };
@@ -592,9 +594,7 @@
 		29667E95A34D5D93D2899408251E3F5F /* PopBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PopBaseView.m; sourceTree = "<group>"; };
 		29C2BAFCDC1F273C3B8DE57859B191B6 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAnimatedImageView.m; path = YYKit/Image/YYAnimatedImageView.m; sourceTree = "<group>"; };
 		2AA0BA04214E70CB11C97D3E1FC036D2 /* object_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = object_notifier.cpp; path = Realm/ObjectStore/src/impl/object_notifier.cpp; sourceTree = "<group>"; };
-		2AE0DD256D56F6D46989A5EDB5DF3DE4 /* STPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPickerView.h; sourceTree = "<group>"; };
 		2B5838B8221CDD6FE13913057FE96405 /* CALayer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYAdd.m"; path = "YYKit/Base/Quartz/CALayer+YYAdd.m"; sourceTree = "<group>"; };
-		2B62657620EA1ACDA42308535399DC2A /* RankEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RankEnum.h; sourceTree = "<group>"; };
 		2B6CE65B8C7EDB2A7DC7F4332CEE6E9D /* partial_sync.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = partial_sync.cpp; path = Realm/ObjectStore/src/sync/partial_sync.cpp; sourceTree = "<group>"; };
 		2BD522A48F52EA3B9ACA5FC73DBE6E41 /* KPBandingUnitPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KPBandingUnitPopView.m; sourceTree = "<group>"; };
 		2BDEE8377753AC9F6AC7DC2949E5C365 /* YYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = YYKit/Cache/YYDiskCache.h; sourceTree = "<group>"; };
@@ -606,10 +606,9 @@
 		2F8E949300607835A6535569A4250079 /* YYKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKitMacro.h; path = YYKit/Base/YYKitMacro.h; sourceTree = "<group>"; };
 		300B0DEA0E41A57A7D1839870EE85B4B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		31384F945E9D858BEB317753BCC302E1 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYKit/Model/YYClassInfo.h; sourceTree = "<group>"; };
+		31B435AC2C4CA82E19289410EBC923E3 /* UIView+ST.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
 		31D07462E38C2053747B0E66175BDF7E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		334436942C49B613FDFC56687751E25F /* YYAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAsyncLayer.m; path = YYKit/Utility/YYAsyncLayer.m; sourceTree = "<group>"; };
-		33DC37E1305826AF73A585BAAC754B46 /* NSCalendar+Util.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Util.m"; sourceTree = "<group>"; };
-		34A22CF15462466AB7E12D04465FECBC /* STPickerDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPickerDate.h; sourceTree = "<group>"; };
 		34DABDDDA562053BFE12444582749AC8 /* transact_log_handler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = transact_log_handler.cpp; path = Realm/ObjectStore/src/impl/transact_log_handler.cpp; sourceTree = "<group>"; };
 		34DAD0F7539DC20BCF77992A6C46C17C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		34E986FB2A8D8D603A8A0F8C3638CC46 /* RLMRealmConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration.h; path = include/RLMRealmConfiguration.h; sourceTree = "<group>"; };
@@ -625,6 +624,7 @@
 		3C560F535F046DE092B212BAE391C6E9 /* RLMJSONModels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMJSONModels.m; path = Realm/RLMJSONModels.m; sourceTree = "<group>"; };
 		3C674E7AF3313D9CFBAE76DD1E2708FF /* NSObject+YYAddForKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForKVO.h"; path = "YYKit/Base/Foundation/NSObject+YYAddForKVO.h"; sourceTree = "<group>"; };
 		3C6BF0C8FC4610601475E6DC4D891281 /* RLMCollection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection_Private.h; path = include/RLMCollection_Private.h; sourceTree = "<group>"; };
+		3D1C92F3B55D1677E23D7BCAF4C31E19 /* STRCCommonPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STRCCommonPickerView.h; sourceTree = "<group>"; };
 		3D90F7D6F2CDF0B1FA84BCF1057747ED /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		3DB2B474DB0A7819112D51386072F796 /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYKit/Text/Component/YYTextLayout.h; sourceTree = "<group>"; };
 		3E8A4D61F412E7FE994CDB882DE5EF7D /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
@@ -635,12 +635,12 @@
 		40EC5968BA10D7953C914F521D9E01E4 /* NSMutableAttributedString+M80.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+M80.m"; sourceTree = "<group>"; };
 		4128901694E11B4FE28525C7C3EFBB11 /* YYTextContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextContainerView.m; path = YYKit/Text/Component/YYTextContainerView.m; sourceTree = "<group>"; };
 		416C0B06F099E9BFB03248F11AC2678D /* Realm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Realm-prefix.pch"; sourceTree = "<group>"; };
+		41B26F72F7ECDA4022E1EB0A6BB816BB /* STPickerDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPickerDate.m; sourceTree = "<group>"; };
 		4224221C0BA6965626F951C96D1C6C7B /* RLMSyncUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUser.h; path = include/RLMSyncUser.h; sourceTree = "<group>"; };
 		423C498EE051C2413A537367F089930B /* NSObject+YYAddForARC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForARC.h"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.h"; sourceTree = "<group>"; };
 		43962866F0E979B1C0893ED82DB0E358 /* SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
 		43A08C43140831FB10E0BBC203FD20AE /* M80AttributedLabelURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabelURL.m; sourceTree = "<group>"; };
 		44052A52CD1B6F26454BA77D099F45E4 /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
-		4431FC85209EB3783848BD367D2110D9 /* DateFormatString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DateFormatString.m; sourceTree = "<group>"; };
 		448384BBA86E8AD486871EDECBB16D32 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
 		45210A290624CF84F25D486E5A342056 /* RLMSyncConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration_Private.h; path = include/RLMSyncConfiguration_Private.h; sourceTree = "<group>"; };
 		459C525A7DA7B54DE4147B9229996455 /* sync_user.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_user.cpp; path = Realm/ObjectStore/src/sync/sync_user.cpp; sourceTree = "<group>"; };
@@ -652,7 +652,9 @@
 		47C550E2E7DF66FF80BF8B41B580C6A9 /* YYKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYKit-prefix.pch"; sourceTree = "<group>"; };
 		47F7863730F746FE04E9BC28AB222359 /* NSDate+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+YYAdd.m"; path = "YYKit/Base/Foundation/NSDate+YYAdd.m"; sourceTree = "<group>"; };
 		4A28C69EBCB319EB5F7209A5161EAE26 /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
+		4AF56549DE3BDF94A1910BBF34ADF8F3 /* NSCalendar+ST.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ST.h"; sourceTree = "<group>"; };
 		4B1EE49DEF60863EA47D6B4ADCFE1DDD /* collection_notifications.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_notifications.cpp; path = Realm/ObjectStore/src/collection_notifications.cpp; sourceTree = "<group>"; };
+		4B549ED2A8CA3477763B266F919DFC08 /* DoubleDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DoubleDatePickerView.h; sourceTree = "<group>"; };
 		4BE92802AD3C5E92E3DA601877536EE3 /* KPUpdatePopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KPUpdatePopView.m; sourceTree = "<group>"; };
 		4CA76037CAFAE37268D0F64EBB2D4B6B /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		4CD9B0F4D26D280FCE96D4C2C50142A6 /* placeholder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = placeholder.cpp; path = Realm/ObjectStore/src/placeholder.cpp; sourceTree = "<group>"; };
@@ -666,7 +668,7 @@
 		5100A7204A852E03B264DA56E9E8C753 /* UIImage+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+YYAdd.h"; path = "YYKit/Base/UIKit/UIImage+YYAdd.h"; sourceTree = "<group>"; };
 		522C082DC1A249753FF736F73059B1FD /* KPRedAlertPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KPRedAlertPopView.m; sourceTree = "<group>"; };
 		52ACFE0F6823DC13B32BB0E66B66BD19 /* YYLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLabel.h; path = YYKit/Text/YYLabel.h; sourceTree = "<group>"; };
-		544529DD2E3DFBF8C1ADC9409BC6CD85 /* STUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		53140890552793C8D35DD078B6EE54B1 /* DateFormatString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DateFormatString.h; sourceTree = "<group>"; };
 		559BB6C91C00B2AF241E9C6441157214 /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
 		55F6473DCCEA772B81AD271E9EDB266D /* sync_config.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_config.cpp; path = Realm/ObjectStore/src/sync/sync_config.cpp; sourceTree = "<group>"; };
 		56300D5F650AA9B4C5BCA5B52D137067 /* UITextField+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+YYAdd.h"; path = "YYKit/Base/UIKit/UITextField+YYAdd.h"; sourceTree = "<group>"; };
@@ -675,6 +677,7 @@
 		571A709C22DB67C698D66ACD5F05B982 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		576C0E1B87A1BB320D3E3F4E8A5CD8F3 /* YYCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCGUtilities.m; path = YYKit/Base/Quartz/YYCGUtilities.m; sourceTree = "<group>"; };
 		588E69BE8B76916F7BBFBEA75D001D43 /* M80AttributedLabelURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelURL.h; sourceTree = "<group>"; };
+		5A080CD037D958AD51971DE61E7219A1 /* UIView+ST.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
 		5A5779F20C099B5608DC624DB0974EB4 /* RLMResults_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults_Private.h; path = include/RLMResults_Private.h; sourceTree = "<group>"; };
 		5B8117690CF929D9830F867DC21F3A29 /* sync_metadata.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_metadata.cpp; path = Realm/ObjectStore/src/sync/impl/sync_metadata.cpp; sourceTree = "<group>"; };
 		5C3612216BBA91169F5F48691E524B7E /* sync_permission.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_permission.cpp; path = Realm/ObjectStore/src/sync/sync_permission.cpp; sourceTree = "<group>"; };
@@ -689,7 +692,7 @@
 		601B76E1F0B6A7D73C70AB1F77FF5C30 /* keychain_helper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = keychain_helper.cpp; path = Realm/ObjectStore/src/impl/apple/keychain_helper.cpp; sourceTree = "<group>"; };
 		6070464670A1033CF70BE051BA8367C0 /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
 		6071E24381FF35DF88205FAA5DB831BE /* NSObject+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAdd.m"; path = "YYKit/Base/Foundation/NSObject+YYAdd.m"; sourceTree = "<group>"; };
-		60EE0FFCC739658DCB598B9EFC5D78FE /* STPickerSingle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
+		6098463B2A12A9FADC72F2857869F14C /* DoubleDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DoubleDatePickerView.m; sourceTree = "<group>"; };
 		6186F561BD20F0573F6F0CC242A75A6F /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
 		620F79A69D31FCBC0B1A9E3CEF0D54C0 /* YYTextEffectWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextEffectWindow.h; path = YYKit/Text/Component/YYTextEffectWindow.h; sourceTree = "<group>"; };
 		6239136791B8466DBEC93FA42280E435 /* PLeakSniffer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PLeakSniffer-dummy.m"; sourceTree = "<group>"; };
@@ -715,10 +718,9 @@
 		6F740112754415FC45A9B6885AEC1012 /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
 		703ECABEC527B0AD4C4D47439FFEB070 /* results_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = results_notifier.cpp; path = Realm/ObjectStore/src/impl/results_notifier.cpp; sourceTree = "<group>"; };
 		7091FD2B79FE2DD9B2B95FBF3D4DEB5B /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
-		70A69BF36FD25F2BADA8DD7A62E0025D /* DoubleDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DoubleDatePickerView.h; sourceTree = "<group>"; };
 		717E47245715B4D9AAF6C4D83BB634E5 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+YYAdd.m"; path = "YYKit/Base/UIKit/UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		734ADCF4FE91E109EE835EFCB6796A6B /* STPickerSingle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
 		744540799489DA5021EE3C28B712F9F9 /* BottomPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BottomPopView.h; sourceTree = "<group>"; };
-		750482FB56829BCF3D7233A6B95BD2DF /* DoubleDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DoubleDatePickerView.m; sourceTree = "<group>"; };
 		750FF8BA21DB3386354ABFA1205DBA00 /* RLMSwiftSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSwiftSupport.m; path = Realm/RLMSwiftSupport.m; sourceTree = "<group>"; };
 		7530283EEDF43EE9F88912C545ACC5F1 /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYKit/Text/YYTextView.h; sourceTree = "<group>"; };
 		75E0D889077F553199C5F55356641C75 /* Realm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Realm.h; path = include/Realm.h; sourceTree = "<group>"; };
@@ -726,8 +728,6 @@
 		7680D9A746549E567FF45D7CE0E480D5 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYKit/Model/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		779F1A8E811A7F02CD3DF344B052DA76 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		7882D7FC095FF74E025941AB598DEA0D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		78C743998B7F98B208719EEDF7B0FEAF /* STUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
-		78DE5046646BA4C88CDC57863EA7C008 /* STPickerSingle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPickerSingle.h; sourceTree = "<group>"; };
 		792CE851948252AE3DB98718090FAADE /* NSObject+YYAddForARC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForARC.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.m"; sourceTree = "<group>"; };
 		7ABFE01FBF570C1FA457DD78286B92FF /* NSError+RLMSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RLMSync.m"; path = "Realm/NSError+RLMSync.m"; sourceTree = "<group>"; };
 		7B143BDAE43B514BDA3B34F20FABE979 /* RLMSyncPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermission.h; path = include/RLMSyncPermission.h; sourceTree = "<group>"; };
@@ -735,6 +735,7 @@
 		7C391A31AF9275F69BBE810F3572F07D /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
 		7CFFA9C3851816B69EECDB5853992613 /* YYGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYGestureRecognizer.h; path = YYKit/Utility/YYGestureRecognizer.h; sourceTree = "<group>"; };
 		7D13D8F65AE845D75E8520690E22CAA8 /* YYKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYKit.xcconfig; sourceTree = "<group>"; };
+		7D7976163AEF3023838F37112FEF02C0 /* STRCCommonPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STRCCommonPickerView.m; sourceTree = "<group>"; };
 		7DA9BF7879A46AAAAD038BB303854D84 /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
 		7EA34A88F2400337B36D678E64246C35 /* YYReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYReachability.m; path = YYKit/Utility/YYReachability.m; sourceTree = "<group>"; };
 		7F5ED5C722133A987D416EFC85EA044C /* UIView+PLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+PLeak.h"; path = "PLeakSniffer/Classes/UIView+PLeak.h"; sourceTree = "<group>"; };
@@ -746,6 +747,7 @@
 		84C10E1855BFD5B5A5FBB40D44053382 /* M80AttributedLabelAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = M80AttributedLabelAttachment.m; sourceTree = "<group>"; };
 		852A73273D5FD25ADB420429E7350893 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
 		85A88132CBFB0D1B88BFF38CA5E3B204 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+YYText.m"; path = "YYKit/Text/String/NSAttributedString+YYText.m"; sourceTree = "<group>"; };
+		86646ED0C9523E1BEA2C2CB9961BF075 /* STPickerSingle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPickerSingle.h; sourceTree = "<group>"; };
 		880FC48B086870202F134A0DE893FC9B /* CALayer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+YYAdd.h"; path = "YYKit/Base/Quartz/CALayer+YYAdd.h"; sourceTree = "<group>"; };
 		8A633F1F8B2CFE00B1931822AB0AA4B4 /* RLMSyncCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncCredentials.h; path = include/RLMSyncCredentials.h; sourceTree = "<group>"; };
 		8AA193B9676BD63027A78E5FB1C5256F /* RLMThreadSafeReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMThreadSafeReference.h; path = include/RLMThreadSafeReference.h; sourceTree = "<group>"; };
@@ -763,6 +765,7 @@
 		8E68F72E4D2F65D3AA84602FE11E946E /* RLMProperty_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty_Private.h; path = include/RLMProperty_Private.h; sourceTree = "<group>"; };
 		8F827922C07EB068354144BB9FC5D77A /* NSNumber+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+YYAdd.m"; path = "YYKit/Base/Foundation/NSNumber+YYAdd.m"; sourceTree = "<group>"; };
 		8FB032EBE05F38321568D51B12E1EDBC /* RLMUpdateChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUpdateChecker.mm; path = Realm/RLMUpdateChecker.mm; sourceTree = "<group>"; };
+		8FD13F12D1D6F368F2C01CA32E614FA8 /* NSCalendar+Util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Util.h"; sourceTree = "<group>"; };
 		901BBA6CC6E40E85EBF902843560FF44 /* YYTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTimer.m; path = YYKit/Utility/YYTimer.m; sourceTree = "<group>"; };
 		909C23E8CE9B43A322578BF7E5CB4A71 /* sync_file.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_file.cpp; path = Realm/ObjectStore/src/sync/impl/sync_file.cpp; sourceTree = "<group>"; };
 		927BC94B48789520B1326335A60B7C45 /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+YYText.h"; path = "YYKit/Text/String/NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
@@ -774,8 +777,8 @@
 		96A21A9B927439F662ED3761AB924075 /* LKDB+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LKDB+Mapping.h"; path = "LKDBHelper/Helper/LKDB+Mapping.h"; sourceTree = "<group>"; };
 		96C0823D9D3FDF8FE27876F922DD4860 /* PObjectProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PObjectProxy.h; path = PLeakSniffer/Classes/PObjectProxy.h; sourceTree = "<group>"; };
 		973BA59781F27076F100A2780F1E63C0 /* NSString+Size.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		97EC5B3323040BEC27500883747EEC7C /* RankEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RankEnum.h; sourceTree = "<group>"; };
 		981C817D9EB43B9BF6F433E059F5CA35 /* RCIOS-SDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "RCIOS-SDK.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		982442614EDA9F2F418DBEBC05833DC9 /* NSCalendar+Util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Util.h"; sourceTree = "<group>"; };
 		9825D9E63A09C5095359DEF79F5437BA /* BottomPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BottomPopView.m; sourceTree = "<group>"; };
 		99E8F6575E2896D668CF2985B3971635 /* LKDBHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LKDBHelper-dummy.m"; sourceTree = "<group>"; };
 		9C003813F93C410B8299D64A9E140DD4 /* KPEditUintPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KPEditUintPopView.m; sourceTree = "<group>"; };
@@ -793,6 +796,7 @@
 		A3AAA629EC28CD0A3F9D6F6A8E779439 /* RLMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMConstants.m; path = Realm/RLMConstants.m; sourceTree = "<group>"; };
 		A47BD45F55E6CE7B686A898B34754E34 /* weak_realm_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = weak_realm_notifier.cpp; path = Realm/ObjectStore/src/impl/weak_realm_notifier.cpp; sourceTree = "<group>"; };
 		A47FAE9EA29938B78E4D6BF7EC986691 /* InputSecurityView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InputSecurityView.h; sourceTree = "<group>"; };
+		A483D42C358541C099F28B1C89AFE1AF /* NSCalendar+Util.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Util.m"; sourceTree = "<group>"; };
 		A4E85A8828EAB0A978B0EA9F1C3D769C /* YYKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYKit-dummy.m"; sourceTree = "<group>"; };
 		A5037501C7568D0383E5CB9A6D7B8FE9 /* binding_callback_thread_observer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = binding_callback_thread_observer.cpp; path = Realm/ObjectStore/src/binding_callback_thread_observer.cpp; sourceTree = "<group>"; };
 		A54458B6B519D01C4F7C42D51E57EEB2 /* NSArray+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YYAdd.h"; path = "YYKit/Base/Foundation/NSArray+YYAdd.h"; sourceTree = "<group>"; };
@@ -811,7 +815,6 @@
 		AA22FD838CE4A8792047BA678D5FA511 /* YYKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKit.h; path = YYKit/YYKit.h; sourceTree = "<group>"; };
 		AA4281381F618F0454AF24F97BB0B716 /* YYWebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageOperation.m; path = YYKit/Image/YYWebImageOperation.m; sourceTree = "<group>"; };
 		AC4AAF3ECB0FA01249E83930254087D6 /* KPEditUintPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KPEditUintPopView.h; sourceTree = "<group>"; };
-		ACACAFAB7E959594B14F3E28916EBF8A /* DateFormatString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DateFormatString.h; sourceTree = "<group>"; };
 		AD97A892D1826E803617C27BCCD62BCB /* MKAnnotationView+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+YYWebImage.m"; path = "YYKit/Image/Categories/MKAnnotationView+YYWebImage.m"; sourceTree = "<group>"; };
 		ADC7B30BBEF42A8DA561A1F72ED13C09 /* object.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = object.cpp; path = Realm/ObjectStore/src/object.cpp; sourceTree = "<group>"; };
 		AE2B27135C09FC16EA3B437F6E6BE5AE /* shared_realm.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = shared_realm.cpp; path = Realm/ObjectStore/src/shared_realm.cpp; sourceTree = "<group>"; };
@@ -824,7 +827,6 @@
 		AFB2BA47515F6FDDEE49DE19D62264E0 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSpriteSheetImage.m; path = YYKit/Image/YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		B03A9267FFF90C9695ED95CA6C4FACB1 /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+LKDBHelper.h"; path = "LKDBHelper/Helper/NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
 		B0D156A607CD1C79798596836565FFD6 /* index_set.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = index_set.cpp; path = Realm/ObjectStore/src/index_set.cpp; sourceTree = "<group>"; };
-		B15DBA727BE73336CFBF06641AABF271 /* PickerPopBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PickerPopBaseView.h; sourceTree = "<group>"; };
 		B16A04C373603729E288F0EBE8E6F3F9 /* WPNormalPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPNormalPopView.m; sourceTree = "<group>"; };
 		B296AFA18E5E2EA0DB3E7831E95D9F7A /* Pods-RCIOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RCIOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		B2C7CB13A1F64E7AE73B462E3ED4CF33 /* YYThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeDictionary.h; path = YYKit/Utility/YYThreadSafeDictionary.h; sourceTree = "<group>"; };
@@ -834,6 +836,8 @@
 		B4ACF9B4BC4FB2D1227B4EA881075A13 /* UIImage+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYAdd.m"; path = "YYKit/Base/UIKit/UIImage+YYAdd.m"; sourceTree = "<group>"; };
 		B6211BD0198C3CB346821EEC30B7AB95 /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYKit/Image/YYImageCoder.h; sourceTree = "<group>"; };
 		B67915201C293B8AD1AB381B1AF6E2B6 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		B6B7DC954A63FD941CAB16AD28B221F5 /* STPickerDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPickerDate.h; sourceTree = "<group>"; };
+		B717E7CE28FAD260C1B83DBDF297D160 /* STUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
 		B75C4D634A4684B2E4CFC6E552687F7F /* Pods-RCIOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RCIOS-SDK-dummy.m"; sourceTree = "<group>"; };
 		B8899E8F93F2C3E1684E73297827AF90 /* RLMArray_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray_Private.h; path = include/RLMArray_Private.h; sourceTree = "<group>"; };
 		B89C2265F1B511DEBD9CEC0279E49612 /* YYImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = YYKit/Image/YYImage.h; sourceTree = "<group>"; };
@@ -847,6 +851,7 @@
 		BB8843A6621B82E8CBBBC8DFDEC8D64E /* YYKVStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKVStorage.m; path = YYKit/Cache/YYKVStorage.m; sourceTree = "<group>"; };
 		BBE2887DD48A6D783041F404076CD6C0 /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYKit/Text/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
 		BCB571232D905236D6C7CA7E78C30F99 /* YYMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYMemoryCache.m; path = YYKit/Cache/YYMemoryCache.m; sourceTree = "<group>"; };
+		BD57016084B3767F933E34B6C251BA8E /* DateFormatString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DateFormatString.m; sourceTree = "<group>"; };
 		BEFDCD6BD7CAF890A2E3090843AE249B /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYKit/Text/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
 		BF38B442C4B56F5ED04716F34074BAFC /* YYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = YYKit/Cache/YYMemoryCache.h; sourceTree = "<group>"; };
 		BF8B724A0A635DC92A7D5BFB3D4B3301 /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYKit/Text/String/YYTextParser.h; sourceTree = "<group>"; };
@@ -855,7 +860,6 @@
 		C3E03760F3AC908491016B89B137A526 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+YYAdd.h"; path = "YYKit/Base/UIKit/UIControl+YYAdd.h"; sourceTree = "<group>"; };
 		C4270BE908D784647DC32FD4584307D8 /* YYImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCoder.m; path = YYKit/Image/YYImageCoder.m; sourceTree = "<group>"; };
 		C44FFD54B17506E6E46E367CCC01C549 /* PLeakSniffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLeakSniffer.h; path = PLeakSniffer/Classes/PLeakSniffer.h; sourceTree = "<group>"; };
-		C4E2733116F1305FC60EB8A49B9DB73D /* NSCalendar+ST.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ST.h"; sourceTree = "<group>"; };
 		C597AFA644139036B13EE5DB68621B41 /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
 		C63818B1E8F93C3A8CAE179933E49CC8 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65534B300DB3CC1CEA97F9617EAC824 /* UIFont+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+YYAdd.h"; path = "YYKit/Base/UIKit/UIFont+YYAdd.h"; sourceTree = "<group>"; };
@@ -876,10 +880,8 @@
 		CCF900333C73C77794A4C348E1F0EE75 /* UITableView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+YYAdd.h"; path = "YYKit/Base/UIKit/UITableView+YYAdd.h"; sourceTree = "<group>"; };
 		CE4E8BB5CD30CFE4F746E830947185D8 /* YYDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYDiskCache.m; path = YYKit/Cache/YYDiskCache.m; sourceTree = "<group>"; };
 		CEB13874EE0E15DC7A06BC24759C44FC /* libRCIOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRCIOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF5583D9DFB6EDDE58EA5515E5C022BA /* STPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPickerView.m; sourceTree = "<group>"; };
 		D1385A3CE6E826B931670D63F89945EC /* RLMSyncConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration.h; path = include/RLMSyncConfiguration.h; sourceTree = "<group>"; };
 		D144435BED8BFB3F0F49B83F6B1F0A2C /* YYSentinel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSentinel.m; path = YYKit/Utility/YYSentinel.m; sourceTree = "<group>"; };
-		D1B66A0813F24CFBF8B023FBEA58B02A /* UIView+ST.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
 		D48C660595F2697B0E2097EE790BE0FE /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
 		D50B7E210CA048210153275E703E2CAB /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		D50FB470F27802F07E54A0EB81836F72 /* sync_session.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = sync_session.cpp; path = Realm/ObjectStore/src/sync/sync_session.cpp; sourceTree = "<group>"; };
@@ -898,7 +900,6 @@
 		DC7BC2E3E768EF45B9E369CDF47D7CAE /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYKit/Text/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
 		DC9CEF2699B3951D69B6FCA19463D434 /* CALayer+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYWebImage.m"; path = "YYKit/Image/Categories/CALayer+YYWebImage.m"; sourceTree = "<group>"; };
 		DD4ACE99A338154EDC111B8E232DAD34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		DDEA43AFBFF8B013BF28682CA5FCED38 /* PickerPopBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PickerPopBaseView.m; sourceTree = "<group>"; };
 		DE690E5CF005006358D216FAB361EBD2 /* YYKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeychain.m; path = YYKit/Utility/YYKeychain.m; sourceTree = "<group>"; };
 		DE789B6836AADC74C25BB174B40A7B00 /* YYGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYGestureRecognizer.m; path = YYKit/Utility/YYGestureRecognizer.m; sourceTree = "<group>"; };
 		DF4BD503396511842EA93B59A91805E1 /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
@@ -913,6 +914,7 @@
 		E2F604CDFBE7BE432B271E9FE1011C4D /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
 		E3202768E84E3FA7AB9115F6BDA8E0EB /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYKit/Text/Component/YYTextContainerView.h; sourceTree = "<group>"; };
 		E51AF4AB195192BFF2730B101E034310 /* UIGestureRecognizer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+YYAdd.m"; path = "YYKit/Base/UIKit/UIGestureRecognizer+YYAdd.m"; sourceTree = "<group>"; };
+		E5844BD63E906D1A3AF33C89835B628C /* STPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPickerView.m; sourceTree = "<group>"; };
 		E6341CC77CFA85004FA9A2B9A9B17149 /* UINavigationController+PLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+PLeak.h"; path = "PLeakSniffer/Classes/UINavigationController+PLeak.h"; sourceTree = "<group>"; };
 		E6FD929AE552F658FE676387F6AE9015 /* M80AttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabel.h; sourceTree = "<group>"; };
 		E891F339A7FB360C73278F0CC3335FBC /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
@@ -940,14 +942,12 @@
 		F3484F6A59274A5C3E0C5107957D2E94 /* RCIOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RCIOS-SDK.xcconfig"; sourceTree = "<group>"; };
 		F44D4B5129F3F74209C16DE1054A0410 /* RLMArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray.h; path = include/RLMArray.h; sourceTree = "<group>"; };
 		F497F52691E533C6F9DC2DD559149176 /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
-		F4A6B46369A375723ACDD1D66CC009A1 /* NSCalendar+ST.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ST.m"; sourceTree = "<group>"; };
 		F4BC46D970F1864CE874C62D8B4B7817 /* YYSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSentinel.h; path = YYKit/Utility/YYSentinel.h; sourceTree = "<group>"; };
 		F58DCD09447B31AAA72378178FDC6C4A /* YYAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAsyncLayer.h; path = YYKit/Utility/YYAsyncLayer.h; sourceTree = "<group>"; };
 		F5A833F401CA05D12905CCE2A8439F6E /* KPTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KPTextField.h; sourceTree = "<group>"; };
 		F5EC1F4433EC2F08D5C567D1E9045D19 /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
 		F604AC0AC10611AA50EC48E9EA692148 /* YYDispatchQueuePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYDispatchQueuePool.m; path = YYKit/Utility/YYDispatchQueuePool.m; sourceTree = "<group>"; };
 		F68DD9B1EDF032C14C9D25C3DC50BD89 /* KPBandingUnitPopView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KPBandingUnitPopView.h; sourceTree = "<group>"; };
-		F716809EB63A146D0F794F379381B09E /* STConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
 		F74ECF6561FE564F3CD7263FDC1EC30F /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
 		F77CF2A2E1D12198ADEE0FF4F1767F2C /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
 		F834A09875AC3B392E0C3894AF23FB90 /* RLMObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase.h; path = include/RLMObjectBase.h; sourceTree = "<group>"; };
@@ -1067,6 +1067,26 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		0A908E71B30D6812A81ED663C2C100DF /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				53140890552793C8D35DD078B6EE54B1 /* DateFormatString.h */,
+				BD57016084B3767F933E34B6C251BA8E /* DateFormatString.m */,
+				4B549ED2A8CA3477763B266F919DFC08 /* DoubleDatePickerView.h */,
+				6098463B2A12A9FADC72F2857869F14C /* DoubleDatePickerView.m */,
+				4AF56549DE3BDF94A1910BBF34ADF8F3 /* NSCalendar+ST.h */,
+				028E77D2967EB1A67A85F90DCC536017 /* NSCalendar+ST.m */,
+				8FD13F12D1D6F368F2C01CA32E614FA8 /* NSCalendar+Util.h */,
+				A483D42C358541C099F28B1C89AFE1AF /* NSCalendar+Util.m */,
+				1898D30517DB86680B22B51160F98218 /* PickerPopBaseView.h */,
+				0C99DDCA6398922BCC3AF73659E415A8 /* PickerPopBaseView.m */,
+				97EC5B3323040BEC27500883747EEC7C /* RankEnum.h */,
+				B6B7DC954A63FD941CAB16AD28B221F5 /* STPickerDate.h */,
+				41B26F72F7ECDA4022E1EB0A6BB816BB /* STPickerDate.m */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		108AE289AD6099D45D037626FDE4FFD2 /* DownSelectView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1150,7 +1170,7 @@
 				F0A675A4EC9BF6D2238DC55C00677821 /* GeneralCore */,
 				AC1893AA3B3AAF0572AAAD513EC07B57 /* KeyBoardDigitalView */,
 				E0E4D0334BCEC6323CCB623471D60F33 /* KitCategry */,
-				EE57716CE7536E4C93D04492EDECB345 /* PickerView */,
+				A6EF1731EDBE4DDA691F024A05173FAF /* PickerView */,
 				1A7582803E9C0D9E8E4562F0471DE0F7 /* Pod */,
 				12B1AF16D121AE8906BC89AB027C0142 /* PopView */,
 				7BD153224FBB5C8AA4004910864FE035 /* Support Files */,
@@ -1176,26 +1196,6 @@
 				40EC5968BA10D7953C914F521D9E01E4 /* NSMutableAttributedString+M80.m */,
 			);
 			path = M80AttributedLabel;
-			sourceTree = "<group>";
-		};
-		3B309B25E7F31EAA10D96DAB148B1DEF /* DatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				ACACAFAB7E959594B14F3E28916EBF8A /* DateFormatString.h */,
-				4431FC85209EB3783848BD367D2110D9 /* DateFormatString.m */,
-				70A69BF36FD25F2BADA8DD7A62E0025D /* DoubleDatePickerView.h */,
-				750482FB56829BCF3D7233A6B95BD2DF /* DoubleDatePickerView.m */,
-				C4E2733116F1305FC60EB8A49B9DB73D /* NSCalendar+ST.h */,
-				F4A6B46369A375723ACDD1D66CC009A1 /* NSCalendar+ST.m */,
-				982442614EDA9F2F418DBEBC05833DC9 /* NSCalendar+Util.h */,
-				33DC37E1305826AF73A585BAAC754B46 /* NSCalendar+Util.m */,
-				B15DBA727BE73336CFBF06641AABF271 /* PickerPopBaseView.h */,
-				DDEA43AFBFF8B013BF28682CA5FCED38 /* PickerPopBaseView.m */,
-				2B62657620EA1ACDA42308535399DC2A /* RankEnum.h */,
-				34A22CF15462466AB7E12D04465FECBC /* STPickerDate.h */,
-				08661B7BA936C99E9DA8EA77773B364E /* STPickerDate.m */,
-			);
-			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		3DBB7C06BF08045BC77F4A570857432A /* PasswordInput */ = {
@@ -1492,6 +1492,31 @@
 			);
 			sourceTree = "<group>";
 		};
+		7DFC44F74430633A8F17151E815770B1 /* STConfig */ = {
+			isa = PBXGroup;
+			children = (
+				128709380186D27749080BC9DADE08E9 /* STConfig.h */,
+				B717E7CE28FAD260C1B83DBDF297D160 /* STUI.h */,
+				06E259F9BBDC7FDF8FA029AFB6E28F35 /* STUI.m */,
+				31B435AC2C4CA82E19289410EBC923E3 /* UIView+ST.h */,
+				5A080CD037D958AD51971DE61E7219A1 /* UIView+ST.m */,
+			);
+			path = STConfig;
+			sourceTree = "<group>";
+		};
+		8959EB5E69B9B5FE8F96D3247E2036E1 /* STPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				86646ED0C9523E1BEA2C2CB9961BF075 /* STPickerSingle.h */,
+				734ADCF4FE91E109EE835EFCB6796A6B /* STPickerSingle.m */,
+				167BAB4C55EE2EDA1D7C5D90AA6A5290 /* STPickerView.h */,
+				E5844BD63E906D1A3AF33C89835B628C /* STPickerView.m */,
+				3D1C92F3B55D1677E23D7BCAF4C31E19 /* STRCCommonPickerView.h */,
+				7D7976163AEF3023838F37112FEF02C0 /* STRCCommonPickerView.m */,
+			);
+			path = STPickerView;
+			sourceTree = "<group>";
+		};
 		8ABC4F0A789EAB8DAA7C0A708A7EEFE5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1567,6 +1592,17 @@
 				8AA193B9676BD63027A78E5FB1C5256F /* RLMThreadSafeReference.h */,
 			);
 			name = Headers;
+			sourceTree = "<group>";
+		};
+		A6EF1731EDBE4DDA691F024A05173FAF /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				0A908E71B30D6812A81ED663C2C100DF /* DatePicker */,
+				7DFC44F74430633A8F17151E815770B1 /* STConfig */,
+				8959EB5E69B9B5FE8F96D3247E2036E1 /* STPickerView */,
+			);
+			name = PickerView;
+			path = "RCIOS-SDK/PickerView";
 			sourceTree = "<group>";
 		};
 		AC1893AA3B3AAF0572AAAD513EC07B57 /* KeyBoardDigitalView */ = {
@@ -1829,30 +1865,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE57716CE7536E4C93D04492EDECB345 /* PickerView */ = {
-			isa = PBXGroup;
-			children = (
-				3B309B25E7F31EAA10D96DAB148B1DEF /* DatePicker */,
-				F1D963AE70C96DD8F05E4AB485A08CEA /* STConfig */,
-				EFB7240C458E7AAE6FDFDFBDBC1AF944 /* STPickerView */,
-			);
-			name = PickerView;
-			path = "RCIOS-SDK/PickerView";
-			sourceTree = "<group>";
-		};
-		EFB7240C458E7AAE6FDFDFBDBC1AF944 /* STPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				78DE5046646BA4C88CDC57863EA7C008 /* STPickerSingle.h */,
-				60EE0FFCC739658DCB598B9EFC5D78FE /* STPickerSingle.m */,
-				2AE0DD256D56F6D46989A5EDB5DF3DE4 /* STPickerView.h */,
-				CF5583D9DFB6EDDE58EA5515E5C022BA /* STPickerView.m */,
-				158E7CEA3D53A7C7C3BA50894CB550AF /* STRCCommonPickerView.h */,
-				199EE14C8C622097B76A975D05431555 /* STRCCommonPickerView.m */,
-			);
-			path = STPickerView;
-			sourceTree = "<group>";
-		};
 		F0A675A4EC9BF6D2238DC55C00677821 /* GeneralCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -1874,18 +1886,6 @@
 				FA2E28F30C7FDD2B34F990B38CC9DE80 /* SelectGroupView.m */,
 			);
 			path = PopSelect;
-			sourceTree = "<group>";
-		};
-		F1D963AE70C96DD8F05E4AB485A08CEA /* STConfig */ = {
-			isa = PBXGroup;
-			children = (
-				F716809EB63A146D0F794F379381B09E /* STConfig.h */,
-				544529DD2E3DFBF8C1ADC9409BC6CD85 /* STUI.h */,
-				78C743998B7F98B208719EEDF7B0FEAF /* STUI.m */,
-				0D76552CC5808BAAE1991789D79B6897 /* UIView+ST.h */,
-				D1B66A0813F24CFBF8B023FBEA58B02A /* UIView+ST.m */,
-			);
-			path = STConfig;
 			sourceTree = "<group>";
 		};
 		FCBA084FA9F378BB10C0BA8B4DB2010D /* Pods */ = {
@@ -2076,60 +2076,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C627FE4F257CECED204119C7DD708EF1 /* Headers */ = {
+		B681A9D4BB9307A2210EFC293AE5836E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE2A8D134E91A4A288DE3DC61B45F00 /* BaseData.h in Headers */,
-				EB36143D1F176B93BE09158CCB1C11D0 /* BottomPopView.h in Headers */,
-				92E3B83E5AD7D904FE2E93C69A9FBB84 /* DateFormatString.h in Headers */,
-				A2656832BD7552CDD2047C3E75AF1C9B /* DoubleDatePickerView.h in Headers */,
-				AF67D11D1463E5B9F15A509B2105F5E1 /* DownSelectView.h in Headers */,
-				FBED491D214B2AB2A7D1FD00B7196806 /* GeneralCore.h in Headers */,
-				12EEAAC37B76025193B2BA7588C7B37A /* GeneralUIUse.h in Headers */,
-				B581E915CDBCC767F7FA0EA2FB08D7D5 /* InputSecurityView.h in Headers */,
-				F8DDB675D251843E32F7EABB10E47ED3 /* KeyBoardDigitalView.h in Headers */,
-				5ED6281F1CF7A90528CB0597F34590C8 /* KPAddProFinishPopView.h in Headers */,
-				4835741083604DA0448C4B91397F7BDE /* KPBandingUnitPopView.h in Headers */,
-				D0398844DE216938D8682039DB84918C /* KPDepartSelectPopView.h in Headers */,
-				DCB085E8636F293441D2BDA11E6AB22A /* KPEditTextPopView.h in Headers */,
-				F9A959A9DB77313B7CD91DD2A8756B7B /* KPEditUintPopView.h in Headers */,
-				2AA19664A3C09D762F6FD4C9AB875379 /* KPRedAlertPopView.h in Headers */,
-				062CF8B0CB5638B16F3C888336CE78D6 /* KPTempModel.h in Headers */,
-				FBEA37E379E0E0FD70D5B72679243732 /* KPTextField.h in Headers */,
-				4E8C6A99C617DA27651A1D4666EBF797 /* KPUpdatePopView.h in Headers */,
-				F28FC9B136F1B97E9834D3BF38127090 /* LittleImageBigControl.h in Headers */,
-				50123278CC8C7A39A2C96DAB9090CF31 /* M80AttributedLabel.h in Headers */,
-				B1E49521B0760203DE00A513E86E7D20 /* M80AttributedLabelAttachment.h in Headers */,
-				CE52EFBD93BB221007D5AA490BFC86D7 /* M80AttributedLabelDefines.h in Headers */,
-				C409889DCDFDC063A686E01CD8C27410 /* M80AttributedLabelURL.h in Headers */,
-				8F48E747F5EE4BFC02BF549C287B49AA /* NSCalendar+ST.h in Headers */,
-				A958EE8384940EFB0AC52565E19E6489 /* NSCalendar+Util.h in Headers */,
-				EE6560A242C1FD54C40908B123FABEAC /* NSMutableAttributedString+M80.h in Headers */,
-				243379D070F33A8904ED4866BDA8A132 /* NSString+Size.h in Headers */,
-				C7AEEFFCE94861A5F6FBED2A13228D1D /* PasswordInputView.h in Headers */,
-				2B251452EFD849E778DE9F46606BE676 /* PaymentSelectView.h in Headers */,
-				B7C72D65341BD6BF6FB1F663A90E28B2 /* PickerPopBaseView.h in Headers */,
-				1C715F06527DE14A35B64341AF22594C /* PopBaseView.h in Headers */,
-				16FA37BF2E60C0231B34BF2DD6083D21 /* RankEnum.h in Headers */,
-				0FF192C4FAFC4FEAF3613D31A0915E6D /* RCSDKHeader.h in Headers */,
-				9729FEB5E4F819BE85410C9F7053128E /* SDAutoLayout.h in Headers */,
-				6E4289D029205DF194730256A3027C29 /* SelectGroupView.h in Headers */,
-				1D70E69F0FF065670EBDCA5E14CDBAC8 /* ShareBottomPopView.h in Headers */,
-				F7ABB809AAA5EF6B21041BBB976AB7A1 /* ShareProBottomPopView.h in Headers */,
-				1D627EF7CD0523AEA561472248E2EB1F /* STConfig.h in Headers */,
-				BC7A7CECC65DB0994FFB0BA02873C1E1 /* STPickerDate.h in Headers */,
-				64DF45C932D9112A46977CC1C551570F /* STPickerSingle.h in Headers */,
-				F9B52D8B2DBEA5AA18303951EA8E0511 /* STPickerView.h in Headers */,
-				87E0E3D88005289E994E4F626C9EF0DA /* STRCCommonPickerView.h in Headers */,
-				CC500A0310833030831151F62F531271 /* STUI.h in Headers */,
-				FE7CB90305DC8AB745C0AF2D83ACE478 /* UIFactory.h in Headers */,
-				A55F7B81E96CBEFE2472A357D97FB559 /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
-				A26C27A49938F6A97248292D4F4CF8AC /* UIView+SDAutoLayout.h in Headers */,
-				E0E4E335D8A459F926B255BC500B8851 /* UIView+ST.h in Headers */,
-				3A09926EC1E9EC5B11E24D42DD71561E /* UpImgDownTextBtn.h in Headers */,
-				DDEB769053BA035DD2FC048A986E4AB6 /* WPNormalPopView.h in Headers */,
-				3FBA71F3B5E13988183183089473D19F /* YYKeyboardManager.h in Headers */,
+				85836937ABBC0F16D2607214564C22F5 /* BaseData.h in Headers */,
+				9CE688AD3A26F8C61711F1E2DE90F514 /* BottomPopView.h in Headers */,
+				5D78277AB677451D6765B4D005D9084B /* DateFormatString.h in Headers */,
+				7C0EF3D4797408FD107930A77E30E5A6 /* DoubleDatePickerView.h in Headers */,
+				6B62EB3A93D1954EAD597A236D0F61A5 /* DownSelectView.h in Headers */,
+				4BB5DECAEB089A347502211123029E8D /* GeneralCore.h in Headers */,
+				BF91398D9CA6D91B4AECB1B1A8006803 /* GeneralUIUse.h in Headers */,
+				C0112BA4DD9F0E6C25E5B2AA6EBAF1D5 /* InputSecurityView.h in Headers */,
+				E31953890DB3CA24A9344DB1A9670D47 /* KeyBoardDigitalView.h in Headers */,
+				A3C45EEFD6EF08F3673E0743A016ADAB /* KPAddProFinishPopView.h in Headers */,
+				BEA8087C12249136142E540F8A585ADD /* KPBandingUnitPopView.h in Headers */,
+				A74B34C1438E2CCFE66BAE41B2BA65EA /* KPDepartSelectPopView.h in Headers */,
+				DA94DAA76D0C9CFF536748A5891AFADC /* KPEditTextPopView.h in Headers */,
+				8547AA7E5437EC379FC98C383185B653 /* KPEditUintPopView.h in Headers */,
+				A5CAF0D4EE61F9BAAACD2DF1BD5101F3 /* KPRedAlertPopView.h in Headers */,
+				7BA8BE903D61E4D47C29A4E2084903D6 /* KPTempModel.h in Headers */,
+				DC8EEA2408767B1A299E9C4009CF5627 /* KPTextField.h in Headers */,
+				FD6782D2FCC0243B4B83A35EBECC4053 /* KPUpdatePopView.h in Headers */,
+				5F612DE7D71DAF1D74E8AA6EDE7D8D59 /* LittleImageBigControl.h in Headers */,
+				FEE73BEBC9B6BF2C745FB3DE1D09718D /* M80AttributedLabel.h in Headers */,
+				E42527FC91A3D0568A40040DBB5269D9 /* M80AttributedLabelAttachment.h in Headers */,
+				463A3AA4FF1AA8DFACD80E7D775D11E3 /* M80AttributedLabelDefines.h in Headers */,
+				A0566F09B8861F49F08B1D7FCCCD69E9 /* M80AttributedLabelURL.h in Headers */,
+				D37402B351D3E9D599F4F4ED0319441B /* NSCalendar+ST.h in Headers */,
+				096A9D302A40B0916FB185B2AE5BB037 /* NSCalendar+Util.h in Headers */,
+				2240C7AFEDE3AC3E9CF9C43C40FC0C5E /* NSMutableAttributedString+M80.h in Headers */,
+				3F9280D5064D6C782DA4B2E3AA12BD0E /* NSString+Size.h in Headers */,
+				92A53A9654310897D7C50B0B9983B333 /* PasswordInputView.h in Headers */,
+				CA2D8F4C4BDBBBED4D886405E547C878 /* PaymentSelectView.h in Headers */,
+				C1DB6E64BF972989BF72050FCBD0A46D /* PickerPopBaseView.h in Headers */,
+				1C1C90DEC23920DF361CB8D2F308C734 /* PopBaseView.h in Headers */,
+				2663AF7EE1B7932BE5D4F637850357AD /* RankEnum.h in Headers */,
+				FA6A7A65AF7A563D75695A33F3BF9834 /* RCSDKHeader.h in Headers */,
+				7C0E0AC646332B2EEEDBB310ADC71BB7 /* SDAutoLayout.h in Headers */,
+				8768FD4CA7B7ABB15D37F3596BD714D3 /* SelectGroupView.h in Headers */,
+				62962BECEB474B4A7ABF0942AD1DCBBC /* ShareBottomPopView.h in Headers */,
+				66C79E278E5C8ECD4DBEFC9023425585 /* ShareProBottomPopView.h in Headers */,
+				01F32B3B48C846D1427E3F569E10A1E9 /* STConfig.h in Headers */,
+				6A298FE31EC351E73B5D44869D203F2E /* STPickerDate.h in Headers */,
+				DE62E9B8B48C912738ABA0D63427399E /* STPickerSingle.h in Headers */,
+				F08CCB785B6BF622CE0F20C6AEFA1C5C /* STPickerView.h in Headers */,
+				E5D7661FDB70E6EDD3B61677036A8982 /* STRCCommonPickerView.h in Headers */,
+				018DF1522FC5F2D4A57515355343A818 /* STUI.h in Headers */,
+				6EF809131FE218598756A633F88FDDB1 /* UIFactory.h in Headers */,
+				7E09753115255AD948FF6C150E9D2690 /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
+				7676EBA948CAEFA6411EB8142F256142 /* UIView+SDAutoLayout.h in Headers */,
+				DE757D8F3ABD1E24EFEBF2780CBBB242 /* UIView+ST.h in Headers */,
+				59C9B24D83F357C8CF64A5A46AC2B2B2 /* UpImgDownTextBtn.h in Headers */,
+				E8AFF2B720AABEAABC7190C671F5647D /* WPNormalPopView.h in Headers */,
+				C1013CF10DA1EEE932B9C6856E5CE5FD /* YYKeyboardManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2246,8 +2246,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB5E2A919801EF273944B51423A2023 /* Build configuration list for PBXNativeTarget "RCIOS-SDK" */;
 			buildPhases = (
-				C627FE4F257CECED204119C7DD708EF1 /* Headers */,
-				A39147D2DECBCEBE5105B4FE4C06EE58 /* Sources */,
+				B681A9D4BB9307A2210EFC293AE5836E /* Headers */,
+				3598B5730BE21ED5ED172384B0012AFC /* Sources */,
 				B304CA0FA0D8053B479CC0435D64726E /* Frameworks */,
 			);
 			buildRules = (
@@ -2408,6 +2408,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3598B5730BE21ED5ED172384B0012AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DCC1221B764405555093D316BB213B /* BottomPopView.m in Sources */,
+				683C800EAF636A1AEB127F400EDE9D66 /* DateFormatString.m in Sources */,
+				4E4915B0611F6BADD27EF563426774E6 /* DoubleDatePickerView.m in Sources */,
+				D4D2F065ADF8BE6F93FB7C3758BE2F4D /* DownSelectView.m in Sources */,
+				4BBA1538B325A9AA5722E92A590C4661 /* GeneralCore.m in Sources */,
+				CDBDB8D99537B54A34F4B88DBD0E90FA /* GeneralUIUse.m in Sources */,
+				B91D1545359E33CB4138C119555AF807 /* InputSecurityView.m in Sources */,
+				575BDC747B331AB8A43C9F4250A7E5B3 /* KeyBoardDigitalView.m in Sources */,
+				6BDACE1191B367D4EAA967F88E67F1DE /* KPAddProFinishPopView.m in Sources */,
+				19B0AB8075018CB4320B01CBEABA5C49 /* KPBandingUnitPopView.m in Sources */,
+				9FE618C19047B7DF40E255862A8540CC /* KPDepartSelectPopView.m in Sources */,
+				CF1F58AB174359CEB39C47B7CBD037A0 /* KPEditTextPopView.m in Sources */,
+				22F6C0D5DAC78B3B0B3853D5363D7CCD /* KPEditUintPopView.m in Sources */,
+				5158816DD34FC9083DBB193F374ECED6 /* KPRedAlertPopView.m in Sources */,
+				249BB3556A2493E97D80E3D7FF3E0F3E /* KPTempModel.m in Sources */,
+				18D4871B755117D52609743445F57793 /* KPTextField.m in Sources */,
+				93E9A574B8E872DB8468BA67718F1E6A /* KPUpdatePopView.m in Sources */,
+				6D0D4CB67C70A986F3C27C25EF981BE3 /* LittleImageBigControl.m in Sources */,
+				0A48588AC39A7B2017B0200CE2061BC8 /* M80AttributedLabel.m in Sources */,
+				647C6464D378BD0743CEC9E25058F319 /* M80AttributedLabelAttachment.m in Sources */,
+				65ADDE59E8CA3EE55E38884F64B95EC9 /* M80AttributedLabelURL.m in Sources */,
+				501CCA83D066CBB0B73E77FBD2E1F2E2 /* NSCalendar+ST.m in Sources */,
+				4AA000042EF3411840617763FB1CE70E /* NSCalendar+Util.m in Sources */,
+				100D5A6EF837C919DAC28D12AF9747CC /* NSMutableAttributedString+M80.m in Sources */,
+				CD0D7F8CCDE616C528383A5A8009E01F /* NSString+Size.m in Sources */,
+				9291CD240E617E6269D09769EC68C0E1 /* PasswordInputView.m in Sources */,
+				DE0E18C91F73E60CD5B63942FF47AA2F /* PaymentSelectView.m in Sources */,
+				A1A0FF4F949C02FF59EB344EC09EC748 /* PickerPopBaseView.m in Sources */,
+				32612D4681BF2FD35752B988AC705917 /* PopBaseView.m in Sources */,
+				F16C2A20AB05E072A0CB1EE9AD6711D9 /* RCIOS-SDK-dummy.m in Sources */,
+				23845A91682C9F9287C0C783534721BA /* SelectGroupView.m in Sources */,
+				02C0F4022786575A21A935EB8B186441 /* ShareBottomPopView.m in Sources */,
+				F49BA29DED406AB3FE4EE7C89817E99E /* ShareProBottomPopView.m in Sources */,
+				833052AFB59F29FAE220799015E1EC1C /* STPickerDate.m in Sources */,
+				41496F7A1E72D91600D3525346A9A6A0 /* STPickerSingle.m in Sources */,
+				09D6A0E3A06B6AADE00E722CA0115A2F /* STPickerView.m in Sources */,
+				7A6A2F6DC6B37741E1A30C30A9EC75A9 /* STRCCommonPickerView.m in Sources */,
+				0182A33B4E8D0996DAB451A63B7198D0 /* STUI.m in Sources */,
+				C1F75AE8223C6C6F9CFCB5686E5AB07F /* UIFactory.m in Sources */,
+				743F3F0C9B615A8DB2DB1B38E15B27B9 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				8C5C2C21C405F2F69F543313D24A9F01 /* UIView+SDAutoLayout.m in Sources */,
+				0CDED9E2E11813B706AE427E3517E571 /* UIView+ST.m in Sources */,
+				897F837B375646EBC4E91A8BB7769BF7 /* UpImgDownTextBtn.m in Sources */,
+				B04B35E661AEDB9895FB5A0D53C42D48 /* WPNormalPopView.m in Sources */,
+				E2D3209389507D4F4059AF5AF978844D /* YYKeyboardManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9836B3B21F7234F5A8D18B8E056869E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2418,58 +2470,6 @@
 				8C123E65AFD4D3BEA996E06846E586F9 /* LKDBUtils.m in Sources */,
 				94E1892F5E9EFA481671AF85C2773AB3 /* NSObject+LKDBHelper.m in Sources */,
 				AA94FA86C67D139BFFD2E4AD29FD944A /* NSObject+LKModel.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A39147D2DECBCEBE5105B4FE4C06EE58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E8D891327EEA9D169D21BF952A2BEF4 /* BottomPopView.m in Sources */,
-				E4F99B1BAC953E051668BB5F654EB780 /* DateFormatString.m in Sources */,
-				1305CA4AD1A437EB57F75578D7226ED9 /* DoubleDatePickerView.m in Sources */,
-				00FD0A373751EB2AE6B14BEAC554E683 /* DownSelectView.m in Sources */,
-				408E62182CA9FAE9D5BAB55BA48E3E93 /* GeneralCore.m in Sources */,
-				1E60CEB5A40B98C91BB543826685E9F9 /* GeneralUIUse.m in Sources */,
-				264D58C25B6320A4C65B2B2E610E47E4 /* InputSecurityView.m in Sources */,
-				501B4ED06FA6025354962685DA4FB386 /* KeyBoardDigitalView.m in Sources */,
-				FA3F47AE6D193726185890EEF8DCF63B /* KPAddProFinishPopView.m in Sources */,
-				CCD816BB265CD3662AE88A7B94B28DD8 /* KPBandingUnitPopView.m in Sources */,
-				AD91A348B4FC8E398414F626953AE835 /* KPDepartSelectPopView.m in Sources */,
-				254E6EE8C61DB6B6054F9A19D0B1C19E /* KPEditTextPopView.m in Sources */,
-				60E4E7C44F84C91DCF03ADFD526DF0E6 /* KPEditUintPopView.m in Sources */,
-				6C77D833C4F8CA1225AF9EABD9844962 /* KPRedAlertPopView.m in Sources */,
-				53A60B1C42915DEBC1F2B9B3E85F0D46 /* KPTempModel.m in Sources */,
-				E83C2F57EBAF4C9A12A7BCE649C486C8 /* KPTextField.m in Sources */,
-				F4E43211385B6043C3CBAD3B6F526821 /* KPUpdatePopView.m in Sources */,
-				565917F51A5C9B4D553A600424E175D7 /* LittleImageBigControl.m in Sources */,
-				667BBED8F60C5579EEA353A68D70D1A1 /* M80AttributedLabel.m in Sources */,
-				72D5F15CB70E33B604EBF57F780873A9 /* M80AttributedLabelAttachment.m in Sources */,
-				BF93A85DB67AB92E5F04BB823371C958 /* M80AttributedLabelURL.m in Sources */,
-				ABDDB5BBCA36F973F56C81D51E1E13CD /* NSCalendar+ST.m in Sources */,
-				AC1461A64E4C3C186B588278AF110C36 /* NSCalendar+Util.m in Sources */,
-				ABD9FD8BAC0EF05DFA44519253FBC778 /* NSMutableAttributedString+M80.m in Sources */,
-				1EDE1BFAA35CED987F0F785AAA962CEE /* NSString+Size.m in Sources */,
-				951A475FABBB00A5AAB0AAE1A8A11F00 /* PasswordInputView.m in Sources */,
-				7B217C64E39365B4779A46F3956D9D16 /* PaymentSelectView.m in Sources */,
-				9B3DCD1AEB2406FBC3CFEA141302AA21 /* PickerPopBaseView.m in Sources */,
-				7E6D231A2B42FF6888DDB8C7E432A87A /* PopBaseView.m in Sources */,
-				F94BDF500791AA791B17FB4FA0AFEDC3 /* RCIOS-SDK-dummy.m in Sources */,
-				66A2C35475387F6284D4B7F5B9A0239B /* SelectGroupView.m in Sources */,
-				6704C1F546F93A6C9554EA0D00DFCC00 /* ShareBottomPopView.m in Sources */,
-				EA31692FD84458C7D5DBCB619C7840D0 /* ShareProBottomPopView.m in Sources */,
-				E68C359353AEF85B515FDC479D8D2B84 /* STPickerDate.m in Sources */,
-				1C759FEBCD79D1030F2210DFF87236DE /* STPickerSingle.m in Sources */,
-				99C28750E2C66D47D6702E203C9E3D83 /* STPickerView.m in Sources */,
-				BEB6183606285B37A6C125AF0A200E6D /* STRCCommonPickerView.m in Sources */,
-				ECC44BAB5B01D1D94493B3B5533EF314 /* STUI.m in Sources */,
-				E4CC3E919E71975202FC76615DD133ED /* UIFactory.m in Sources */,
-				626CD109AC11390444CB6F56F2F6C273 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
-				03FF31A950B98B69CB0995B70987C6CF /* UIView+SDAutoLayout.m in Sources */,
-				99867D59EDAA50B2E735031C38483EE1 /* UIView+ST.m in Sources */,
-				AAC9A84870724C81C36C7187CF6BCC3E /* UpImgDownTextBtn.m in Sources */,
-				AD86313744D61325283D1B2AE5C9DC4A /* WPNormalPopView.m in Sources */,
-				6E76F726B23EDABDF78369A41DC15FA3 /* YYKeyboardManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
