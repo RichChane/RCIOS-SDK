@@ -25,7 +25,10 @@
         
         shareInstance.CWhite = [UIColor whiteColor];
         shareInstance.CBlack = [UIColor blackColor];
-
+        shareInstance.tabBarHeight = 100;
+        shareInstance.topBarNowHeight = 100;
+        shareInstance.topBarNormalHeight = 100;
+        shareInstance.tabBarOriginalHeight = 100;
         
     });
     

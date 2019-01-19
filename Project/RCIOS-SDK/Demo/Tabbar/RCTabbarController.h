@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RCTabbarController : UIViewController
+@interface RCTabbarController : GeneralViewController
 {
     MetaBallCanvas *ballView;
     

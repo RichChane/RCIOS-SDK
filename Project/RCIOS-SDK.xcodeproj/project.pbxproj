@@ -31,6 +31,7 @@
 		8A70B478217D62F00058B955 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70B477217D62F00058B955 /* CommonUtil.m */; };
 		8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */; };
 		8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9ABA2F219413250078E1A8 /* RCRealmVC.m */; };
+		8AA0E0AF21E324B500CCB650 /* ImageTextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0E0AE21E324B500CCB650 /* ImageTextFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCCusKeyboardVC.m; sourceTree = "<group>"; };
 		8A9ABA2E219413250078E1A8 /* RCRealmVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCRealmVC.h; sourceTree = "<group>"; };
 		8A9ABA2F219413250078E1A8 /* RCRealmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCRealmVC.m; sourceTree = "<group>"; };
+		8AA0E0AD21E324B500CCB650 /* ImageTextFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTextFactory.h; sourceTree = "<group>"; };
+		8AA0E0AE21E324B500CCB650 /* ImageTextFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTextFactory.m; sourceTree = "<group>"; };
 		8F43CAF8F14C7CD21A72D737 /* libPods-RCIOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCIOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F387BB4A3192A231BCBB3EC2 /* Pods-RCIOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F54BAEF96BAD5D0DAE73567A /* Pods-RCIOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				8A5424CA21E0564200C2097D /* MetaBallCanvas.m */,
 				8A5424C521E04CB700C2097D /* NumbTagView.h */,
 				8A5424C621E04CB700C2097D /* NumbTagView.m */,
+				8AA0E0AD21E324B500CCB650 /* ImageTextFactory.h */,
+				8AA0E0AE21E324B500CCB650 /* ImageTextFactory.m */,
 				8A58A4FF21D8CCFA00F456B6 /* RCTabBar.h */,
 				8A58A50021D8CCFA00F456B6 /* RCTabBar.m */,
 				8A6A595321DF94BE0092E101 /* RCTabbarController.h */,
@@ -316,6 +321,7 @@
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 				8A70B478217D62F00058B955 /* CommonUtil.m in Sources */,
 				8A5424D621E0582D00C2097D /* Circle.m in Sources */,
+				8AA0E0AF21E324B500CCB650 /* ImageTextFactory.m in Sources */,
 				8A58A50121D8CCFA00F456B6 /* RCTabBar.m in Sources */,
 				8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */,
 			);

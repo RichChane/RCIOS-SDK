@@ -48,7 +48,7 @@
     [self selectTabAtIndex:btn.tag - 100];
     if ([_delegate respondsToSelector:@selector(tabBar:didSelectIndex:)])
     {
-        //[_delegate tabBar:self didSelectIndex:btn.tag - 100];
+        [_delegate tabBar:self didSelectIndex:btn.tag - 100];
     }
 }
 - (void)selectTabAtIndex:(NSInteger)index
@@ -111,12 +111,12 @@
     [btn setImage:defaultImage forState:UIControlStateNormal];
     [btn setImage:seletedImage forState:UIControlStateSelected];
     
-    [btn.titleLabel setFont:[UIFont systemFontOfSize:12]];
-    [btn setTitle:ML(name) forState:UIControlStateNormal];
-    [btn setTitle:ML(name) forState:UIControlStateSelected];
-    
-    [btn setTitleColor:_TC forState:UIControlStateNormal];
-    [btn setTitleColor:GC.MC forState:UIControlStateSelected];
+//    [btn.titleLabel setFont:[UIFont systemFontOfSize:12]];
+//    [btn setTitle:ML(name) forState:UIControlStateNormal];
+//    [btn setTitle:ML(name) forState:UIControlStateSelected];
+//
+//    [btn setTitleColor:_TC forState:UIControlStateNormal];
+//    [btn setTitleColor:GC.MC forState:UIControlStateSelected];
     
     //    CGRect now_frame = [btn.titleLabel.text boundingRectWithSize:CGSizeMake(btn.frame.size.width, btn.frame.size.height)//限制最大的宽度和高度
     //                                                         options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading//采用换行模式
@@ -126,11 +126,10 @@
     //    [btn setImageEdgeInsets:UIEdgeInsetsMake(3, (now_frame.size.width + height)/2, btn.frame.size.height - 3 - height, 0)];
     //    [btn setTitleEdgeInsets:UIEdgeInsetsMake(height + 5, 0, btn.frame.size.height - 5 - height - 7, (now_frame.size.width + height)/2 - 1)];
     
-    btn.titleEdgeInsets = UIEdgeInsetsMake(-btn.titleLabel.frame.size.height + 35, -btn.imageView.frame.size.width, -btn.imageView.frame.size.height, 0);
-    btn.imageEdgeInsets = UIEdgeInsetsMake(7, 0, 0, -btn.titleLabel.frame.size.width);
+
     // 由于iOS8中titleLabel的size为0，用上面这样设置有问题，修改一下即可
     //    btn.imageEdgeInsets = UIEdgeInsetsMake(-btn.titleLabel.intrinsicContentSize.height, 0, 0, -btn.titleLabel.intrinsicContentSize.width);
-    btn.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
+    //btn.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
     [btn addTarget:self action:@selector(tabBarButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     newPoint[index] = [[UIView alloc]initWithFrame:CGRectMake(btn.frame.size.width - 18, 8, 8, 8)];
