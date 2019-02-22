@@ -14,7 +14,7 @@
 #import "RCLKDBHelperVC.h"
 #import "RCTabbarController.h"
 #import "ImageTextFactory.h"
-
+#import "RCTableView.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -39,7 +39,7 @@
     dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper",@"InnerTabbar"];
     
     
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
+    RCTableView *tableView = [[RCTableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];

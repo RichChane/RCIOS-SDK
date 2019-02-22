@@ -6,19 +6,21 @@ PODS:
     - LKDBHelper/standard (= 2.5.1)
   - LKDBHelper/standard (2.5.1):
     - FMDB
+  - MJRefresh (3.1.15.7)
   - PLeakSniffer (0.1.0)
   - RCIOS-SDK (1.0.0):
     - PLeakSniffer
     - YYKit
-  - Realm (3.12.0):
-    - Realm/Headers (= 3.12.0)
-  - Realm/Headers (3.12.0)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - LKDBHelper
+  - MJRefresh
   - RCIOS-SDK (from `../`)
   - Realm
 
@@ -26,6 +28,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
     - LKDBHelper
+    - MJRefresh
     - PLeakSniffer
     - Realm
     - YYKit
@@ -37,11 +40,12 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   LKDBHelper: 9a276ba51f2e16263d46a9517e16cc9b03472664
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
   RCIOS-SDK: 42c156d3e60d27f988c8f13c34dff626d6544e36
-  Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 83d48350e42f13ce9914b7c9a39908bcae0b4a27
+PODFILE CHECKSUM: 194ab86879401944eb4b950893e7c87874d35a9f
 
 COCOAPODS: 1.5.3
