@@ -8,7 +8,7 @@
 
 #import "RCTableView.h"
 #import <MJRefresh/MJRefresh.h>
-
+#import "RCMJRefreshNormalHeader.h"
 
 @implementation RCTableView
 
@@ -18,14 +18,20 @@
     
     if (self) {
         
-        self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        MJRefreshHeader *header = [RCMJRefreshNormalHeader headerWithRefreshingBlock:^{
             
         }];
         
+        header.frame = CGRectMake(0, 0, SCREEN_WIDTH, 100);
+        
+        self.mj_header = header;
     }
     
     return self;
 }
+
+
 
 
 
