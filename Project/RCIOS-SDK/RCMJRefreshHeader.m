@@ -36,7 +36,7 @@
         
         UILabel *label = [UILabel new];
         label.textAlignment = NSTextAlignmentCenter;
-        [label setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 25)];
+        [label setFrame:CGRectMake(0, 0, SCREEN_WIDTH, StatusLabelHeight)];
         [label setFont:MJRefreshLabelFont];
         [label setTextColor:MJRefreshLabelTextColor];
         [self addSubview:label];
@@ -52,7 +52,7 @@
         
         UILabel *label = [UILabel new];
         label.textAlignment = NSTextAlignmentCenter;
-        [label setFrame:CGRectMake(0, 25, SCREEN_WIDTH, 25)];
+        [label setFrame:CGRectMake(0, StatusLabelHeight, SCREEN_WIDTH, StatusLabelHeight)];
         [label setFont:MJRefreshLabelFont];
         [label setTextColor:MJRefreshLabelTextColor];
         [self addSubview:label];
@@ -152,7 +152,7 @@
         // 状态
         if (noConstrainsOnStatusLabel) self.stateLabel.frame = self.bounds;
     } else {
-        CGFloat stateLabelH = self.mj_h * 0.25;
+        CGFloat stateLabelH = StatusLabelHeight;
         // 状态
         if (noConstrainsOnStatusLabel) {
             self.stateLabel.mj_x = 0;

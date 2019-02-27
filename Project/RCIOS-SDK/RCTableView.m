@@ -8,7 +8,7 @@
 
 #import "RCTableView.h"
 #import <MJRefresh/MJRefresh.h>
-#import "RCMJRefreshNormalHeader.h"
+#import "RCMJRefreshExternHeader.h"
 
 @implementation RCTableView
 
@@ -19,11 +19,14 @@
     if (self) {
         
         
-        MJRefreshHeader *header = [RCMJRefreshNormalHeader headerWithRefreshingBlock:^{
+        RCMJRefreshExternHeader *header = [RCMJRefreshExternHeader headerWithRefreshingBlock:^{
             
         }];
         
-        header.frame = CGRectMake(0, 0, SCREEN_WIDTH, 100);
+        UIView *externView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
+        externView.backgroundColor = [UIColor redColor];
+        [header addExternView:externView];
+        
         
         self.mj_header = header;
     }

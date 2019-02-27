@@ -6,18 +6,20 @@
 //  Copyright © 2019年 RC. All rights reserved.
 //
 
-#import "RCMJRefreshNormalHeader.h"
+#import "RCMJRefreshExternHeader.h"
 
 
-@interface RCMJRefreshNormalHeader()
+@interface RCMJRefreshExternHeader()
 {
     __unsafe_unretained UIImageView *_arrowView;
+    CGFloat arrowCenterY;
+    UIView *_externView;
 }
 @property (weak, nonatomic) UIActivityIndicatorView *loadingView;
 
 @end
 
-@implementation RCMJRefreshNormalHeader
+@implementation RCMJRefreshExternHeader
 #pragma mark - 懒加载子控件
 - (UIImageView *)arrowView
 {
@@ -70,7 +72,7 @@
         CGFloat textWidth = MAX(stateWidth, timeWidth);
         arrowCenterX -= textWidth / 2 + self.labelLeftInset;
     }
-    CGFloat arrowCenterY = self.mj_h * 0.25;
+    arrowCenterY = StatusLabelHeight;
     CGPoint arrowCenter = CGPointMake(arrowCenterX, arrowCenterY);
     
     // 箭头
@@ -125,5 +127,26 @@
         self.arrowView.hidden = YES;
     }
 }
+
+- (void)addExternView:(UIView *)externView
+{
+    if (externView) {
+        externView.frame = CGRectMake(0, MJRefreshHeaderHeight, externView.frame.size.width, externView.frame.size.height);
+        self.frame = CGRectMake(0, -(MJRefreshHeaderHeight + externView.frame.size.height), self.frame.size.width, MJRefreshHeaderHeight + externView.frame.size.height);
+        if (![_externView isEqual:externView]) {
+            [self addSubview:externView];
+        }
+        
+    }else{// externView 为空则还原header
+        self.frame = CGRectMake(0, -MJRefreshHeaderHeight, self.frame.size.width, MJRefreshHeaderHeight);
+        if (_externView) {
+            [_externView removeFromSuperview];
+        }
+        
+    }
+    _externView = externView;
+    
+}
+
 @end
 

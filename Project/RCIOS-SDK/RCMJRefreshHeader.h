@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define StatusLabelHeight MJRefreshHeaderHeight/2
+
 @interface RCMJRefreshHeader : MJRefreshHeader
 
 #pragma mark - 刷新时间相关

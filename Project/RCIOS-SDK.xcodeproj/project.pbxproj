@@ -17,7 +17,7 @@
 		8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A254E37212D55F7005D4C9B /* RCPopDemoVC.m */; };
 		8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */; };
 		8A4F730322216EA700C0278D /* RCMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F730222216EA700C0278D /* RCMJRefreshHeader.m */; };
-		8A4F73062221715A00C0278D /* RCMJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F73052221715A00C0278D /* RCMJRefreshNormalHeader.m */; };
+		8A4F73062221715A00C0278D /* RCMJRefreshExternHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4F73052221715A00C0278D /* RCMJRefreshExternHeader.m */; };
 		8A5424C721E04CB700C2097D /* NumbTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424C621E04CB700C2097D /* NumbTagView.m */; };
 		8A5424CC21E0564200C2097D /* MetaBallCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424CA21E0564200C2097D /* MetaBallCanvas.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A5424CD21E0564200C2097D /* MetaBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5424CB21E0564200C2097D /* MetaBall.m */; };
@@ -55,8 +55,8 @@
 		8A275CA02137CD6C0071B32A /* RCPickerDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPickerDemoVC.m; sourceTree = "<group>"; };
 		8A4F730122216EA700C0278D /* RCMJRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCMJRefreshHeader.h; sourceTree = "<group>"; };
 		8A4F730222216EA700C0278D /* RCMJRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCMJRefreshHeader.m; sourceTree = "<group>"; };
-		8A4F73042221715A00C0278D /* RCMJRefreshNormalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCMJRefreshNormalHeader.h; sourceTree = "<group>"; };
-		8A4F73052221715A00C0278D /* RCMJRefreshNormalHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCMJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		8A4F73042221715A00C0278D /* RCMJRefreshExternHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCMJRefreshExternHeader.h; sourceTree = "<group>"; };
+		8A4F73052221715A00C0278D /* RCMJRefreshExternHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCMJRefreshExternHeader.m; sourceTree = "<group>"; };
 		8A5424C521E04CB700C2097D /* NumbTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumbTagView.h; sourceTree = "<group>"; };
 		8A5424C621E04CB700C2097D /* NumbTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbTagView.m; sourceTree = "<group>"; };
 		8A5424C821E0564200C2097D /* MetaBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaBall.h; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 				8A863DD9221FFEEC00F83365 /* RCTableView.m */,
 				8A4F730122216EA700C0278D /* RCMJRefreshHeader.h */,
 				8A4F730222216EA700C0278D /* RCMJRefreshHeader.m */,
-				8A4F73042221715A00C0278D /* RCMJRefreshNormalHeader.h */,
-				8A4F73052221715A00C0278D /* RCMJRefreshNormalHeader.m */,
+				8A4F73042221715A00C0278D /* RCMJRefreshExternHeader.h */,
+				8A4F73052221715A00C0278D /* RCMJRefreshExternHeader.m */,
 				8A254E11212D2E0A005D4C9B /* PrefixHeader.pch */,
 				8A254DFB212D14D6005D4C9B /* Main.storyboard */,
 				8A254DFE212D14D7005D4C9B /* Assets.xcassets */,
@@ -350,7 +350,7 @@
 				8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */,
 				8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */,
 				8A254E05212D14D7005D4C9B /* main.m in Sources */,
-				8A4F73062221715A00C0278D /* RCMJRefreshNormalHeader.m in Sources */,
+				8A4F73062221715A00C0278D /* RCMJRefreshExternHeader.m in Sources */,
 				8A275CA12137CD6C0071B32A /* RCPickerDemoVC.m in Sources */,
 				8A863DDA221FFEEC00F83365 /* RCTableView.m in Sources */,
 				8A5424CC21E0564200C2097D /* MetaBallCanvas.m in Sources */,
