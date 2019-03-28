@@ -29,6 +29,9 @@
 		8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994CE2196C54C000F3B71 /* TestLKModel.m */; };
 		8A6994D22196C7CF000F3B71 /* LKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994D12196C7CF000F3B71 /* LKBaseModel.m */; };
 		8A6A595521DF94BE0092E101 /* RCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A595421DF94BE0092E101 /* RCTabbarController.m */; };
+		8A6AF89C224CA20700217C68 /* RCKeepBGRunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6AF89B224CA20700217C68 /* RCKeepBGRunManager.m */; };
+		8A6AF89E224CA4A800217C68 /* audio_source.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AF89D224CA4A800217C68 /* audio_source.mp3 */; };
+		8A6AF8A0224CAB8C00217C68 /* shadow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AF89F224CAB8C00217C68 /* shadow.mp3 */; };
 		8A6D1BEA2177330600DDE742 /* AppDelegate+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */; };
 		8A70B478217D62F00058B955 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70B477217D62F00058B955 /* CommonUtil.m */; };
 		8A863DDA221FFEEC00F83365 /* RCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A863DD9221FFEEC00F83365 /* RCTableView.m */; };
@@ -79,6 +82,10 @@
 		8A6994D12196C7CF000F3B71 /* LKBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseModel.m; sourceTree = "<group>"; };
 		8A6A595321DF94BE0092E101 /* RCTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTabbarController.h; sourceTree = "<group>"; };
 		8A6A595421DF94BE0092E101 /* RCTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTabbarController.m; sourceTree = "<group>"; };
+		8A6AF89A224CA20700217C68 /* RCKeepBGRunManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCKeepBGRunManager.h; sourceTree = "<group>"; };
+		8A6AF89B224CA20700217C68 /* RCKeepBGRunManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCKeepBGRunManager.m; sourceTree = "<group>"; };
+		8A6AF89D224CA4A800217C68 /* audio_source.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_source.mp3; sourceTree = "<group>"; };
+		8A6AF89F224CAB8C00217C68 /* shadow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow.mp3; sourceTree = "<group>"; };
 		8A6D1BE82177330600DDE742 /* AppDelegate+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Init.h"; sourceTree = "<group>"; };
 		8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Init.m"; sourceTree = "<group>"; };
 		8A70B476217D62F00058B955 /* CommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
@@ -146,6 +153,7 @@
 		8A254DF4212D14D6005D4C9B /* RCIOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				8A6AF899224CA1D000217C68 /* BackTask */,
 				8A70B475217D62C70058B955 /* Common */,
 				8A6C6552215E0CFA00689BED /* Demo */,
 				8A254DF5212D14D6005D4C9B /* AppDelegate.h */,
@@ -193,6 +201,17 @@
 				8A6A595421DF94BE0092E101 /* RCTabbarController.m */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		8A6AF899224CA1D000217C68 /* BackTask */ = {
+			isa = PBXGroup;
+			children = (
+				8A6AF89F224CAB8C00217C68 /* shadow.mp3 */,
+				8A6AF89D224CA4A800217C68 /* audio_source.mp3 */,
+				8A6AF89A224CA20700217C68 /* RCKeepBGRunManager.h */,
+				8A6AF89B224CA20700217C68 /* RCKeepBGRunManager.m */,
+			);
+			path = BackTask;
 			sourceTree = "<group>";
 		};
 		8A6C6552215E0CFA00689BED /* Demo */ = {
@@ -259,6 +278,11 @@
 				TargetAttributes = {
 					8A254DF1212D14D6005D4C9B = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -287,7 +311,9 @@
 			files = (
 				8A254E02212D14D7005D4C9B /* LaunchScreen.storyboard in Resources */,
 				8A254DFF212D14D7005D4C9B /* Assets.xcassets in Resources */,
+				8A6AF89E224CA4A800217C68 /* audio_source.mp3 in Resources */,
 				8A254DFD212D14D6005D4C9B /* Main.storyboard in Resources */,
+				8A6AF8A0224CAB8C00217C68 /* shadow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +384,7 @@
 				8A254E38212D55F7005D4C9B /* RCPopDemoVC.m in Sources */,
 				8A5424D021E0571200C2097D /* PointUtils.m in Sources */,
 				8A5424CD21E0564200C2097D /* MetaBall.m in Sources */,
+				8A6AF89C224CA20700217C68 /* RCKeepBGRunManager.m in Sources */,
 				8A254DF7212D14D6005D4C9B /* AppDelegate.m in Sources */,
 				8A70B478217D62F00058B955 /* CommonUtil.m in Sources */,
 				8A4F730322216EA700C0278D /* RCMJRefreshHeader.m in Sources */,
