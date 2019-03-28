@@ -30,7 +30,6 @@
 		8A6994D22196C7CF000F3B71 /* LKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6994D12196C7CF000F3B71 /* LKBaseModel.m */; };
 		8A6A595521DF94BE0092E101 /* RCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A595421DF94BE0092E101 /* RCTabbarController.m */; };
 		8A6AF89C224CA20700217C68 /* RCKeepBGRunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6AF89B224CA20700217C68 /* RCKeepBGRunManager.m */; };
-		8A6AF89E224CA4A800217C68 /* audio_source.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AF89D224CA4A800217C68 /* audio_source.mp3 */; };
 		8A6AF8A0224CAB8C00217C68 /* shadow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AF89F224CAB8C00217C68 /* shadow.mp3 */; };
 		8A6D1BEA2177330600DDE742 /* AppDelegate+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */; };
 		8A70B478217D62F00058B955 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70B477217D62F00058B955 /* CommonUtil.m */; };
@@ -38,6 +37,7 @@
 		8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */; };
 		8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9ABA2F219413250078E1A8 /* RCRealmVC.m */; };
 		8AA0E0AF21E324B500CCB650 /* ImageTextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0E0AE21E324B500CCB650 /* ImageTextFactory.m */; };
+		8AE6C233224CB8E80057DF99 /* order_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8AE6C232224CB8E80057DF99 /* order_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,7 +84,6 @@
 		8A6A595421DF94BE0092E101 /* RCTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTabbarController.m; sourceTree = "<group>"; };
 		8A6AF89A224CA20700217C68 /* RCKeepBGRunManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCKeepBGRunManager.h; sourceTree = "<group>"; };
 		8A6AF89B224CA20700217C68 /* RCKeepBGRunManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCKeepBGRunManager.m; sourceTree = "<group>"; };
-		8A6AF89D224CA4A800217C68 /* audio_source.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio_source.mp3; sourceTree = "<group>"; };
 		8A6AF89F224CAB8C00217C68 /* shadow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow.mp3; sourceTree = "<group>"; };
 		8A6D1BE82177330600DDE742 /* AppDelegate+Init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Init.h"; sourceTree = "<group>"; };
 		8A6D1BE92177330600DDE742 /* AppDelegate+Init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Init.m"; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		8A9ABA2F219413250078E1A8 /* RCRealmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCRealmVC.m; sourceTree = "<group>"; };
 		8AA0E0AD21E324B500CCB650 /* ImageTextFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTextFactory.h; sourceTree = "<group>"; };
 		8AA0E0AE21E324B500CCB650 /* ImageTextFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTextFactory.m; sourceTree = "<group>"; };
+		8AE6C232224CB8E80057DF99 /* order_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = order_sound.mp3; sourceTree = "<group>"; };
 		8F43CAF8F14C7CD21A72D737 /* libPods-RCIOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCIOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F387BB4A3192A231BCBB3EC2 /* Pods-RCIOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F54BAEF96BAD5D0DAE73567A /* Pods-RCIOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCIOS-SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCIOS-SDK/Pods-RCIOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 		8A6AF899224CA1D000217C68 /* BackTask */ = {
 			isa = PBXGroup;
 			children = (
+				8AE6C232224CB8E80057DF99 /* order_sound.mp3 */,
 				8A6AF89F224CAB8C00217C68 /* shadow.mp3 */,
-				8A6AF89D224CA4A800217C68 /* audio_source.mp3 */,
 				8A6AF89A224CA20700217C68 /* RCKeepBGRunManager.h */,
 				8A6AF89B224CA20700217C68 /* RCKeepBGRunManager.m */,
 			);
@@ -311,9 +311,9 @@
 			files = (
 				8A254E02212D14D7005D4C9B /* LaunchScreen.storyboard in Resources */,
 				8A254DFF212D14D7005D4C9B /* Assets.xcassets in Resources */,
-				8A6AF89E224CA4A800217C68 /* audio_source.mp3 in Resources */,
 				8A254DFD212D14D6005D4C9B /* Main.storyboard in Resources */,
 				8A6AF8A0224CAB8C00217C68 /* shadow.mp3 in Resources */,
+				8AE6C233224CB8E80057DF99 /* order_sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

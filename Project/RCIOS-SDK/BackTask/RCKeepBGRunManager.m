@@ -49,12 +49,12 @@ static RCKeepBGRunManager *_sharedManger;
         //静音文件
 //        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"audio_source" ofType:@"mp3"];
 //        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-        NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"shadow.mp3" withExtension:nil];
+        NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"order_sound.mp3" withExtension:nil];
         
         self.playerBack = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
         [self.playerBack prepareToPlay];
         // 0.0~1.0,默认为1.0
-        self.playerBack.volume = 0.01;
+//        self.playerBack.volume = 0.01;
         // 循环播放
         self.playerBack.numberOfLoops = -1;
     }
