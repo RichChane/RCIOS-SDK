@@ -15,6 +15,8 @@
 #import "RCTabbarController.h"
 #import "ImageTextFactory.h"
 #import "RCTableView.h"
+#import "RCWebViewVC.h"
+
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +38,7 @@
     
     self.title = @"SDK";
     
-    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper",@"InnerTabbar"];
+    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper",@"InnerTabbar",@"RCWebViewVC"];
     
     
     RCTableView *tableView = [[RCTableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -124,6 +126,11 @@
         RCTabbarController *vc = [[RCTabbarController alloc]initWithViewControllers:@[vc1,vc2,vc3] BarImage:imageArray BarBgImage:@[@""]];
         
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 6){
+        RCWebViewVC *web = [[RCWebViewVC alloc] init];
+        [web loadWebURLSring:@"https://www.baidu.com"];
+        [self.navigationController pushViewController:web animated:YES];
+        
     }
     
 }
