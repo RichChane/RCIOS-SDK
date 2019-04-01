@@ -16,6 +16,7 @@
 #import "ImageTextFactory.h"
 #import "RCTableView.h"
 #import "RCWebViewVC.h"
+#import "RCAPIManagerDemoVC.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -38,7 +39,7 @@
     
     self.title = @"SDK";
     
-    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper",@"InnerTabbar",@"RCWebViewVC"];
+    dataSourceArray = @[@"PopView",@"PickerView",@"RCCusKeyboardVC",@"Realm",@"LKDBHelper",@"InnerTabbar",@"RCWebViewVC",@"RCAPIManagerDemoVC"];
     
     
     RCTableView *tableView = [[RCTableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -130,6 +131,10 @@
         RCWebViewVC *web = [[RCWebViewVC alloc] init];
         [web loadWebURLSring:@"https://www.baidu.com"];
         [self.navigationController pushViewController:web animated:YES];
+        
+    }else if (indexPath.row == 7){
+        RCAPIManagerDemoVC *vc = [[RCAPIManagerDemoVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }
     

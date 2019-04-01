@@ -303,18 +303,6 @@ static void *WkwebBrowserContext = &WkwebBrowserContext;
      @{@"request":request,@"snapShotView":currentSnapShotView}];
 }
 
-//-(void)updateNavigationItems{
-//    if (self.wkWebView.canGoBack) {
-//        UIBarButtonItem *spaceButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-//        spaceButtonItem.width = -6.5;
-//        
-//        [self.navigationItem setLeftBarButtonItems:@[spaceButtonItem,self.customBackBarItem,self.closeButtonItem] animated:NO];
-//    }else{
-//        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-//        [self.navigationItem setLeftBarButtonItems:@[self.customBackBarItem]];
-//    }
-//}
-
 #pragma mark ================ 懒加载 ================
 
 - (WKWebView *)wkWebView{

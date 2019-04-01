@@ -9,5 +9,8 @@ target 'RCIOS-SDK' do
     pod 'Realm'
     pod 'LKDBHelper'
     pod 'MJRefresh'
+    pod "AFNetworking"
+    pod "HandyFrame"
+    pod "CTMediator"
     
 end
