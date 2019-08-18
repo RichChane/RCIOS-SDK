@@ -45,6 +45,7 @@
 		8A8797862251B74B0032EE8E /* DemoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8797852251B74B0032EE8E /* DemoService.m */; };
 		8A8797892251BFED0032EE8E /* Target_RCAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8797882251BFED0032EE8E /* Target_RCAppContext.m */; };
 		8A87978C2251EE4E0032EE8E /* NSArray+AXNetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A87978B2251EE4E0032EE8E /* NSArray+AXNetworkingMethods.m */; };
+		8A87978F2252174A0032EE8E /* RCDemoReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A87978E2252174A0032EE8E /* RCDemoReformer.m */; };
 		8A8802DC217979D900D84614 /* RCCusKeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */; };
 		8A928E69224F71D500C5DCCF /* RCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A928E68224F71D500C5DCCF /* RCLogger.m */; };
 		8A928E6C224F72B500C5DCCF /* RCApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A928E6B224F72B500C5DCCF /* RCApiProxy.m */; };
@@ -133,6 +134,8 @@
 		8A8797882251BFED0032EE8E /* Target_RCAppContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_RCAppContext.m; sourceTree = "<group>"; };
 		8A87978A2251EE4E0032EE8E /* NSArray+AXNetworkingMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+AXNetworkingMethods.h"; sourceTree = "<group>"; };
 		8A87978B2251EE4E0032EE8E /* NSArray+AXNetworkingMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AXNetworkingMethods.m"; sourceTree = "<group>"; };
+		8A87978D2252174A0032EE8E /* RCDemoReformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDemoReformer.h; sourceTree = "<group>"; };
+		8A87978E2252174A0032EE8E /* RCDemoReformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoReformer.m; sourceTree = "<group>"; };
 		8A8802DA217979D900D84614 /* RCCusKeyboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCCusKeyboardVC.h; sourceTree = "<group>"; };
 		8A8802DB217979D900D84614 /* RCCusKeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCCusKeyboardVC.m; sourceTree = "<group>"; };
 		8A928E5F224F6CF400C5DCCF /* RCNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCNetworking.h; sourceTree = "<group>"; };
@@ -332,6 +335,8 @@
 			children = (
 				8A87977A2251B6C10032EE8E /* DemoAPIManager.h */,
 				8A87977B2251B6C10032EE8E /* DemoAPIManager.m */,
+				8A87978D2252174A0032EE8E /* RCDemoReformer.h */,
+				8A87978E2252174A0032EE8E /* RCDemoReformer.m */,
 				8A87977C2251B6C10032EE8E /* RCAPIManagerDemoVC.h */,
 				8A87977D2251B6C10032EE8E /* RCAPIManagerDemoVC.m */,
 			);
@@ -686,6 +691,7 @@
 				8A5424D321E0572F00C2097D /* MetaBallItem.m in Sources */,
 				8A254DFA212D14D6005D4C9B /* ViewController.m in Sources */,
 				8A9ABA30219413250078E1A8 /* RCRealmVC.m in Sources */,
+				8A87978F2252174A0032EE8E /* RCDemoReformer.m in Sources */,
 				8A928E69224F71D500C5DCCF /* RCLogger.m in Sources */,
 				8A6994CF2196C54C000F3B71 /* TestLKModel.m in Sources */,
 				8A87976A2251B02F0032EE8E /* RCCacheCenter.m in Sources */,
