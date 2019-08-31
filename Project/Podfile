@@ -6,7 +6,11 @@ target 'RCIOS-SDK' do
     
     pod 'RCIOS-SDK', :path => '../'
 #    pod 'YYKit'
-
-
+    pod 'Realm'
+    pod 'LKDBHelper'
+    pod 'MJRefresh'
+    pod "AFNetworking"
+    pod "HandyFrame"
+    pod "CTMediator"
     
 end

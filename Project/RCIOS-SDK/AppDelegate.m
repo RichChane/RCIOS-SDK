@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+Init.h"
+#import "CommonUtil.h"
+#import "RCKeepBGRunManager.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +21,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self initVendors];
+
+    dispatch_async(dispatch_get_global_queue(0, 0),^{
+        [CommonUtil testQuickArray];
+    });
+    
+    
     return YES;
 }
 
@@ -30,11 +42,16 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [[RCKeepBGRunManager shareManager] startBGRun];
+    
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    
+    [[RCKeepBGRunManager shareManager] stopBGRun];
 }
 
 

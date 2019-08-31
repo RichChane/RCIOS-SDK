@@ -12,7 +12,9 @@
 // 基础配置
 #import "BaseData.h"
 #import "GeneralCore.h"
+#import "GeneralViewController.h"
 #import <YYKit/YYKit.h>
+#import "LKDBHelper.h"
 
 // category
 #import "NSString+Size.h"

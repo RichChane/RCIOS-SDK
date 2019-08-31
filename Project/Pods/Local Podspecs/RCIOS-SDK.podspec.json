@@ -19,12 +19,15 @@
     "ios": "8.0"
   },
   "source_files": [
-    "{RCIOS-SDK/GeneralCore,RCIOS-SDK/KitCategry,RCIOS-SDK/PickerView,RCIOS-SDK/PopView,RCIOS-SDK/TempModel,RCIOS-SDK/UIFactory,RCIOS-SDK/Widget}{/}**/*",
+    "{RCIOS-SDK/GeneralCore,RCIOS-SDK/KitCategry,RCIOS-SDK/PickerView,RCIOS-SDK/PopView,RCIOS-SDK/TempModel,RCIOS-SDK/UIFactory,RCIOS-SDK/KeyBoardDigitalView,RCIOS-SDK/Widget,RCIOS-SDK/BackTask}{/}**/*",
     "RCIOS-SDK/RCSDKHeader.h",
     "RCIOS-SDK/BaseData.h"
   ],
   "dependencies": {
     "YYKit": [
+
+    ],
+    "PLeakSniffer": [
 
     ]
   }

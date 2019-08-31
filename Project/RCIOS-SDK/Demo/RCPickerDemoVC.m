@@ -12,8 +12,13 @@
 #import "STPickerSingle.h"
 #import "STRCCommonPickerView.h"
 #import "STPickerDate.h"
+//#import "DoubleDatePickerView.h"
+#import <RCIOS-SDK/DoubleDatePickerView.h>
 
 @interface RCPickerDemoVC ()<UITableViewDelegate,UITableViewDataSource,STPickerSingleDelegate,STRCCommonPickerViewDelegate,STPickerDateDelegate>
+@property (nonatomic,strong) NSDictionary *dateSpace;
+@property (nonatomic,strong) DoubleDatePickerView * datepicker;
+
 
 @end
 
@@ -31,7 +36,7 @@
     
     self.title = @"PopView";
     
-    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3",@"STPickerDate-4"];
+    dataSourceArray = @[@"STPickerView",@"STPickerSingle",@"STRCCommonPickerView-2",@"STRCCommonPickerView-3",@"STPickerDate-4",@"DoubleDatePickerView-5"];
     
     
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
@@ -113,6 +118,32 @@
         [pickerView show];
         //[pickerView setSelectLastOne];
         //[pickerView selectYear:2017 selectMonth:9 selectDay:14];
+    }else if (indexPath.row == 5){
+        
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        [dict setObject:@[ML(@"今日"),ML(@"昨日"),ML(@"本月"),ML(@"上月"),ML(@"近三月"),ML(@"本年")] forKey:BottomBtnKey];
+        DoubleDatePickerView *pickerView = [[DoubleDatePickerView alloc] initWithDateSpace:dict block:^(NSDictionary *dateSpace) {
+        
+            self.dateSpace = dateSpace;
+            NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+            [formatter setDateFormat:@"yyyy/MM/dd"];
+            
+            NSString *startTimeInt = [dateSpace objectForKey:BeginTimer];
+            NSDate * startDate = [NSDate dateWithTimeIntervalSince1970:[startTimeInt doubleValue]/1000];
+            NSString * startString = [formatter stringFromDate:startDate];
+            
+            NSString *endTimeInt = [dateSpace objectForKey:EndTimer];
+            NSDate * endDate = [NSDate dateWithTimeIntervalSince1970:[endTimeInt doubleValue]/1000];
+            NSString * endString = [formatter stringFromDate:endDate];
+            
+            
+            
+            
+        }];
+        pickerView.distanceOrigin = 150;
+        pickerView.popDirection = PopDirectionTop;
+        _datepicker = pickerView;
+        [pickerView show];
     }
 }
 

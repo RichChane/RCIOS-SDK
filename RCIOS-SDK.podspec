@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '{RCIOS-SDK/GeneralCore,RCIOS-SDK/KitCategry,RCIOS-SDK/PickerView,RCIOS-SDK/PopView,RCIOS-SDK/TempModel,RCIOS-SDK/UIFactory,RCIOS-SDK/Widget}{/}**/*','RCIOS-SDK/RCSDKHeader.h','RCIOS-SDK/BaseData.h'
+  s.source_files = '{RCIOS-SDK/GeneralCore,RCIOS-SDK/KitCategry,RCIOS-SDK/PickerView,RCIOS-SDK/PopView,RCIOS-SDK/TempModel,RCIOS-SDK/UIFactory,RCIOS-SDK/KeyBoardDigitalView,RCIOS-SDK/Widget,RCIOS-SDK/BackTask}{/}**/*','RCIOS-SDK/RCSDKHeader.h','RCIOS-SDK/BaseData.h'
   
   # s.resource_bundles = {
   #   'RCIOS-SDK' => ['RCIOS-SDK/Assets/*.png']
@@ -46,6 +46,7 @@ TODO: Add long description of the pod here.
 #s.dependency 'MJRefresh'
 #s.dependency 'MBProgressHUD'
   s.dependency 'YYKit'
+  s.dependency 'PLeakSniffer'
 #s.dependency 'YYCategories'
 
 #s.pod_target_xcconfig = {

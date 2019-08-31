@@ -1,15 +1,59 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CTMediator (25)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HandyFrame (1.2.0)
+  - LKDBHelper (2.5.1):
+    - LKDBHelper/standard (= 2.5.1)
+  - LKDBHelper/standard (2.5.1):
+    - FMDB
+  - MJRefresh (3.1.15.7)
+  - PLeakSniffer (0.1.0)
   - RCIOS-SDK (1.0.0):
+    - PLeakSniffer
     - YYKit
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AFNetworking
+  - CTMediator
+  - HandyFrame
+  - LKDBHelper
+  - MJRefresh
   - RCIOS-SDK (from `../`)
+  - Realm
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CTMediator
+    - FMDB
+    - HandyFrame
+    - LKDBHelper
+    - MJRefresh
+    - PLeakSniffer
+    - Realm
     - YYKit
 
 EXTERNAL SOURCES:
@@ -17,9 +61,17 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RCIOS-SDK: e78a7848acb6b67a17ab44318a1eaf3412be79ae
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
+  LKDBHelper: 9a276ba51f2e16263d46a9517e16cc9b03472664
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
+  RCIOS-SDK: 54b6a357a8c3ac7536ad6301cbcf186081408b12
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 02570107adca4b041f452cab09dc6ba2ec62d607
+PODFILE CHECKSUM: 10ce2b83537ce069300abb242d6478815975bb01
 
 COCOAPODS: 1.5.3

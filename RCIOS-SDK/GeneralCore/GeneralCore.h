@@ -22,7 +22,10 @@
 @property(strong, nonatomic) UIColor *MC;         // 主色调
 @property(strong, nonatomic) UIColor *CWhite;         // 白色
 @property(strong, nonatomic) UIColor *CBlack;         // 黑色
-
+@property(assign, nonatomic) CGFloat tabBarHeight;
+@property(assign, nonatomic) CGFloat topBarNowHeight;
+@property(assign, nonatomic) CGFloat topBarNormalHeight;
+@property(assign, nonatomic) CGFloat tabBarOriginalHeight;
 
 
 + (GeneralCore *)getInstance;
